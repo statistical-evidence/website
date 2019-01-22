@@ -30,6 +30,7 @@ home = [ "HTML", "RSS", "JSON"]
 
 
 [[menu.shortcuts]]
+pre = "<h4>Let's connect on</h4>"
 name = "<i class='fa fa-twitter'>&nbsp;&nbsp;</i>Twitter"
 url = "https://twitter.com/chetan_oxforduk"
 weight = 8
