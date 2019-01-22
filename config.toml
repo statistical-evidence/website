@@ -1,7 +1,7 @@
-baseURL = "/"
+baseURL = "https://chetan-prajapati.netlify.com"
 languageCode = "en-us"
 DefaultContentLanguage = "en"
-title = "Statistical Modelling, Data Science and R"
+title = "Consult Qualified and Accredited Statistican online | Online-Statistician.com"
 theme = "hugo-theme-docdock"
 #themesdir = "../.."
 pygmentsCodeFences = true
