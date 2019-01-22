@@ -1,10 +1,31 @@
 [
 {
-	"uri": "/post/2015-07-23-r-rmarkdown/",
-	"title": "Hello R Markdown",
-	"tags": ["R Markdown", "plot", "regression"],
+	"uri": "/1_data-management/",
+	"title": "Data Management",
+	"tags": [],
 	"description": "",
-	"content": "\rR Markdown\rThis is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.\nYou can embed an R code chunk like this:\nsummary(cars)\r## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.:19.0 3rd Qu.: 56.00 ## Max. :25.0 Max. :120.00\rfit \u0026lt;- lm(dist ~ speed, data = cars)\rfit\r## ## Call:\r## lm(formula = dist ~ speed, data = cars)\r## ## Coefficients:\r## (Intercept) speed ## -17.579 3.932\r\rIncluding Plots\rYou can also embed plots. See Figure 1 for example:\npar(mar = c(0, 1, 0, 1))\rpie(\rc(280, 60, 20),\rc(\u0026#39;Sky\u0026#39;, \u0026#39;Sunny side of pyramid\u0026#39;, \u0026#39;Shady side of pyramid\u0026#39;),\rcol = c(\u0026#39;#0292D8\u0026#39;, \u0026#39;#F7EA39\u0026#39;, \u0026#39;#C4B632\u0026#39;),\rinit.angle = -50, border = NA\r)\r\rFigure 1: A fancy pie chart.\r\r\r"
+	"content": " Data Management in R Basic and complex methods of handling data in R\n"
+},
+{
+	"uri": "/2_data-visualisation/",
+	"title": "Data Visualisation",
+	"tags": [],
+	"description": "",
+	"content": " Data Visualisation in R Basic and complex methods of data visualisation in R\n"
+},
+{
+	"uri": "/3_basic-statistics/",
+	"title": "Basic Statistics",
+	"tags": [],
+	"description": "",
+	"content": " Basic Statistics Foundation and Theory of Statistics and some common statitical test\n"
+},
+{
+	"uri": "/4_statistical-modelling/",
+	"title": "Statistical Modelling",
+	"tags": [],
+	"description": "",
+	"content": " Statistical Modelling in R Basic and complex statistical modeles in R\n"
 },
 {
 	"uri": "/categories/",
@@ -15,42 +36,7 @@
 },
 {
 	"uri": "/",
-	"title": "DocDock Documentation",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
-	"uri": "/tags/plot/",
-	"title": "Plot",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
-	"uri": "/post/",
-	"title": "Posts",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
-	"uri": "/categories/r/",
-	"title": "R",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
-	"uri": "/tags/r-markdown/",
-	"title": "R Markdown",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
-	"uri": "/tags/regression/",
-	"title": "Regression",
+	"title": "Home",
 	"tags": [],
 	"description": "",
 	"content": ""
