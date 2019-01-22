@@ -1,7 +1,7 @@
 baseURL = "/"
 languageCode = "en-us"
 DefaultContentLanguage = "en"
-title = "DocDock Documentation"
+title = "Statistical Modelling, Data Science and R"
 theme = "hugo-theme-docdock"
 #themesdir = "../.."
 pygmentsCodeFences = true
