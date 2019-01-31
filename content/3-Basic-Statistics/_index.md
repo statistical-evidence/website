@@ -2,7 +2,7 @@
 title: Basic Statistics
 weight: 3
 pre: "<b>3. </b>"
-chapter: true
+disable_comments : true
 ---
 
 ### Basic Statistics

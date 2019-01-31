@@ -2,7 +2,8 @@
 title: Statistical Models
 weight: 4
 pre: "<b>4. </b>"
-chapter: true
+disable_comments : true
+alwaysopen : true
 ---
 
 

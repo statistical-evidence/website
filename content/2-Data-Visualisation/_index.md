@@ -2,7 +2,7 @@
 title: Data Visualisation
 weight: 2
 pre: "<b>2. </b>"
-chapter: true
+disable_comments : true
 ---
 
 ## Data Visualisation in R
