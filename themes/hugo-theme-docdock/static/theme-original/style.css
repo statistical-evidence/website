@@ -1201,7 +1201,7 @@ pre .copy-to-clipboard:hover {
     #sidebar ul li .category-icon {
       color: gray; }
     #sidebar ul.topics > li.parent a, #sidebar ul.topics > li.active a {
-      color: #fff;
+      color: #c91e00;
       -webkit-transition: color 0.15s ease;
       -moz-transition: color 0.15s ease;
       -ms-transition: color 0.15s ease;

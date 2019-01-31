@@ -1,31 +1,52 @@
 [
 {
-	"uri": "/1_data-management/",
+	"uri": "/1-data-management/",
 	"title": "Data Management",
 	"tags": [],
 	"description": "",
-	"content": " Basic and complex methods of handling data in R "
+	"content": "  "
 },
 {
-	"uri": "/2_data-visualisation/",
+	"uri": "/4-statistical-modelling/4-1-discrete-response/",
+	"title": "Discrete response",
+	"tags": [],
+	"description": "Models for binary and count outcomes",
+	"content": "  Count response Count models in R\n  "
+},
+{
+	"uri": "/4-statistical-modelling/4-2-continuous-response/",
+	"title": "Continuous response",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/2-data-visualisation/",
 	"title": "Data Visualisation",
 	"tags": [],
 	"description": "",
-	"content": " Data Visualisation in R Basic and complex methods of data visualisation in R\n"
+	"content": " Data Visualisation in R  "
 },
 {
-	"uri": "/3_basic-statistics/",
+	"uri": "/3-basic-statistics/",
 	"title": "Basic Statistics",
 	"tags": [],
 	"description": "",
-	"content": " Basic Statistics Foundation and Theory of Statistics and some common statitical test\n"
+	"content": " Basic Statistics Foundation and Theory of Statistics and some common statitical test\n "
 },
 {
-	"uri": "/4_statistical-modelling/",
-	"title": "Statistical Modelling",
+	"uri": "/4-statistical-modelling/",
+	"title": "Statistical Models",
 	"tags": [],
 	"description": "",
-	"content": " Statistical Modelling in R Basic and complex statistical modeles in R\n"
+	"content": "  Discrete response Models for binary and count outcomes\n  Continuous response \n  "
+},
+{
+	"uri": "/4-statistical-modelling/4-1-discrete-response/4-1-3-count-response/count-response/",
+	"title": "Count response",
+	"tags": ["r", "poisson", "GLM"],
+	"description": "Count models in R",
+	"content": "\r\n\r\n\r\n\r\n"
 },
 {
 	"uri": "/_header/",
@@ -42,8 +63,36 @@
 	"content": ""
 },
 {
+	"uri": "/tags/glm/",
+	"title": "Glm",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/categories/glm/",
+	"title": "Glm",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
 	"uri": "/",
 	"title": "Home",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/tags/poisson/",
+	"title": "Poisson",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/tags/r/",
+	"title": "R",
 	"tags": [],
 	"description": "",
 	"content": ""

@@ -3,19 +3,33 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/1_data-management/</loc>
+    <loc>/1-data-management/</loc>
   </url>
   
   <url>
-    <loc>/2_data-visualisation/</loc>
+    <loc>/4-statistical-modelling/4-1-discrete-response/</loc>
+    <lastmod>2019-01-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/3_basic-statistics/</loc>
+    <loc>/4-statistical-modelling/4-2-continuous-response/</loc>
   </url>
   
   <url>
-    <loc>/4_statistical-modelling/</loc>
+    <loc>/2-data-visualisation/</loc>
+  </url>
+  
+  <url>
+    <loc>/3-basic-statistics/</loc>
+  </url>
+  
+  <url>
+    <loc>/4-statistical-modelling/</loc>
+  </url>
+  
+  <url>
+    <loc>/4-statistical-modelling/4-1-discrete-response/4-1-3-count-response/count-response/</loc>
+    <lastmod>2019-01-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -28,11 +42,37 @@
   </url>
   
   <url>
+    <loc>/tags/glm/</loc>
+    <lastmod>2019-01-31T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/glm/</loc>
+    <lastmod>2019-01-31T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/</loc>
+    <lastmod>2019-01-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/poisson/</loc>
+    <lastmod>2019-01-31T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/r/</loc>
+    <lastmod>2019-01-31T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/</loc>
+    <lastmod>2019-01-31T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

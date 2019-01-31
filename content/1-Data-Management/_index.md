@@ -4,6 +4,4 @@ weight: 1
 pre: "<b>1. </b>"
 chapter: true
 ---
-
-
-### Basic and complex methods of handling data in R
+{{%children style="h2" description="true"%}}

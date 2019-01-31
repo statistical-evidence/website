@@ -9,3 +9,5 @@ chapter: true
 
 
 Foundation and Theory of Statistics and some common statitical test
+
+{{%children style="h2" description="true"%}}
