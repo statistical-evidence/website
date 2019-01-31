@@ -1,0 +1,102 @@
+---
+title: "Count data models"
+author: "Chetan Prajapati"
+date: '2019-01-31'
+description: ''
+slug: count-data-models
+tags:
+- Poisson
+- Zero-inflated
+- R
+- GLM
+categories: GLM
+---
+
+
+
+<div id="count-outcome-or-count-data" class="section level3">
+<h3>Count outcome or count data</h3>
+<p>count basically is a number which is <strong>discrete</strong> and <strong>non-negative</strong> (integers such as 0,1 or 895 but not 0.6,1.9 or 895.66). It is a number(or sum) of event. This is different to numeric continuous variable which modelled differently (such as blood pressure 120.2,135.9).</p>
+<p>Count may also have contextual information i.e with time, area or length. Question starting as “How many (events)” generally answered with counts.Such as number of road accidents in given year, number of rain drops in square meter area.</p>
+</div>
+<div id="distributionmodel-to-consider-in-count-data" class="section level3">
+<h3>Distribution/Model to consider in count data</h3>
+<p>The prime distribution of count is poisson. The other models are avialable to overcome two majors issues in counts : overdispersion (or less often underdispersion) and excess zeros. Or sometime zero is impossible value for the outcome ( such length of stay-no 0 length of stay), in this condition, zero truncated model is useful.</p>
+<p><strong>To overcome over or under dispersion:</strong></p>
+<ul>
+<li>Negative Binomial distribution (NB)</li>
+<li>Poisson Inverse Gaussian (PIG)</li>
+<li>Generalized Negative Binomial Model</li>
+<li>Generalised Poisson</li>
+<li>Heterogeneous Negative Binomail model (NB-H)</li>
+</ul>
+<p><strong>To ovecome excess zero’s:</strong></p>
+<ul>
+<li>zero-inflated Poisson (ZIP)</li>
+<li>zero-inflated negative binomial (ZINB)</li>
+<li>Hurdle model</li>
+</ul>
+<p><strong>To model outcome where 0 is impossible value</strong></p>
+<ul>
+<li>zero truncated models</li>
+</ul>
+<pre class="r"><code>knitr::include_graphics(&#39;/images/poisson_models_types.PNG&#39;)</code></pre>
+<p><img src="/images/poisson_models_types.PNG" /><!-- --></p>
+<div class="figure">
+<img src="/images/poisson_models_types.PNG" alt="Figure 1 Models for count data: mean-variance relationships and its parameterisation" />
+<p class="caption">Figure 1 <strong>Models for count data: mean-variance relationships and its parameterisation</strong></p>
+</div>
+<div id="poisson-distribution" class="section level4">
+<h4>1 Poisson distribution</h4>
+<ul>
+<li>single parameter</li>
+<li>mean <span class="math inline">\([\mu]\)</span> is equal to variance <span class="math inline">\([\mu]\)</span>, also called equidispersion</li>
+<li>in real life datasets, more often there will be higher variability or correlation than model allows (over-dispersion) which leads to biased standard errors ( so as misleading signficance of covarite)</li>
+</ul>
+</div>
+<div id="negative-binomial" class="section level4">
+<h4>2 Negative Binomial</h4>
+<ul>
+<li>has additinal dispersion parameter <span class="math inline">\([\alpha]\)</span> to accomodate excess variability. when the dispersion parameter is zero,
+the model becomes Poisson</li>
+<li>can be traditional negative binomial (NB1) or quadratic negative binomial (NB2)</li>
+<li>Only correct overdispersion ( not underdispersion of poisson)</li>
+<li>form of Poisson-gamma mixture with dispersion parameter <span class="math inline">\([\alpha]\)</span> has gamma distribution. Gamma distribution is very flexible in shape so most (not all) overdispesed count data modelled well with NB</li>
+<li>It is possible that NB may not correct overdispersion in a Poisson model</li>
+</ul>
+</div>
+<div id="poisson-inverse-gaussian-pig" class="section level4">
+<h4>3 Poisson Inverse Gaussian (PIG)</h4>
+<ul>
+<li>Similler to negative binomial except the disperson parameter <span class="math inline">\([\alpha]\)</span> has inverse gaussian distribution</li>
+<li>Avaialbe in R <code>gamlass</code> package</li>
+</ul>
+</div>
+<div id="generalized-negative-binomial-model-gnb" class="section level4">
+<h4>4 Generalized Negative Binomial Model (GNB)</h4>
+<ul>
+<li>The GNB parameterizes the exponent on the second term of the
+negative binomial variance.</li>
+<li>To get initial idea whether data is suited to NB1 or NB2 or NB-P</li>
+</ul>
+</div>
+<div id="generalised-poissson-models" class="section level4">
+<h4>5 Generalised Poissson Models</h4>
+<ul>
+<li>Similler to above models but dispersion parameter can take negative values which also correct underdispersion if present</li>
+</ul>
+</div>
+<div id="heterogeneous-negative-binomail-model-nb-h" class="section level4">
+<h4>6 Heterogeneous Negative Binomail model (NB-H)</h4>
+<ul>
+<li>Dispersion parameter can be associated with particular covariate which bring singificant dispoersion in the model.</li>
+</ul>
+</div>
+<div id="exact-poisson-regression" class="section level4">
+<h4>7 Exact poisson regression</h4>
+<p>for unbalnced and sparce count data</p>
+<p>In count model log of count are modelled with respect to linear predictors. This is will make sure that predicted count will always be positive.</p>
+<p>The expected percentage of zero counts on the basis of the Poisson
+model is under 1%. If mean of count response is 5 or below and some 30% of the count observations consist of zeros,ZIP or ZINB will be good choice.</p>
+</div>
+</div>
