@@ -586,7 +586,7 @@ h1 {
   text-align: center;
   text-transform: uppercase;
   color: #060606;
-  font-weight: 200; }
+  font-weight: 800; }
 
 blockquote {
   border-left: 10px solid #f2f2f2; }
@@ -681,11 +681,12 @@ code + .copy-to-clipboard {
   top: -1px; }
 
 pre {
-  padding: 1rem;
-  margin: 2rem 0;
-  border: 1px solid #272a2c;
-  border-radius: 2px;
-  line-height: 1.15; }
+    padding: .3rem;
+    margin: 2rem 0;
+    color: #000000;
+    border-radius: .1rem;
+    line-height: 1.15;
+    background-color: #ccc; }
 
 pre code {
   background: inherit;
@@ -1042,19 +1043,15 @@ td {
   padding: 0 0.1rem; }
 
 .copy-to-clipboard {
-  display: inline-block;
-  position: relative;
-  color: #5e5e5e;
-  background-color: #f8efd1;
-  text-align: center;
-  cursor: pointer;
-  border-radius: 0 2px 2px 0;
-  padding: 0.1rem;
-  border: 1px solid #ffeeb8;
-  -webkit-transition: all 0.15s ease;
-  -moz-transition: all 0.15s ease;
-  -ms-transition: all 0.15s ease;
-  transition: all 0.15s ease; }
+    display: inline-block;
+    position: relative;
+    color: #5e5e5e;
+    background-color: #494e58;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0 2px 2px 0;
+    padding: 0.1rem;
+    border: 1px solid #494e58; }
 
 .copy-to-clipboard:hover {
   background-color: #f8efd1; }

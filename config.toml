@@ -6,7 +6,7 @@ description = "Consult Qualified and Accredited Statistican online | Online-Stat
 theme = "hugo-theme-docdock"
 #themesdir = "../.."
 pygmentsCodeFences = true
-pygmentsStyle = "dracula"
+pygmentsStyle = "monokailight"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir= false
 enableMissingTranslationPlaceholders = false
@@ -22,7 +22,7 @@ ordersectionsby = "weight" # ordersectionsby = "title"
 disableHomeIcon = false # default is false
 disableSearch = false # default is false
 disableNavChevron = false # set true to hide next/prev chevron, default is false
-highlightClientSide = true # set true to use highlight.pack.js instead of the default hugo chroma highlighter
+highlightClientSide = false # set true to use highlight.pack.js instead of the default hugo chroma highlighter
 menushortcutsnewtab = false # set true to open shortcuts links to a new tab/window
 enableGitInfo = true
 

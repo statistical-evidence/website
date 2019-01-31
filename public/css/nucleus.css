@@ -510,7 +510,8 @@ h1, h2, h3, h4, h5, h6 {
   text-rendering: optimizeLegibility; }
 
 h1 {
-  font-size: 3.25rem; }
+  font-size: 2.50rem;
+  border-bottom: 4px solid #F0F2F4;}
 
 h2 {
   font-size: 2.55rem; }
