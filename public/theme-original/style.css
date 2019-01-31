@@ -240,7 +240,7 @@ body {
 
 /* anchors */
 .anchor {
-  color: #2053AB;
+  color: #c91e00;
   font-size: 0.5em;
   cursor: pointer;
   visibility: hidden;
@@ -253,7 +253,7 @@ body {
   transition: color 0.35s ease; }
 
 .anchor:hover {
-  color: #238fbd;
+  color: #000000;
   -webkit-transition: color 0.35s ease;
   -moz-transition: color 0.35s ease;
   -ms-transition: color 0.35s ease;
@@ -345,14 +345,14 @@ body #chapter h1 {
   font-size: 3.5rem; }
 
 a {
-  color: #2053AB;
+  color: #c91e00;
   -webkit-transition: color 0.15s ease;
   -moz-transition: color 0.15s ease;
   -ms-transition: color 0.15s ease;
   transition: color 0.15s ease; }
 
 a:hover {
-  color: #238fbd;
+  color: #000000;
   -webkit-transition: color 0.15s ease;
   -moz-transition: color 0.15s ease;
   -ms-transition: color 0.15s ease;
@@ -396,10 +396,10 @@ textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[typ
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(0, 169, 218, 0.7); }
 
 #header-wrapper {
-  background: #2053AB;
+  background: #c91e00;
   color: #fff;
   text-align: center;
-  border-bottom: 1px solid #183f81;
+  border-bottom: 1px solid #fff;
   padding: 1rem; }
 
 #header a {
@@ -415,8 +415,8 @@ textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[typ
 .searchbox {
   margin-top: 1rem;
   position: relative;
-  border: 1px solid #6795e3;
-  background: #183f81;
+  border: 1px solid #fff;
+  background: #b41b00;
   border-radius: 4px; }
 
 .searchbox label {
@@ -1109,7 +1109,7 @@ pre .copy-to-clipboard:hover {
   margin-right: 1rem !important; }
 
 #sidebar {
-  background-color: #2053AB;
+  background-color: #252c31;
   position: fixed;
   top: 0;
   width: 300px;
@@ -1213,7 +1213,7 @@ pre .copy-to-clipboard:hover {
       -ms-transition: color 0.15s ease;
       transition: color 0.15s ease; }
     #sidebar ul.topics > li.parent, #sidebar ul.topics > li.active {
-      background: #183f81;
+      background: #fff;
       margin-left: -1rem;
       margin-right: 0rem;
       padding-left: 1rem;
@@ -1251,7 +1251,7 @@ pre .copy-to-clipboard:hover {
     #sidebar ul li .read-icon {
       display: none;
       font-size: xx-small;
-      color: gray;
+      color: #fff;
       position: absolute;
       float: left;
       margin: 0;
