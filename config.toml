@@ -7,12 +7,12 @@ theme = "hugo-theme-docdock"
 #themesdir = "../.."
 pygmentsCodeFences = true
 pygmentsStyle = "monokailight"
-defaultContentLanguage = "en"
-defaultContentLanguageInSubdir= false
+defaultContentLanguageInSubdir= true
 enableMissingTranslationPlaceholders = false
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
-
 disqusShortname = "https-chetan-prajapati-netlify-com"
+
+
 [params]
 #editURL = "https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/"
 showVisitedLinks = true # default is false
