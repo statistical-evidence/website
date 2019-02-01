@@ -1,16 +1,12 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta content="{{ delimit .Keywords ", " }}" name="keywords">
 <meta name="revised" content="{{ now.Format "2006-01-02T15:04:05 MST" }}">
 
-<meta name="description" content="{{if .IsHome}}{{ $.Site.Params.description }}{{else}}{{.Description}}{{end}}" />
-
-<meta content="{{ $isHomePage := eq .Title .Site.Title }}{{ .Site.Params.description }}{{ if eq $isHomePage false }} - {{ .Description }}{{ end }}" property="og:description">
-
-<meta content="{{ delimit .Keywords ", " }}" name="keywords">
-
-<meta content="{{ $isHomePage := eq .Title .Site.Title }}{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}" property="og:title">
-
+{{ partial "site-meta.html" . }}
+{{ partial "site-opengraph.html" . }}
+{{ partial "site-twittercard.html" . }}
 {{ partial "seo_schema" . }}
 
 

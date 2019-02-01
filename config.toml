@@ -19,7 +19,10 @@ disqusShortname = "https-chetan-prajapati-netlify-com"
 [params]
 #editURL = "https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/"
 
-description = "Statitician online analysis regression R SPSS STATA"
+description = "In-depth analysis with best possible way | Statistician-online.com"
+images = ["images/bio.png"]
+
+
 showVisitedLinks = true # default is false
 themeStyle = "original" # "original" or "flex" # default "flex"
 themeVariant = "" # choose theme variant "green", "gold" , "gray", "blue" (default)
@@ -50,7 +53,10 @@ url = "/images/logo.png"
 width = 800
 height = 600
 
-
+[params.facebook]
+appid = "xxx"
+[params.twitter]
+username = "xxx"
 
 
 
