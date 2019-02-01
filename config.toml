@@ -13,8 +13,13 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 disqusShortname = "https-chetan-prajapati-netlify-com"
 
 
+[author]
+  name = "Chetan Prajapati"
+
 [params]
 #editURL = "https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/"
+
+description = "Statitician online analysis regression R SPSS STATA"
 showVisitedLinks = true # default is false
 themeStyle = "original" # "original" or "flex" # default "flex"
 themeVariant = "" # choose theme variant "green", "gold" , "gray", "blue" (default)
@@ -25,6 +30,37 @@ disableNavChevron = false # set true to hide next/prev chevron, default is false
 highlightClientSide = false # set true to use highlight.pack.js instead of the default hugo chroma highlighter
 menushortcutsnewtab = false # set true to open shortcuts links to a new tab/window
 enableGitInfo = true
+
+
+[params.publisher]
+    name = "Chetan Prajapati"
+
+[params.publisher.logo]
+url = "/images/logo.png"
+width = 127
+height = 40
+
+[params.logo]
+url = "/images/logo.png"
+width = 127
+height = 40
+
+[params.image]
+url = "/images/logo.png"
+width = 800
+height = 600
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 [outputs]
