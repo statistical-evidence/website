@@ -18,7 +18,8 @@ disqusShortname = "https-chetan-prajapati-netlify-com"
 
 [params]
 #editURL = "https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/"
-
+author = "Chetan Prajapati"
+title = "Statistican-online"
 description = "In-depth analysis with best possible way | Statistician-online.com"
 images = ["images/bio.png"]
 

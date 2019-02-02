@@ -63,14 +63,14 @@
 	"content": ""
 },
 {
-	"uri": "/tags/glm/",
+	"uri": "/categories/glm/",
 	"title": "Glm",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "/categories/glm/",
+	"uri": "/tags/glm/",
 	"title": "Glm",
 	"tags": [],
 	"description": "",
@@ -80,7 +80,7 @@
 	"uri": "/",
 	"title": "Home",
 	"tags": [],
-	"description": "",
+	"description": "This page is about me",
 	"content": ""
 },
 {
@@ -91,14 +91,14 @@
 	"content": ""
 },
 {
-	"uri": "/tags/r/",
+	"uri": "/categories/r/",
 	"title": "R",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "/categories/r/",
+	"uri": "/tags/r/",
 	"title": "R",
 	"tags": [],
 	"description": "",
