@@ -48,7 +48,7 @@ width = 127
 height = 40
 
 [params.image]
-url = "/images/logo.png"
+url = "/images/cover.png"
 width = 800
 height = 600
 
