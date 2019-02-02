@@ -22,10 +22,129 @@ categories:
 
 <img alt="reshape data wide long r gather melt dplyr" src="/images/Reshape.png" height="300px" width="400px" />
 
-Reshaping though frequently required in data analysis, so often it remains confusing even if you are frequent  user of `reshape` function in R.Here I have provided more explaination with simulated data.
+Reshaping though frequently required in data analysis, so often it remains confusing even if you are frequent  user of `reshape` function in R.Here I have provided more explanation with simulated data.
+
+#### [1] Wide to long
+
+Wide data: the observation has been made several time  but all the observations for given person is recorded in single row in spreadsheet.For example, in clinic, person visiting every month for their blood pressure check, and nurse note down the value for each month in single row which belong to this specific person. 
+
+
+Let's first create small wide data
 
 ```{r}
-data("cars")
+# wide data
+df <- data.frame(matrix(data = NA, nrow = 3, ncol = 5, dimnames = list(NULL, paste0(c("id","name","jan","feb","march")))))
+df[1,] <- c(1,"A",123,120,125)
+df[2,] <- c(2,"B",140,150,155)
+df[3,] <- c(3,"C",96,86,97)
 ```
 
-sto
+Our "wide" data look like
+
+```{r echo=FALSE}
+df
+```
+
+
+Now rather than recording each month's observation in row, we want data each which only one observation per row for that given person. for that we need to use standard `reshape` command in `R`.  
+
+The `reshape` has following argument:
+
++ `idvar` : unique identifier for person,place or object on which observations(measurments) are made at different time points or repeatedly. Example `Case ID`
+
++ `varying` :  if observation for specific individulas are made at different time points, in which columns values are recorded i.e time-varying columns. Example `Jan`, `Feb`, `March`
+
++ `timevar`: what will be the name of column once the timevarying columns above has been staked in rows. Example `Month` 
+
++ `times` : what will be the values (of time) once the timevarying columns above has been staked in rows. Example  `Jan`, `Feb`, `March`
+
++ `v.names`: what will be the values (of observations) once the timevarying columns above has been staked in rows. Example `BP`
+
++ `direction`: data needs to converted from wide to `long` format.
+
+
+```{r}
+df_long <- reshape(df,
+idvar = "id",  
+        #[unique identifier for person,place or object on which observations(measurments) are made at different time points or repeatedly]
+
+varying = c("jan","feb","march"),  
+        # [if observation for specific individulas are made at different time points, in which columns values are recorded i.e time-varying columns ]
+
+timevar = "month", 
+        # [what will be the name of column once the timevarying columns above has been staked in rows]
+
+times = c("jan","feb","march"),
+        # [what will be the values (of time) once the timevarying columns above has been staked in rows]
+
+v.names = "BP", 
+        # [what will be the values (of observations) once the timevarying columns above has been staked in rows]
+
+direction = "long")   
+        # [we want to convert wide df into long one])
+```
+
+Our "long" data look like
+
+```{r echo=TRUE, message=FALSE, warning=FALSE}
+require(dplyr)
+df_long <- arrange(df_long, id)
+df_long
+```
+
+Sometime, not only one type of measurement (BP) but also other types (such as Heart rate -HR) are measured and recorded row wise. For example,
+
+```{r echo=FALSE}
+# wide data
+df <- data.frame(matrix(data = NA, nrow = 3, ncol = 8, dimnames = list(NULL, paste0(c("id","name","BP_jan","BP_feb","BP_march","HR_jan","HR_feb","HR_march")))))
+df[1,] <- c(1,"A",123,120,125,72,70,71)
+df[2,] <- c(2,"B",140,150,155,85,82,86)
+df[3,] <- c(3,"C",96,86,97,65,52,59)
+df
+```
+
+This data can be converted into "long" by using `list` for group of time-varying columns for `varying`
+
+```{r}
+df_long <- reshape(df,
+idvar = "id",  
+varying = list(c("BP_jan","BP_feb","BP_march"),c("HR_jan","HR_feb","HR_march") ),  
+timevar = "month", 
+times = c("jan","feb","march"),
+v.names = c("BP","HR"), 
+direction = "long")   
+```
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+df_long <- arrange(df_long, id)
+df_long
+```
+
+#### [2] long to wide
+
+To make data "wide" from long, the `reshape` function will need only two main argumennts apart from id. 
+
++ `v.names` : which column represent **values** of the observations in long data ( so that `reshape` function can transform these values into rows for each ID)
+
++ `timevar` : which column represent **the timing** of the observations ( so that `reshape` function associate it with the value for given time for each ID )
+
+Here is the example
+
+```{r}
+df_wide <- reshape(df_long,
+       idvar = "id",
+       # unique identifier
+       v.names = c("BP","HR"),
+       # the columns represent the value of the observation (BP,HR)
+       timevar = "month",
+       # the column represent the timing of the observations
+       direction = "wide"
+        )
+```
+
+Here is the wide data
+
+```{r}
+df_wide
+```
+
