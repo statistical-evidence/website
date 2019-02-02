@@ -12,11 +12,6 @@
 <meta name="revised" content="{{ now.Format "2006-01-02T15:04:05 MST" }}">
 <meta name="description" content="{{if .IsHome}}{{ $.Site.Params.description }}{{else}}{{.Description}}{{end}}" />
 
-{{ if .IsHome -}}
-  <title>{{ .Site.Title }}</title>
-{{- else -}}
-  <title>{{ .Title }} – {{ .Site.Title }}</title>
-{{- end }}
 
 
 <link rel="shortcut icon" href="{{"images/favicon.png" | relURL}}" type="image/x-icon" />
