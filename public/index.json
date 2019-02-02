@@ -4,7 +4,7 @@
 	"title": "Data Management",
 	"tags": [],
 	"description": "",
-	"content": "  "
+	"content": "  Reshaping data into wide or long format in R Reshaping data into wide or long formate in R\n  "
 },
 {
 	"uri": "/4-statistical-modelling/4-1-discrete-response/",
@@ -42,6 +42,13 @@
 	"content": "  Discrete response Models for binary and count outcomes\n  Continuous response \n  "
 },
 {
+	"uri": "/1-data-management/reshaping-data-into-wide-or-long-format-in-r/",
+	"title": "Reshaping data into wide or long format in R",
+	"tags": ["dataframe", "wide", "long", "R"],
+	"description": "Reshaping data into wide or long formate in R",
+	"content": "\rReshaping though frequently required in data analysis, so often it remains confusing even if you are frequent user of reshape function in R.Here I have provided more explaination with simulated data.\ndata(\u0026quot;cars\u0026quot;)\r"
+},
+{
 	"uri": "/4-statistical-modelling/4-1-discrete-response/4-1-3-count-response/count-data-models/",
 	"title": "Count data models",
 	"tags": ["Poisson", "Zero-inflated", "R", "GLM"],
@@ -63,14 +70,21 @@
 	"content": ""
 },
 {
-	"uri": "/tags/glm/",
-	"title": "Glm",
+	"uri": "/tags/dataframe/",
+	"title": "Dataframe",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
 	"uri": "/categories/glm/",
+	"title": "Glm",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/tags/glm/",
 	"title": "Glm",
 	"tags": [],
 	"description": "",
@@ -84,15 +98,15 @@
 	"content": ""
 },
 {
-	"uri": "/tags/poisson/",
-	"title": "Poisson",
+	"uri": "/tags/long/",
+	"title": "Long",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "/tags/r/",
-	"title": "R",
+	"uri": "/tags/poisson/",
+	"title": "Poisson",
 	"tags": [],
 	"description": "",
 	"content": ""
@@ -105,8 +119,29 @@
 	"content": ""
 },
 {
+	"uri": "/tags/r/",
+	"title": "R",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/categories/reshape/",
+	"title": "Reshape",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
 	"uri": "/tags/",
 	"title": "Tags",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/tags/wide/",
+	"title": "Wide",
 	"tags": [],
 	"description": "",
 	"content": ""

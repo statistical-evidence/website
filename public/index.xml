@@ -6,10 +6,20 @@
     <description>Recent content in Home on Consult Qualified and Accredited Statistican online | Online-Statistician.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 31 Jan 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 02 Feb 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Reshaping data into wide or long format in R</title>
+      <link>/1-data-management/reshaping-data-into-wide-or-long-format-in-r/</link>
+      <pubDate>Sat, 02 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/1-data-management/reshaping-data-into-wide-or-long-format-in-r/</guid>
+      <description>Reshaping though frequently required in data analysis, so often it remains confusing even if you are frequent user of reshape function in R.Here I have provided more explaination with simulated data.
+data(&amp;quot;cars&amp;quot;)</description>
+    </item>
     
     <item>
       <title>Count data models</title>

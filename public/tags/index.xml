@@ -6,10 +6,19 @@
     <description>Recent content in Tags on Consult Qualified and Accredited Statistican online | Online-Statistician.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 31 Jan 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 02 Feb 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Dataframe</title>
+      <link>/tags/dataframe/</link>
+      <pubDate>Sat, 02 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/dataframe/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Glm</title>
@@ -17,6 +26,15 @@
       <pubDate>Thu, 31 Jan 2019 00:00:00 +0000</pubDate>
       
       <guid>/tags/glm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Long</title>
+      <link>/tags/long/</link>
+      <pubDate>Sat, 02 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/long/</guid>
       <description></description>
     </item>
     
@@ -32,9 +50,18 @@
     <item>
       <title>R</title>
       <link>/tags/r/</link>
-      <pubDate>Thu, 31 Jan 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 02 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>/tags/r/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Wide</title>
+      <link>/tags/wide/</link>
+      <pubDate>Sat, 02 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/wide/</guid>
       <description></description>
     </item>
     
