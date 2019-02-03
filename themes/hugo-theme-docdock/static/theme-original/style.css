@@ -1046,12 +1046,12 @@ td {
     display: inline-block;
     position: relative;
     color: #5e5e5e;
-    background-color: #494e58;
+    background-color: #FFF7DD;
     text-align: center;
     cursor: pointer;
     border-radius: 0 2px 2px 0;
     padding: 0.1rem;
-    border: 1px solid #494e58; }
+    border: 1px solid #FFF7DD; }
 
 .copy-to-clipboard:hover {
   background-color: #f8efd1; }
