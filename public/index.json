@@ -1,153 +1,153 @@
 [
 {
-	"uri": "/1-data-management/",
+	"uri": "https://chetan-prajapati.netlify.com/1-data-management/",
 	"title": "Data Management",
 	"tags": [],
 	"description": "",
 	"content": "  Reshaping data into wide or long format in R Reshaping data into wide or long formate in R\n  "
 },
 {
-	"uri": "/4-statistical-modelling/4-1-discrete-response/",
+	"uri": "https://chetan-prajapati.netlify.com/4-statistical-modelling/4-1-discrete-response/",
 	"title": "Discrete response",
 	"tags": [],
 	"description": "Models for binary and count outcomes",
 	"content": "  Count data models This page describes how to do poisson regression statistical model in R\n  "
 },
 {
-	"uri": "/4-statistical-modelling/4-2-continuous-response/",
+	"uri": "https://chetan-prajapati.netlify.com/4-statistical-modelling/4-2-continuous-response/",
 	"title": "Continuous response",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "/2-data-visualisation/",
+	"uri": "https://chetan-prajapati.netlify.com/2-data-visualisation/",
 	"title": "Data Visualisation",
 	"tags": [],
 	"description": "",
 	"content": " Data Visualisation in R  "
 },
 {
-	"uri": "/3-basic-statistics/",
+	"uri": "https://chetan-prajapati.netlify.com/3-basic-statistics/",
 	"title": "Basic Statistics",
 	"tags": [],
 	"description": "",
 	"content": " Basic Statistics Foundation and Theory of Statistics and some common statitical test\n "
 },
 {
-	"uri": "/4-statistical-modelling/",
+	"uri": "https://chetan-prajapati.netlify.com/4-statistical-modelling/",
 	"title": "Statistical Models",
 	"tags": [],
 	"description": "",
 	"content": "  Discrete response Models for binary and count outcomes\n  Continuous response \n  "
 },
 {
-	"uri": "/1-data-management/reshaping-data-into-wide-or-long-format-in-r/",
+	"uri": "https://chetan-prajapati.netlify.com/1-data-management/reshaping-data-into-wide-or-long-format-in-r/",
 	"title": "Reshaping data into wide or long format in R",
 	"tags": ["dataframe", "wide", "long", "R"],
 	"description": "Reshaping data into wide or long formate in R",
 	"content": "\rReshaping though frequently required in data analysis, so often it remains confusing even if you are frequent user of reshape function in R.Here I have provided more explanation with simulated data.\n[1] Wide to long\rWide data: the observation has been made several time but all the observations for given person is recorded in single row in spreadsheet.For example, in clinic, person visiting every month for their blood pressure check, and nurse note down the value for each month in single row which belong to this specific person.\nLet’s first create small wide data\n# wide data\rdf \u0026lt;- data.frame(matrix(data = NA, nrow = 3, ncol = 5, dimnames = list(NULL, paste0(c(\u0026quot;id\u0026quot;,\u0026quot;name\u0026quot;,\u0026quot;jan\u0026quot;,\u0026quot;feb\u0026quot;,\u0026quot;march\u0026quot;)))))\rdf[1,] \u0026lt;- c(1,\u0026quot;A\u0026quot;,123,120,125)\rdf[2,] \u0026lt;- c(2,\u0026quot;B\u0026quot;,140,150,155)\rdf[3,] \u0026lt;- c(3,\u0026quot;C\u0026quot;,96,86,97)\rOur “wide” data look like\n## id name jan feb march\r## 1 1 A 123 120 125\r## 2 2 B 140 150 155\r## 3 3 C 96 86 97\rNow rather than recording each month’s observation in row, we want data each which only one observation per row for that given person. for that we need to use standard reshape command in R.\nThe reshape has following argument:\n\ridvar : unique identifier for person,place or object on which observations(measurments) are made at different time points or repeatedly. Example Case ID\n\rvarying : if observation for specific individulas are made at different time points, in which columns values are recorded i.e time-varying columns. Example Jan, Feb, March\n\rtimevar: what will be the name of column once the timevarying columns above has been staked in rows. Example Month\n\rtimes : what will be the values (of time) once the timevarying columns above has been staked in rows. Example Jan, Feb, March\n\rv.names: what will be the values (of observations) once the timevarying columns above has been staked in rows. Example BP\n\rdirection: data needs to converted from wide to long format.\n\r\rdf_long \u0026lt;- reshape(df,\ridvar = \u0026quot;id\u0026quot;, #[unique identifier for person,place or object on which observations(measurments) are made at different time points or repeatedly]\rvarying = c(\u0026quot;jan\u0026quot;,\u0026quot;feb\u0026quot;,\u0026quot;march\u0026quot;), # [if observation for specific individulas are made at different time points, in which columns values are recorded i.e time-varying columns ]\rtimevar = \u0026quot;month\u0026quot;, # [what will be the name of column once the timevarying columns above has been staked in rows]\rtimes = c(\u0026quot;jan\u0026quot;,\u0026quot;feb\u0026quot;,\u0026quot;march\u0026quot;),\r# [what will be the values (of time) once the timevarying columns above has been staked in rows]\rv.names = \u0026quot;BP\u0026quot;, # [what will be the values (of observations) once the timevarying columns above has been staked in rows]\rdirection = \u0026quot;long\u0026quot;) # [we want to convert wide df into long one])\rOur “long” data look like\nrequire(dplyr)\rdf_long \u0026lt;- arrange(df_long, id)\rdf_long\r## id name month BP\r## 1 1 A jan 123\r## 2 1 A feb 120\r## 3 1 A march 125\r## 4 2 B jan 140\r## 5 2 B feb 150\r## 6 2 B march 155\r## 7 3 C jan 96\r## 8 3 C feb 86\r## 9 3 C march 97\rSometime, not only one type of measurement (BP) but also other types (such as Heart rate -HR) are measured and recorded row wise. For example,\n## id name BP_jan BP_feb BP_march HR_jan HR_feb HR_march\r## 1 1 A 123 120 125 72 70 71\r## 2 2 B 140 150 155 85 82 86\r## 3 3 C 96 86 97 65 52 59\rThis data can be converted into “long” by using list for group of time-varying columns for varying\ndf_long \u0026lt;- reshape(df,\ridvar = \u0026quot;id\u0026quot;, varying = list(c(\u0026quot;BP_jan\u0026quot;,\u0026quot;BP_feb\u0026quot;,\u0026quot;BP_march\u0026quot;),c(\u0026quot;HR_jan\u0026quot;,\u0026quot;HR_feb\u0026quot;,\u0026quot;HR_march\u0026quot;) ), timevar = \u0026quot;month\u0026quot;, times = c(\u0026quot;jan\u0026quot;,\u0026quot;feb\u0026quot;,\u0026quot;march\u0026quot;),\rv.names = c(\u0026quot;BP\u0026quot;,\u0026quot;HR\u0026quot;), direction = \u0026quot;long\u0026quot;) \r## id name month BP HR\r## 1 1 A jan 123 72\r## 2 1 A feb 120 70\r## 3 1 A march 125 71\r## 4 2 B jan 140 85\r## 5 2 B feb 150 82\r## 6 2 B march 155 86\r## 7 3 C jan 96 65\r## 8 3 C feb 86 52\r## 9 3 C march 97 59\r\r[2] long to wide\rTo make data “wide” from long, the reshape function will need only two main argumennts apart from id.\n\rv.names : which column represent values of the observations in long data ( so that reshape function can transform these values into rows for each ID)\n\rtimevar : which column represent the timing of the observations ( so that reshape function associate it with the value for given time for each ID )\n\r\rHere is the example\ndf_wide \u0026lt;- reshape(df_long,\ridvar = \u0026quot;id\u0026quot;,\r# unique identifier\rv.names = c(\u0026quot;BP\u0026quot;,\u0026quot;HR\u0026quot;),\r# the columns represent the value of the observation (BP,HR)\rtimevar = \u0026quot;month\u0026quot;,\r# the column represent the timing of the observations\rdirection = \u0026quot;wide\u0026quot;\r)\rHere is the wide data\ndf_wide\r## id name BP.jan HR.jan BP.feb HR.feb BP.march HR.march\r## 1 1 A 123 72 120 70 125 71\r## 4 2 B 140 85 150 82 155 86\r## 7 3 C 96 65 86 52 97 59\r\r"
 },
 {
-	"uri": "/4-statistical-modelling/4-1-discrete-response/4-1-3-count-response/count-data-models/",
+	"uri": "https://chetan-prajapati.netlify.com/4-statistical-modelling/4-1-discrete-response/4-1-3-count-response/count-data-models/",
 	"title": "Count data models",
 	"tags": ["Poisson", "Zero-inflated", "R", "GLM"],
 	"description": "This page describes how to do poisson regression statistical model in R",
 	"content": "\rCount outcome or count data\rcount basically is a number which is discrete and non-negative (integers such as 0,1 or 895 but not 0.6,1.9 or 895.66). It is a number(or sum) of event. This is different to numeric continuous variable which modelled differently (such as blood pressure 120.2,135.9).\nCount may also have contextual information i.e with time, area or length. Question starting as “How many (events)” generally answered with counts.Such as number of road accidents in given year, number of rain drops in square meter area.\n\rDistribution/Model to consider in count data\rThe prime distribution of count is poisson. The other models are avialable to overcome two majors issues in counts : overdispersion (or less often underdispersion) and excess zeros. Or sometime zero is impossible value for the outcome ( such length of stay-no 0 length of stay), in this condition, zero truncated model is useful.\nTo overcome over or under dispersion:\n\rNegative Binomial distribution (NB)\rPoisson Inverse Gaussian (PIG)\rGeneralized Negative Binomial Model\rGeneralised Poisson\rHeterogeneous Negative Binomail model (NB-H)\r\rTo ovecome excess zero’s:\n\rzero-inflated Poisson (ZIP)\rzero-inflated negative binomial (ZINB)\rHurdle model\r\rTo model outcome where 0 is impossible value\n\rzero truncated models\r\rknitr::include_graphics(\u0026#39;/images/poisson_models_types.PNG\u0026#39;)\rFigure 1 Models for count data: mean-variance relationships and its parameterisation\n\r1 Poisson distribution\r\rsingle parameter\rmean \\([\\mu]\\) is equal to variance \\([\\mu]\\), also called equidispersion\rin real life datasets, more often there will be higher variability or correlation than model allows (over-dispersion) which leads to biased standard errors ( so as misleading signficance of covarite)\r\r\r2 Negative Binomial\r\rhas additinal dispersion parameter \\([\\alpha]\\) to accomodate excess variability. when the dispersion parameter is zero,\rthe model becomes Poisson\rcan be traditional negative binomial (NB1) or quadratic negative binomial (NB2)\rOnly correct overdispersion ( not underdispersion of poisson)\rform of Poisson-gamma mixture with dispersion parameter \\([\\alpha]\\) has gamma distribution. Gamma distribution is very flexible in shape so most (not all) overdispesed count data modelled well with NB\rIt is possible that NB may not correct overdispersion in a Poisson model\r\r\r3 Poisson Inverse Gaussian (PIG)\r\rSimiller to negative binomial except the disperson parameter \\([\\alpha]\\) has inverse gaussian distribution\rAvaialbe in R gamlass package\r\r\r4 Generalized Negative Binomial Model (GNB)\r\rThe GNB parameterizes the exponent on the second term of the\rnegative binomial variance.\rTo get initial idea whether data is suited to NB1 or NB2 or NB-P\r\r\r5 Generalised Poissson Models\r\rSimiller to above models but dispersion parameter can take negative values which also correct underdispersion if present\r\r\r6 Heterogeneous Negative Binomail model (NB-H)\r\rDispersion parameter can be associated with particular covariate which bring singificant dispoersion in the model.\r\r\r7 Exact poisson regression\rfor unbalnced and sparce count data\nIn count model log of count are modelled with respect to linear predictors. This is will make sure that predicted count will always be positive.\nThe expected percentage of zero counts on the basis of the Poisson\rmodel is under 1%. If mean of count response is 5 or below and some 30% of the count observations consist of zeros,ZIP or ZINB will be good choice.\n\r\r"
 },
 {
-	"uri": "/_header/",
+	"uri": "https://chetan-prajapati.netlify.com/_header/",
 	"title": "",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "/categories/",
+	"uri": "https://chetan-prajapati.netlify.com/categories/",
 	"title": "Categories",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "/tags/dataframe/",
+	"uri": "https://chetan-prajapati.netlify.com/tags/dataframe/",
 	"title": "Dataframe",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "/tags/glm/",
+	"uri": "https://chetan-prajapati.netlify.com/tags/glm/",
 	"title": "Glm",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "/categories/glm/",
+	"uri": "https://chetan-prajapati.netlify.com/categories/glm/",
 	"title": "Glm",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "/",
+	"uri": "https://chetan-prajapati.netlify.com/",
 	"title": "Home",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "/tags/long/",
+	"uri": "https://chetan-prajapati.netlify.com/tags/long/",
 	"title": "Long",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "/tags/poisson/",
+	"uri": "https://chetan-prajapati.netlify.com/tags/poisson/",
 	"title": "Poisson",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "/tags/r/",
+	"uri": "https://chetan-prajapati.netlify.com/tags/r/",
 	"title": "R",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "/categories/r/",
+	"uri": "https://chetan-prajapati.netlify.com/categories/r/",
 	"title": "R",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "/categories/reshape/",
+	"uri": "https://chetan-prajapati.netlify.com/categories/reshape/",
 	"title": "Reshape",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "/tags/",
+	"uri": "https://chetan-prajapati.netlify.com/tags/",
 	"title": "Tags",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "/tags/wide/",
+	"uri": "https://chetan-prajapati.netlify.com/tags/wide/",
 	"title": "Wide",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "/tags/zero-inflated/",
+	"uri": "https://chetan-prajapati.netlify.com/tags/zero-inflated/",
 	"title": "Zero Inflated",
 	"tags": [],
 	"description": "",
