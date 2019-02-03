@@ -56,6 +56,9 @@ height = 600
 [params.facebook]
 appid = "2107085849337279"
 
+[params.lang2]
+langu2 = "en_GB"
+
 [params.twitter]
 username = "xxx"
 
