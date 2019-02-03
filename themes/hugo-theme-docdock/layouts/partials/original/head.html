@@ -10,6 +10,7 @@
 
 <meta content="{{ delimit .Keywords ", " }}" name="keywords">
 <meta name="revised" content="{{ now.Format "2006-01-02T15:04:05 MST" }}">
+<meta name="description" content="{{if .IsHome}}{{ $.Site.Params.description }}{{else}}{{.Description}}{{end}}" />
 
 <meta name="title" content="{{ if .IsHome -}}
   {{ .Site.Title }}
