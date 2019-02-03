@@ -10,4 +10,4 @@ alwaysopen : true
 
 
 
-{{%children style="h2" description="true"%}}
+{{% children depth="3" showhidden="true" %}}

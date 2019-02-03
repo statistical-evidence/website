@@ -8,4 +8,4 @@ pre: "<b>4.1 </b>"
 
 #####   
 
-{{%children style="h2" description="true"%}}
+{{% children depth="3" showhidden="true" %}}
