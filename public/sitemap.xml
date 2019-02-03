@@ -3,117 +3,117 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://chetan-prajapati.netlify.com/1-data-management/</loc>
+    <loc>/1-data-management/</loc>
     <lastmod>2019-02-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://chetan-prajapati.netlify.com/4-statistical-modelling/4-1-discrete-response/</loc>
+    <loc>/4-statistical-modelling/4-1-discrete-response/</loc>
     <lastmod>2019-01-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://chetan-prajapati.netlify.com/4-statistical-modelling/4-2-continuous-response/</loc>
+    <loc>/4-statistical-modelling/4-2-continuous-response/</loc>
   </url>
   
   <url>
-    <loc>https://chetan-prajapati.netlify.com/2-data-visualisation/</loc>
+    <loc>/2-data-visualisation/</loc>
   </url>
   
   <url>
-    <loc>https://chetan-prajapati.netlify.com/3-basic-statistics/</loc>
+    <loc>/3-basic-statistics/</loc>
   </url>
   
   <url>
-    <loc>https://chetan-prajapati.netlify.com/4-statistical-modelling/</loc>
+    <loc>/4-statistical-modelling/</loc>
   </url>
   
   <url>
-    <loc>https://chetan-prajapati.netlify.com/1-data-management/reshaping-data-into-wide-or-long-format-in-r/</loc>
+    <loc>/1-data-management/reshaping-data-into-wide-or-long-format-in-r/</loc>
     <lastmod>2019-02-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://chetan-prajapati.netlify.com/4-statistical-modelling/4-1-discrete-response/4-1-3-count-response/count-data-models/</loc>
+    <loc>/4-statistical-modelling/4-1-discrete-response/4-1-3-count-response/count-data-models/</loc>
     <lastmod>2019-01-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://chetan-prajapati.netlify.com/_header/</loc>
+    <loc>/_header/</loc>
   </url>
   
   <url>
-    <loc>https://chetan-prajapati.netlify.com/categories/</loc>
+    <loc>/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://chetan-prajapati.netlify.com/tags/dataframe/</loc>
+    <loc>/tags/dataframe/</loc>
     <lastmod>2019-02-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://chetan-prajapati.netlify.com/tags/glm/</loc>
-    <lastmod>2019-01-31T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://chetan-prajapati.netlify.com/categories/glm/</loc>
+    <loc>/tags/glm/</loc>
     <lastmod>2019-01-31T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://chetan-prajapati.netlify.com/</loc>
-    <lastmod>2019-02-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://chetan-prajapati.netlify.com/tags/long/</loc>
-    <lastmod>2019-02-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://chetan-prajapati.netlify.com/tags/poisson/</loc>
+    <loc>/categories/glm/</loc>
     <lastmod>2019-01-31T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://chetan-prajapati.netlify.com/tags/r/</loc>
+    <loc>/</loc>
+    <lastmod>2019-02-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/long/</loc>
     <lastmod>2019-02-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://chetan-prajapati.netlify.com/categories/r/</loc>
+    <loc>/tags/poisson/</loc>
     <lastmod>2019-01-31T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://chetan-prajapati.netlify.com/categories/reshape/</loc>
+    <loc>/tags/r/</loc>
     <lastmod>2019-02-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://chetan-prajapati.netlify.com/tags/</loc>
+    <loc>/categories/r/</loc>
+    <lastmod>2019-01-31T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/reshape/</loc>
     <lastmod>2019-02-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://chetan-prajapati.netlify.com/tags/wide/</loc>
+    <loc>/tags/</loc>
     <lastmod>2019-02-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://chetan-prajapati.netlify.com/tags/zero-inflated/</loc>
+    <loc>/tags/wide/</loc>
+    <lastmod>2019-02-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/zero-inflated/</loc>
     <lastmod>2019-01-31T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
