@@ -54,13 +54,13 @@
   </url>
   
   <url>
-    <loc>/tags/glm/</loc>
+    <loc>/categories/glm/</loc>
     <lastmod>2019-01-31T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/glm/</loc>
+    <loc>/tags/glm/</loc>
     <lastmod>2019-01-31T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -83,14 +83,14 @@
   </url>
   
   <url>
-    <loc>/tags/r/</loc>
-    <lastmod>2019-02-02T00:00:00+00:00</lastmod>
+    <loc>/categories/r/</loc>
+    <lastmod>2019-01-31T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/r/</loc>
-    <lastmod>2019-01-31T00:00:00+00:00</lastmod>
+    <loc>/tags/r/</loc>
+    <lastmod>2019-02-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
