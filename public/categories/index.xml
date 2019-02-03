@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Consult Qualified and Accredited Statistican online | Online-Statistician.com</title>
-    <link>https://chetan-prajapati.netlify.com/categories/</link>
+    <link>/categories/</link>
     <description>Recent content in Categories on Consult Qualified and Accredited Statistican online | Online-Statistician.com</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en_US</language>
+    <language>en-gb</language>
     
-	<atom:link href="https://chetan-prajapati.netlify.com/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Glm</title>
-      <link>https://chetan-prajapati.netlify.com/categories/glm/</link>
+      <link>/categories/glm/</link>
       <pubDate>Thu, 31 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://chetan-prajapati.netlify.com/categories/glm/</guid>
+      <guid>/categories/glm/</guid>
       <description></description>
     </item>
     
     <item>
       <title>R</title>
-      <link>https://chetan-prajapati.netlify.com/categories/r/</link>
+      <link>/categories/r/</link>
       <pubDate>Thu, 31 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://chetan-prajapati.netlify.com/categories/r/</guid>
+      <guid>/categories/r/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Reshape</title>
-      <link>https://chetan-prajapati.netlify.com/categories/reshape/</link>
+      <link>/categories/reshape/</link>
       <pubDate>Sat, 02 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://chetan-prajapati.netlify.com/categories/reshape/</guid>
+      <guid>/categories/reshape/</guid>
       <description></description>
     </item>
     
