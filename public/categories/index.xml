@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Consult Qualified and Accredited Statistican online | Online-Statistician.com</title>
-    <link>/categories/</link>
+    <link>https://chetan-prajapati.netlify.com/categories/</link>
     <description>Recent content in Categories on Consult Qualified and Accredited Statistican online | Online-Statistician.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     
-	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://chetan-prajapati.netlify.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Data Management</title>
+      <link>https://chetan-prajapati.netlify.com/categories/data-management/</link>
+      <pubDate>Sat, 02 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://chetan-prajapati.netlify.com/categories/data-management/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Glm</title>
-      <link>/categories/glm/</link>
+      <link>https://chetan-prajapati.netlify.com/categories/glm/</link>
       <pubDate>Thu, 31 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>/categories/glm/</guid>
+      <guid>https://chetan-prajapati.netlify.com/categories/glm/</guid>
       <description></description>
     </item>
     
     <item>
       <title>R</title>
-      <link>/categories/r/</link>
+      <link>https://chetan-prajapati.netlify.com/categories/r/</link>
       <pubDate>Thu, 31 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>/categories/r/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Reshape</title>
-      <link>/categories/reshape/</link>
-      <pubDate>Sat, 02 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/categories/reshape/</guid>
+      <guid>https://chetan-prajapati.netlify.com/categories/r/</guid>
       <description></description>
     </item>
     

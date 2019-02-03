@@ -2,75 +2,66 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Consult Qualified and Accredited Statistican online | Online-Statistician.com</title>
-    <link>/tags/</link>
+    <link>https://chetan-prajapati.netlify.com/tags/</link>
     <description>Recent content in Tags on Consult Qualified and Accredited Statistican online | Online-Statistician.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Sat, 02 Feb 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://chetan-prajapati.netlify.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Dataframe</title>
-      <link>/tags/dataframe/</link>
+      <link>https://chetan-prajapati.netlify.com/tags/dataframe/</link>
       <pubDate>Sat, 02 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tags/dataframe/</guid>
+      <guid>https://chetan-prajapati.netlify.com/tags/dataframe/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Glm</title>
-      <link>/tags/glm/</link>
+      <link>https://chetan-prajapati.netlify.com/tags/glm/</link>
       <pubDate>Thu, 31 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tags/glm/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Long</title>
-      <link>/tags/long/</link>
-      <pubDate>Sat, 02 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/long/</guid>
+      <guid>https://chetan-prajapati.netlify.com/tags/glm/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Poisson</title>
-      <link>/tags/poisson/</link>
+      <link>https://chetan-prajapati.netlify.com/tags/poisson/</link>
       <pubDate>Thu, 31 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tags/poisson/</guid>
+      <guid>https://chetan-prajapati.netlify.com/tags/poisson/</guid>
       <description></description>
     </item>
     
     <item>
       <title>R</title>
-      <link>/tags/r/</link>
+      <link>https://chetan-prajapati.netlify.com/tags/r/</link>
       <pubDate>Sat, 02 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tags/r/</guid>
+      <guid>https://chetan-prajapati.netlify.com/tags/r/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Wide</title>
-      <link>/tags/wide/</link>
+      <title>Reshape</title>
+      <link>https://chetan-prajapati.netlify.com/tags/reshape/</link>
       <pubDate>Sat, 02 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tags/wide/</guid>
+      <guid>https://chetan-prajapati.netlify.com/tags/reshape/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Zero Inflated</title>
-      <link>/tags/zero-inflated/</link>
+      <link>https://chetan-prajapati.netlify.com/tags/zero-inflated/</link>
       <pubDate>Thu, 31 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tags/zero-inflated/</guid>
+      <guid>https://chetan-prajapati.netlify.com/tags/zero-inflated/</guid>
       <description></description>
     </item>
     

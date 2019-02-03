@@ -1,9 +1,18 @@
 ---
-title: "Reshaping data into wide or long format in R"
+title: "How to reshape data - wide or long form in the R programming language"
 author: "Chetan Prajapati"
 date: '2019-02-02'
-description: Reshaping data into wide or long formate in R
-keywords: reshape
+description: Reshape data frame or matrix either in wide or long format in R programming language.
+
+keywords: 
+
+- matrix
+- data
+- r
+- programming
+- wide
+- long
+
 menuTitle: Reshaping data in to R
 pageimage:
   image:
@@ -11,13 +20,14 @@ pageimage:
     url: /imgages/Reshape.png
     width: 800
 slug: reshaping-data-into-wide-or-long-format-in-r
+
 tags:
 - dataframe
-- wide
-- long
-- R
-categories: 
+- r
 - reshape
+
+categories: 
+- data management
 ---
 
 
@@ -41,11 +51,11 @@ df[3,] &lt;- c(3,&quot;C&quot;,96,86,97)</code></pre>
 <p>Now rather than recording each month’s observation in row, we want data each which only one observation per row for that given person. for that we need to use standard <code>reshape</code> command in <code>R</code>.</p>
 <p>The <code>reshape</code> has following argument:</p>
 <ul>
-<li><p><code>idvar</code> : unique identifier for person,place or object on which observations(measurments) are made at different time points or repeatedly. Example <code>Case ID</code></p></li>
-<li><p><code>varying</code> : if observation for specific individulas are made at different time points, in which columns values are recorded i.e time-varying columns. Example <code>Jan</code>, <code>Feb</code>, <code>March</code></p></li>
-<li><p><code>timevar</code>: what will be the name of column once the timevarying columns above has been staked in rows. Example <code>Month</code></p></li>
-<li><p><code>times</code> : what will be the values (of time) once the timevarying columns above has been staked in rows. Example <code>Jan</code>, <code>Feb</code>, <code>March</code></p></li>
-<li><p><code>v.names</code>: what will be the values (of observations) once the timevarying columns above has been staked in rows. Example <code>BP</code></p></li>
+<li><p><code>idvar</code> : unique identifier for person,place or object on which observations(measurements) are made at different time points or repeatedly. Example <code>Case ID</code></p></li>
+<li><p><code>varying</code> : if observation for specific individuals are made at different time points, in which columns values are recorded i.e time-varying columns. Example <code>Jan</code>, <code>Feb</code>, <code>March</code></p></li>
+<li><p><code>timevar</code>: what will be the name of column once the time-varying columns above has been staked in rows. Example <code>Month</code></p></li>
+<li><p><code>times</code> : what will be the values (of time) once the time-varying columns above has been staked in rows. Example <code>Jan</code>, <code>Feb</code>, <code>March</code></p></li>
+<li><p><code>v.names</code>: what will be the values (of observations) once the time-varying columns above has been staked in rows. Example <code>BP</code></p></li>
 <li><p><code>direction</code>: data needs to converted from wide to <code>long</code> format.</p></li>
 </ul>
 <pre class="r"><code>df_long &lt;- reshape(df,
@@ -106,7 +116,7 @@ direction = &quot;long&quot;)   </code></pre>
 </div>
 <div id="long-to-wide" class="section level4">
 <h4>[2] long to wide</h4>
-<p>To make data “wide” from long, the <code>reshape</code> function will need only two main argumennts apart from id.</p>
+<p>To make data “wide” from long, the <code>reshape</code> function will need only two main arguments apart from id.</p>
 <ul>
 <li><p><code>v.names</code> : which column represent <strong>values</strong> of the observations in long data ( so that <code>reshape</code> function can transform these values into rows for each ID)</p></li>
 <li><p><code>timevar</code> : which column represent <strong>the timing</strong> of the observations ( so that <code>reshape</code> function associate it with the value for given time for each ID )</p></li>
