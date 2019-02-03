@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+    {{ if .IsHome -}}
+  <title>{{ .Site.Title }}</title>
+{{- else -}}
+  <title>{{ .Title }} – {{ .Site.Title }}</title>
+{{- end }}
+
     {{if .Site.Params.themeStyle}}
       {{ partial (printf "%s/head.html" .Site.Params.themeStyle) . }}
     {{else}}

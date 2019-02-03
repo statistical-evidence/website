@@ -20,6 +20,7 @@ categories:
 - reshape
 ---
 
+
 <img alt="reshape data wide long r gather melt dplyr" src="/images/Reshape.png" height="300px" width="400px" />
 
 Reshaping though frequently required in data analysis, so often it remains confusing even if you are frequent  user of `reshape` function in R.Here I have provided more explanation with simulated data.
