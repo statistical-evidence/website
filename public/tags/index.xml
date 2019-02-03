@@ -2,66 +2,84 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Online-Statistician.com</title>
-    <link>https://chetan-prajapati.netlify.com/tags/</link>
+    <link>/tags/</link>
     <description>Recent content in Tags on Online-Statistician.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Sat, 02 Feb 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://chetan-prajapati.netlify.com/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Dataframe</title>
-      <link>https://chetan-prajapati.netlify.com/tags/dataframe/</link>
+      <link>/tags/dataframe/</link>
       <pubDate>Sat, 02 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://chetan-prajapati.netlify.com/tags/dataframe/</guid>
+      <guid>/tags/dataframe/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Glm</title>
-      <link>https://chetan-prajapati.netlify.com/tags/glm/</link>
+      <link>/tags/glm/</link>
       <pubDate>Thu, 31 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://chetan-prajapati.netlify.com/tags/glm/</guid>
+      <guid>/tags/glm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Negative Binomial</title>
+      <link>/tags/negative-binomial/</link>
+      <pubDate>Thu, 31 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/negative-binomial/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Poisson</title>
-      <link>https://chetan-prajapati.netlify.com/tags/poisson/</link>
+      <link>/tags/poisson/</link>
       <pubDate>Thu, 31 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://chetan-prajapati.netlify.com/tags/poisson/</guid>
+      <guid>/tags/poisson/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Quasi Poisson</title>
+      <link>/tags/quasi-poisson/</link>
+      <pubDate>Thu, 31 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/quasi-poisson/</guid>
       <description></description>
     </item>
     
     <item>
       <title>R</title>
-      <link>https://chetan-prajapati.netlify.com/tags/r/</link>
+      <link>/tags/r/</link>
       <pubDate>Sat, 02 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://chetan-prajapati.netlify.com/tags/r/</guid>
+      <guid>/tags/r/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Reshape</title>
-      <link>https://chetan-prajapati.netlify.com/tags/reshape/</link>
+      <link>/tags/reshape/</link>
       <pubDate>Sat, 02 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://chetan-prajapati.netlify.com/tags/reshape/</guid>
+      <guid>/tags/reshape/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Zero Inflated</title>
-      <link>https://chetan-prajapati.netlify.com/tags/zero-inflated/</link>
+      <link>/tags/zero-inflated/</link>
       <pubDate>Thu, 31 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://chetan-prajapati.netlify.com/tags/zero-inflated/</guid>
+      <guid>/tags/zero-inflated/</guid>
       <description></description>
     </item>
     
