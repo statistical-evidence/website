@@ -1,6 +1,6 @@
 baseURL = "https://chetan-prajapati.netlify.com"
 languageCode = "en_US"
-DefaultContentLanguage = "en_US"
+DefaultContentLanguage = "en"
 title = "Consult Qualified and Accredited Statistican online | Online-Statistician.com"
 description = "Consult Qualified and Accredited Statistican online | Online-Statistician.com"
 theme = "hugo-theme-docdock"
