@@ -36,15 +36,9 @@ tags:
 categories: 
 
 - GLM
-
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(include = FALSE)
-```
-
-
-### what is count or count variable
+###  What is a count or count variable?
 
 Count is a number which is **discrete** and **non-negative**. Discrete means a number which is a countable and distinct. For example, number of road accidents. Road accidents can be 2 or 852 but can not be 2.1 or 85.5. So its discrete i.e integer. This is different to numeric continuous variable (such as blood pressure 120.2,135.9) which modelled differently.
 
@@ -60,12 +54,14 @@ Now if we know the average rate of some event $[\lambda]$ in which event happeni
 For example, in neighborhood road, on avaerge 2 cars passing by every hour. We noted the number of cars passing by continuously for 10 hours. We may get following numbers
 
 ```{r}
+set.seed(125)
 rpois(10,2)
 ```
 
 We can derive the probability associated with each event and plot it with number of cars ( X axis ) and probability associated with it on Y axis
 
 ```{r message=FALSE, warning=FALSE}
+
 set.seed(125)
 X <- rpois(10,2)
 probs <- dpois(X,2)

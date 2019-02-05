@@ -126,10 +126,14 @@ direction = "long")
 ```
 
 
-```{r echo=FALSE, message=FALSE, warning=FALSE}
+```{r message=FALSE, warning=FALSE}
 df_long <- arrange(df_long, id)
+```
+
+```{r echo=FALSE}
 kable(df_long,format = "html") %>%  kable_styling(full_width = F, position = "center",font_size = 14)
 ```
+
 
 #### [2] long to wide
 
@@ -149,13 +153,14 @@ df_wide <- reshape(df_long,
        # the columns represent the value of the observation (BP,HR)
        timevar = "month",
        # the column represent the timing of the observations
-       direction = "wide"
+       direction = "wide",
+       sep = "_"
         )
 ```
 
 Here is the wide data
 
-```{r}
+```{r echo=FALSE}
 kable(df_wide,format = "html") %>%  kable_styling(full_width = F, position = "center",font_size = 14)
 ```
 

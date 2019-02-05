@@ -302,6 +302,7 @@ timevar = &quot;month&quot;,
 times = c(&quot;jan&quot;,&quot;feb&quot;,&quot;march&quot;),
 v.names = c(&quot;BP&quot;,&quot;HR&quot;), 
 direction = &quot;long&quot;)   </code></pre>
+<pre class="r"><code>df_long &lt;- arrange(df_long, id)</code></pre>
 <table class="table" style="font-size: 14px; width: auto !important; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
@@ -494,10 +495,10 @@ march
        # the columns represent the value of the observation (BP,HR)
        timevar = &quot;month&quot;,
        # the column represent the timing of the observations
-       direction = &quot;wide&quot;
+       direction = &quot;wide&quot;,
+       sep = &quot;_&quot;
         )</code></pre>
 <p>Here is the wide data</p>
-<pre class="r"><code>kable(df_wide,format = &quot;html&quot;) %&gt;%  kable_styling(full_width = F, position = &quot;center&quot;,font_size = 14)</code></pre>
 <table class="table" style="font-size: 14px; width: auto !important; margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
@@ -510,22 +511,22 @@ id
 name
 </th>
 <th style="text-align:left;">
-BP.jan
+BP_jan
 </th>
 <th style="text-align:left;">
-HR.jan
+HR_jan
 </th>
 <th style="text-align:left;">
-BP.feb
+BP_feb
 </th>
 <th style="text-align:left;">
-HR.feb
+HR_feb
 </th>
 <th style="text-align:left;">
-BP.march
+BP_march
 </th>
 <th style="text-align:left;">
-HR.march
+HR_march
 </th>
 </tr>
 </thead>
