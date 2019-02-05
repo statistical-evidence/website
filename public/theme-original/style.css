@@ -665,8 +665,8 @@ code, kbd, pre, samp {
 code {
   padding: 2px 4px;
     font-size: 90%;
-    color: #c7254e;
-    background-color: #f9f2f4;
+    color: #f1220b;
+    background-color: #f9f7f6;
     border-radius: 4px; }
 
 
@@ -676,7 +676,7 @@ pre {
     color: #5d2c2c;
     border-radius: .5rem;
     line-height: 1.15;
-    background-color: #d6d1d1; }
+    background-color: #efe9e9; }
 
 pre code {
   background: inherit;

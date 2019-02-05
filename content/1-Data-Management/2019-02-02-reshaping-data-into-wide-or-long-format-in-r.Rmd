@@ -23,11 +23,13 @@ tags:
 - reshape
 categories: 
 - data management
-output: 
-  html_document: 
-    css: C:/Hugo/website/themes/hugo-theme-docdock/static/css/hybrid.css
----
 
+---
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+require(knitr)
+require(kableExtra)
+require(dplyr)
+```
 
 <img alt="reshape data wide long r gather melt dplyr" src="/images/Reshape.png" height="300px" width="400px" />
 
@@ -50,10 +52,9 @@ df[3,] <- c(3,"C",96,86,97)
 
 Our "wide" data look like
 
-```{r}
-df
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+kable(df,format = "html") %>%  kable_styling(full_width = F, position = "center",font_size = 14)
 ```
-
 
 Now rather than recording each month's observation in row, we want data each which only one observation per row for that given person. for that we need to use standard `reshape` command in `R`.  
 
@@ -96,9 +97,9 @@ direction = "long")
 Our "long" data look like
 
 ```{r echo=TRUE, message=FALSE, warning=FALSE}
-require(dplyr)
 df_long <- arrange(df_long, id)
-df_long
+
+kable(df_long,format = "html") %>%  kable_styling(full_width = F, position = "center",font_size = 14)
 ```
 
 Sometime, not only one type of measurement (BP) but also other types (such as Heart rate -HR) are measured and recorded row wise. For example,
@@ -109,7 +110,6 @@ df <- data.frame(matrix(data = NA, nrow = 3, ncol = 8, dimnames = list(NULL, pas
 df[1,] <- c(1,"A",123,120,125,72,70,71)
 df[2,] <- c(2,"B",140,150,155,85,82,86)
 df[3,] <- c(3,"C",96,86,97,65,52,59)
-df
 ```
 
 This data can be converted into "long" by using `list` for group of time-varying columns for `varying`
@@ -128,7 +128,7 @@ direction = "long")
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 df_long <- arrange(df_long, id)
-df_long
+kable(df_long,format = "html") %>%  kable_styling(full_width = F, position = "center",font_size = 14)
 ```
 
 #### [2] long to wide
@@ -156,6 +156,6 @@ df_wide <- reshape(df_long,
 Here is the wide data
 
 ```{r}
-df_wide
+kable(df_wide,format = "html") %>%  kable_styling(full_width = F, position = "center",font_size = 14)
 ```
 
