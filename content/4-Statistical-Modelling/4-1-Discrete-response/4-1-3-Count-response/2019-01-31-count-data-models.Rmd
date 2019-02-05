@@ -24,6 +24,7 @@ keywords :
   - Quasi poisson
   
 slug: count-data-models
+
 tags:
   
 - Poisson
@@ -38,15 +39,44 @@ categories:
 
 ---
 
-### Count outcome or count data
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(include = FALSE)
+```
 
-count basically is a number which is **discrete** and **non-negative** (integers such as 0,1 or 895 but not 0.6,1.9 or 895.66). It is a number(or sum) of event. This is different to numeric continuous variable which modelled differently (such as blood pressure 120.2,135.9).
 
-Count may also have contextual information i.e with time, area or length. Question starting as "How many (events)" generally answered with counts.Such as number of road accidents in given year, number of rain drops in square meter area.
+### what is count or count variable
 
-### Distribution/Model to consider in count data
+Count is a number which is **discrete** and **non-negative**. Discrete means a number which is a countable and distinct. For example, number of road accidents. Road accidents can be 2 or 852 but can not be 2.1 or 85.5. So its discrete i.e integer. This is different to numeric continuous variable (such as blood pressure 120.2,135.9) which modelled differently.
 
-The prime distribution of count is poisson. The other models are avialable to overcome two majors issues in counts : overdispersion (or less often underdispersion) and excess zeros. Or sometime zero is impossible value for the outcome ( such length of stay-no 0 length of stay), in this condition, zero truncated model is useful.
+Count may also have contextual information i.e with time, area or length. Such as number of road accidents in given year, number of rain drops in square meter area. When the count is associated with any denominators, rate can be derived. For example, we observe 25 number of maternity claims from 850 women in  year then the rate of claims will be 29 per 1000 women per year.
+
+
+### Probability distribution(s) associated with the count random variable
+
+First we need to clarify what is a distribution.**The Distribution is the specification of probability associated with the value taken by random variable on random experiment**. For example, in random experiment of counting number of rain drops in square meter area. The random variable is number of rain drops. Once the experiment has been performed, we count the drop which may be 10. The random variable X taken the value of 10.We do this experiment again and its 35. So random variable X has taken the value of 35.
+
+Now if we know the average rate of some event $[\lambda]$ in which event happening indepdently in time. Then the number of event in any time period has poisson distribution.
+
+For example, in neighborhood road, on avaerge 2 cars passing by every hour. We noted the number of cars passing by continuously for 10 hours. We may get following numbers
+
+```{r}
+rpois(10,2)
+```
+
+We can derive the probability associated with each event and plot it with number of cars ( X axis ) and probability associated with it on Y axis
+
+```{r message=FALSE, warning=FALSE}
+set.seed(125)
+X <- rpois(10,2)
+probs <- dpois(X,2)
+require(ggplot2)
+ggplot(data.frame(X,probs), aes(X,probs)) + geom_bar(stat = "identity")
+
+```
+
+
+
+The prime distribution of count is poisson. The other models are available to overcome two majors issues in counts : over-dispersion (or less often under-dispersion) and excess zeros. Or sometime zero is impossible value for the outcome ( such length of stay-no 0 length of stay), in this condition, zero truncated model is useful.
  
 **To overcome over or under dispersion:** 
 
@@ -54,7 +84,7 @@ The prime distribution of count is poisson. The other models are avialable to ov
 + Poisson Inverse Gaussian (PIG)
 + Generalized Negative Binomial Model
 + Generalised Poisson 
-+ Heterogeneous Negative Binomail model (NB-H)
++ Heterogeneous Negative Binomial model (NB-H)
 
 **To ovecome excess zero's:**
 
@@ -74,35 +104,35 @@ knitr::include_graphics('/images/poisson_models_types.PNG')
 
 #### 1 Poisson distribution
 + single parameter
-+ mean $[\mu]$ is equal to variance $[\mu]$, also called equidispersion
-+ in real life datasets, more often there will be higher variability or correlation than model allows (over-dispersion) which leads to biased standard errors ( so as misleading signficance of covarite)
++ mean $[\mu]$ is equal to variance $[\mu]$, also called dispersion
++ in real life datasets, more often there will be higher variability or correlation than model allows (over-dispersion) which leads to biased standard errors ( so as misleading significance of covariate)
 
 #### 2 Negative Binomial 
-+ has additinal dispersion parameter $[\alpha]$ to accomodate excess variability. when the dispersion parameter is zero,
++ has additional dispersion parameter $[\alpha]$ to accommodate excess variability. when the dispersion parameter is zero,
 the model becomes Poisson
 + can be traditional negative binomial (NB1) or quadratic negative binomial (NB2)
-+ Only correct overdispersion ( not underdispersion of poisson)
-+ form of Poisson-gamma mixture with  dispersion parameter $[\alpha]$ has gamma distribution. Gamma distribution is very flexible in shape so most (not all) overdispesed count data modelled well with NB
-+ It is possible that NB may not correct overdispersion in a Poisson model
++ Only correct over-dispersion ( not under-dispersion of poisson)
++ form of Poisson-gamma mixture with  dispersion parameter $[\alpha]$ has gamma distribution. Gamma distribution is very flexible in shape so most (not all) dispersed count data modelled well with NB
++ It is possible that NB may not correct over-dispersion in a Poisson model
 
 #### 3 Poisson Inverse Gaussian (PIG)
-+ Similler to negative binomial except the disperson parameter $[\alpha]$ has inverse gaussian distribution
-+ Avaialbe in R `gamlass` package
++ Similler to negative binomial except the dispersion parameter $[\alpha]$ has inverse Gaussian distribution
++ Available in R `gamlass` package
 
 #### 4 Generalized Negative Binomial Model (GNB)
-+ The GNB parameterizes the exponent on the second term of the
++ The GNB parametrizes the exponent on the second term of the
 negative binomial variance.
 + To get initial idea whether data is suited to NB1 or NB2 or NB-P
 
 
 #### 5 Generalised Poissson Models
-+ Similler to above models but dispersion parameter can take negative values which also correct underdispersion if present
++ Si miller to above models but dispersion parameter can take negative values which also correct under dispersion if present
 
 #### 6 Heterogeneous Negative Binomail model (NB-H)
-+ Dispersion parameter can be associated with particular covariate which bring singificant dispoersion in the model.
++ Dispersion parameter can be associated with particular covariate which bring significant dispersion in the model.
 
 #### 7 Exact poisson regression
-for unbalnced and sparce count data
+for unbalanced and sparse count data
 
 
 

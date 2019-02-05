@@ -4,9 +4,8 @@ DefaultContentLanguage = "en"
 title = "Online-Statistician.com"
 description = "Consult Qualified and Accredited Statistican Online | Online-Statistician.com"
 theme = "hugo-theme-docdock"
-#themesdir = "../.."
-pygmentsCodeFences = true
-pygmentsStyle = "monokailight"
+pygmentsCodeFences = false
+pygmentsStyle = ""
 defaultContentLanguageInSubdir= true
 enableMissingTranslationPlaceholders = false
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
@@ -29,11 +28,12 @@ ordersectionsby = "weight" # ordersectionsby = "title"
 disableHomeIcon = false # default is false
 disableSearch = false # default is false
 disableNavChevron = false # set true to hide next/prev chevron, default is false
-highlightClientSide = false # set true to use highlight.pack.js instead of the default hugo chroma highlighter
+highlightClientSide = true # set true to use highlight.pack.js instead of the default hugo chroma highlighter
 menushortcutsnewtab = false # set true to open shortcuts links to a new tab/window
 enableGitInfo = true
 enableRobotsTXT = true
 canonifyURLs = true
+
 
 [params.publisher]
 name = "Chetan Prajapati"

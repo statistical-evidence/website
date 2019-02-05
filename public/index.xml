@@ -27,8 +27,8 @@
       <pubDate>Thu, 31 Jan 2019 00:00:00 +0000</pubDate>
       
       <guid>/4-statistical-modelling/4-1-discrete-response/4-1-3-count-response/count-data-models/</guid>
-      <description>Count outcome or count datacount basically is a number which is discrete and non-negative (integers such as 0,1 or 895 but not 0.6,1.9 or 895.66). It is a number(or sum) of event. This is different to numeric continuous variable which modelled differently (such as blood pressure 120.2,135.9).
-Count may also have contextual information i.e with time, area or length. Question starting as “How many (events)” generally answered with counts.</description>
+      <description>what is count or count variableCount is a number which is discrete and non-negative. Discrete means a number which is a countable and distinct. For example, number of road accidents. Road accidents can be 2 or 852 but can not be 2.1 or 85.5. So its discrete i.e integer. This is different to numeric continuous variable (such as blood pressure 120.2,135.9) which modelled differently.
+Count may also have contextual information i.</description>
     </item>
     
     <item>

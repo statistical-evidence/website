@@ -3,16 +3,13 @@ title: "How to reshape data - wide or long form in the R programming language"
 author: "Chetan Prajapati"
 date: '2019-02-02'
 description: Reshape data frame or matrix either in wide or long format in R programming language.
-
 keywords: 
-
 - matrix
 - data
 - r
 - programming
 - wide
 - long
-
 menuTitle: Reshaping data in to R
 pageimage:
   image:
@@ -20,14 +17,15 @@ pageimage:
     url: /imgages/Reshape.png
     width: 800
 slug: reshaping-data-into-wide-or-long-format-in-r
-
 tags:
 - dataframe
 - r
 - reshape
-
 categories: 
 - data management
+output: 
+  html_document: 
+    css: C:/Hugo/website/themes/hugo-theme-docdock/static/css/hybrid.css
 ---
 
 
@@ -44,6 +42,7 @@ df[1,] &lt;- c(1,&quot;A&quot;,123,120,125)
 df[2,] &lt;- c(2,&quot;B&quot;,140,150,155)
 df[3,] &lt;- c(3,&quot;C&quot;,96,86,97)</code></pre>
 <p>Our “wide” data look like</p>
+<pre class="r"><code>df</code></pre>
 <pre><code>##   id name jan feb march
 ## 1  1    A 123 120   125
 ## 2  2    B 140 150   155
