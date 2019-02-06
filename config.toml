@@ -18,7 +18,7 @@ name = "Chetan Prajapati"
 [params]
 #editURL = "https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/"
 author = "Chetan Prajapati"
-title = "Statistican-online"
+title = "Statistican-Online"
 description = "In-depth Analysis with robust statistical methods at resonable price"
 images = ["images/bio.png"]
 showVisitedLinks = true # default is false
