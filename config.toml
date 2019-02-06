@@ -1,7 +1,7 @@
 baseURL = "https://chetan-prajapati.netlify.com"
 languageCode = "en-gb"
 DefaultContentLanguage = "en"
-title = "Online-Statistician.com"
+title = "Statistician-online.com"
 description = "Consult Qualified and Accredited Statistican Online | Online-Statistician.com"
 theme = "hugo-theme-docdock"
 pygmentsCodeFences = false
@@ -19,7 +19,7 @@ name = "Chetan Prajapati"
 #editURL = "https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/"
 author = "Chetan Prajapati"
 title = "Statistican-online"
-description = "Robust-Reliable-Economical Statistical Consultancy | Statistician-online.com"
+description = "In-depth Analysis with robust statistical methods at resonable price"
 images = ["images/bio.png"]
 showVisitedLinks = true # default is false
 themeStyle = "original" # "original" or "flex" # default "flex"
