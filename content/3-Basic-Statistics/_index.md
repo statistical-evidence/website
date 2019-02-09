@@ -3,11 +3,11 @@ title: Basic Statistics
 weight: 3
 pre: "<b>3. </b>"
 disable_comments : true
+alwaysopen : true
 ---
 
-### Basic Statistics
 
 
-Foundation and Theory of Statistics and some common statitical test
 
-{{%children style="h2" description="true"%}}
+
+{{% children depth="3" showhidden="true" %}}

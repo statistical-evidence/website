@@ -6,10 +6,19 @@
     <description>Recent content in Tags on Statistician-online.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Sat, 02 Feb 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 09 Feb 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Boot</title>
+      <link>/tags/boot/</link>
+      <pubDate>Sat, 09 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/boot/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Dataframe</title>
@@ -35,6 +44,24 @@
       <pubDate>Thu, 31 Jan 2019 00:00:00 +0000</pubDate>
       
       <guid>/tags/negative-binomial/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Non Parametric</title>
+      <link>/tags/non-parametric/</link>
+      <pubDate>Sat, 09 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/non-parametric/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Parametric</title>
+      <link>/tags/parametric/</link>
+      <pubDate>Sat, 09 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/parametric/</guid>
       <description></description>
     </item>
     

@@ -22,10 +22,16 @@
   
   <url>
     <loc>/3-basic-statistics/</loc>
+    <lastmod>2019-02-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/4-statistical-modelling/</loc>
+  </url>
+  
+  <url>
+    <loc>/3-basic-statistics/bootstrapping-parametric-and-non-parametric-bootstrap-using-loops-and-boot-function-in-r/</loc>
+    <lastmod>2019-02-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -43,7 +49,20 @@
   </url>
   
   <url>
+    <loc>/tags/boot/</loc>
+    <lastmod>2019-02-09T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/bootstrap/</loc>
+    <lastmod>2019-02-09T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/categories/</loc>
+    <lastmod>2019-02-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -73,12 +92,24 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2019-02-02T00:00:00+00:00</lastmod>
+    <lastmod>2019-02-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/negative-binomial/</loc>
     <lastmod>2019-01-31T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/non-parametric/</loc>
+    <lastmod>2019-02-09T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/parametric/</loc>
+    <lastmod>2019-02-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -108,7 +139,7 @@
   
   <url>
     <loc>/tags/</loc>
-    <lastmod>2019-02-02T00:00:00+00:00</lastmod>
+    <lastmod>2019-02-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
