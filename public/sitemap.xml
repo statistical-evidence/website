@@ -3,148 +3,148 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://www.statistician-online.com/1-data-management/</loc>
-    <lastmod>2019-02-02T00:00:00+00:00</lastmod>
+    <loc>/1-data-management/</loc>
+    <lastmod>2019-11-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.statistician-online.com/4-statistical-modelling/4-1-discrete-response/</loc>
+    <loc>/4-statistical-modelling/4-1-discrete-response/</loc>
     <lastmod>2019-01-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.statistician-online.com/4-statistical-modelling/4-2-continuous-response/</loc>
+    <loc>/4-statistical-modelling/4-2-continuous-response/</loc>
   </url>
   
   <url>
-    <loc>https://www.statistician-online.com/2-data-visualisation/</loc>
+    <loc>/2-data-visualisation/</loc>
   </url>
   
   <url>
-    <loc>https://www.statistician-online.com/3-basic-statistics/</loc>
+    <loc>/3-basic-statistics/</loc>
     <lastmod>2019-02-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.statistician-online.com/4-statistical-modelling/</loc>
+    <loc>/4-statistical-modelling/</loc>
   </url>
   
   <url>
-    <loc>https://www.statistician-online.com/3-basic-statistics/bootstrapping-parametric-and-non-parametric-bootstrap-using-loops-and-boot-function-in-r/</loc>
+    <loc>/3-basic-statistics/bootstrapping-parametric-and-non-parametric-bootstrap-using-loops-and-boot-function-in-r/</loc>
     <lastmod>2019-02-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.statistician-online.com/1-data-management/reshaping-data-into-wide-or-long-format-in-r/</loc>
-    <lastmod>2019-02-02T00:00:00+00:00</lastmod>
+    <loc>/1-data-management/reshaping-data-into-wide-or-long-format-in-r/</loc>
+    <lastmod>2019-11-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.statistician-online.com/4-statistical-modelling/4-1-discrete-response/4-1-3-count-response/count-data-models/</loc>
+    <loc>/4-statistical-modelling/4-1-discrete-response/4-1-3-count-response/count-data-models/</loc>
     <lastmod>2019-01-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.statistician-online.com/_header/</loc>
+    <loc>/_header/</loc>
   </url>
   
   <url>
-    <loc>https://www.statistician-online.com/tags/boot/</loc>
+    <loc>/tags/boot/</loc>
     <lastmod>2019-02-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.statistician-online.com/categories/bootstrap/</loc>
+    <loc>/categories/bootstrap/</loc>
     <lastmod>2019-02-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.statistician-online.com/categories/</loc>
+    <loc>/categories/</loc>
     <lastmod>2019-02-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.statistician-online.com/categories/data-management/</loc>
-    <lastmod>2019-02-02T00:00:00+00:00</lastmod>
+    <loc>/categories/data-management/</loc>
+    <lastmod>2019-11-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.statistician-online.com/tags/dataframe/</loc>
-    <lastmod>2019-02-02T00:00:00+00:00</lastmod>
+    <loc>/tags/dataframe/</loc>
+    <lastmod>2019-11-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.statistician-online.com/tags/glm/</loc>
-    <lastmod>2019-01-31T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.statistician-online.com/categories/glm/</loc>
+    <loc>/tags/glm/</loc>
     <lastmod>2019-01-31T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.statistician-online.com/</loc>
-    <lastmod>2019-02-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.statistician-online.com/tags/negative-binomial/</loc>
+    <loc>/categories/glm/</loc>
     <lastmod>2019-01-31T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.statistician-online.com/tags/non-parametric/</loc>
+    <loc>/</loc>
     <lastmod>2019-02-09T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.statistician-online.com/tags/parametric/</loc>
-    <lastmod>2019-02-09T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.statistician-online.com/tags/poisson/</loc>
+    <loc>/tags/negative-binomial/</loc>
     <lastmod>2019-01-31T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.statistician-online.com/tags/quasi-poisson/</loc>
-    <lastmod>2019-01-31T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.statistician-online.com/tags/r/</loc>
-    <lastmod>2019-02-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.statistician-online.com/tags/reshape/</loc>
-    <lastmod>2019-02-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.statistician-online.com/tags/</loc>
+    <loc>/tags/non-parametric/</loc>
     <lastmod>2019-02-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://www.statistician-online.com/tags/zero-inflated/</loc>
+    <loc>/tags/parametric/</loc>
+    <lastmod>2019-02-09T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/poisson/</loc>
+    <lastmod>2019-01-31T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/quasi-poisson/</loc>
+    <lastmod>2019-01-31T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/r/</loc>
+    <lastmod>2019-11-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/reshape/</loc>
+    <lastmod>2019-11-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2019-02-09T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/zero-inflated/</loc>
     <lastmod>2019-01-31T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
