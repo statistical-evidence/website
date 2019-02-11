@@ -66,14 +66,14 @@ ggplot(data.frame(X,probs), aes(X,probs)) + geom_bar(stat = "identity") + scale_
 
 ```
 
-```{r}
+```{r message=FALSE, warning=FALSE}
 require(dummies)
 x <- sample(x=c("A","B"),size=100, replace=TRUE, prob=c(0.5,0.5)) 
 linpred <- cbind(1, dummy(x)[, -1]) %*% c(0.2, 0.4) 
 y  <- exp(linpred) 
 df <- data.frame(x,y)
 fit <- glm(y~x,family = poisson(), df)
-
+summary(fit)
 ```
 
 
