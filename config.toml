@@ -11,6 +11,7 @@ enableMissingTranslationPlaceholders = false
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 disqusShortname = "https-chetan-prajapati-netlify-com"
 googleAnalytics = "UA-134274550-1"
+enableRobotsTXT = true
 
 [author]
 name = "Chetan Prajapati"
@@ -31,7 +32,7 @@ disableNavChevron = false # set true to hide next/prev chevron, default is false
 highlightClientSide = true # set true to use highlight.pack.js instead of the default hugo chroma highlighter
 menushortcutsnewtab = false # set true to open shortcuts links to a new tab/window
 enableGitInfo = true
-enableRobotsTXT = true
+
 canonifyURLs = true
 
 
