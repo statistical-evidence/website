@@ -10,7 +10,7 @@ defaultContentLanguageInSubdir= true
 enableMissingTranslationPlaceholders = false
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 disqusShortname = "https-chetan-prajapati-netlify-com"
-
+googleAnalytics = "UA-134274550-1"
 
 [author]
 name = "Chetan Prajapati"
