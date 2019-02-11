@@ -2,6 +2,7 @@
 title: 'Generalized linear model (GLM) : Poisson regression for count and rate'
 author: "Chetan Prajapati"
 date: '2019-01-31'
+lastmod: "2019-11-02"
 description: Poisson regression model part of Generalized linear models (GLM), its
   statistical assumptions and interpretation (risk ratio). Also about zero-inflated,
   negative binomial and generalized poisson models
