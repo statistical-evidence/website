@@ -13,7 +13,7 @@ keywords :
   
 disable_comments : true
 ---
-<img alt="statistician online statistics chetan prajapati hire find consultant internet" src="/images/bio.png" height="312px" width="820px" />
+<img alt="statistician online statistics chetan prajapati hire find consultant internet" src="/images/bio.png" />
 
 {{< button theme="danger" >}} About me{{< /button >}}
 
@@ -49,6 +49,7 @@ The plethora of web resources available about how to use statistical tools (like
 {{< button href= "https://web.Skype.com/en/" theme="info" >}} Skype **Statistician-Online** {{< /button >}}
 {{% /panel %}}
 
+#  Detailed statistical analysis | Timely completion | Affordable
 
 {{% notice info %}}
 The views and opinions expressed in this site are those of the author and do not necessarily reflect the official policy or position of any university or author's past or current employer
