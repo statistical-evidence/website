@@ -11,7 +11,7 @@ enableMissingTranslationPlaceholders = false
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 disqusShortname = "https-chetan-prajapati-netlify-com"
 canonifyURLs = true
-enableRobotsTXT = true
+enableRobotsTXT = false
 
 [author]
 name = "Chetan Prajapati"
