@@ -1,4 +1,4 @@
-baseURL = "https://www.statistician-online.com"
+baseURL = "https://www.statistician-online.com/"
 languageCode = "en-gb"
 DefaultContentLanguage = "en"
 title = "Statistician-online.com"
@@ -10,7 +10,7 @@ defaultContentLanguageInSubdir= true
 enableMissingTranslationPlaceholders = false
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 disqusShortname = "https-chetan-prajapati-netlify-com"
-
+canonifyURLs = true
 enableRobotsTXT = true
 
 [author]
@@ -33,7 +33,7 @@ highlightClientSide = true # set true to use highlight.pack.js instead of the de
 menushortcutsnewtab = false # set true to open shortcuts links to a new tab/window
 enableGitInfo = true
 
-canonifyURLs = true
+
 
 
 [params.publisher]
