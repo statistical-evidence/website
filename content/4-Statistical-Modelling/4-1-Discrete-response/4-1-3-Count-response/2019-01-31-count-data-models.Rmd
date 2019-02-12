@@ -142,6 +142,11 @@ In count model log of count are modelled with respect to linear predictors. This
 The expected percentage of zero counts on the basis of the Poisson
 model is under 1%. If mean of count response is 5 or below and some 30% of the count observations consist of zeros,ZIP or ZINB will be good choice.
 
+Article is being updated ...
 
+
+Ref:
+
+Hilbe, J. (2014). Modeling Count Data. Cambridge: Cambridge University Press. doi:10.1017/CBO9781139236065
 
 
