@@ -1,7 +1,7 @@
 baseURL = "https://www.statistician-online.com/"
 languageCode = "en-gb"
 DefaultContentLanguage = "en"
-title = "Hire A Professional Statistician For Your Research Project Online"
+title = "Statistician-Online.com"
 description = "Consult Qualified and Accredited Statistican Online | Online-Statistician.com"
 theme = "hugo-theme-docdock"
 pygmentsCodeFences = false
