@@ -1,8 +1,7 @@
 baseURL = "https://www.statistician-online.com/"
 languageCode = "en-gb"
 DefaultContentLanguage = "en"
-title = "Statistician-Online.com"
-description = "Freelance Statistical Consultant Available Online 24/7 | Detailed analysis | Timely completion | Affordable"
+title = "Statistician-Online.com | Hire Professional Statistician Online"
 theme = "hugo-theme-docdock"
 pygmentsCodeFences = false
 pygmentsStyle = ""
@@ -19,6 +18,7 @@ name = "Chetan Prajapati"
 [params]
 #editURL = "https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/"
 author = "Chetan Prajapati"
+description = "Consult Accredited Statistician Online for your research  | Timely completion | Affordable | Statistics Service"
 images = ["images/bio.png"]
 showVisitedLinks = true # default is false
 themeStyle = "original" # "original" or "flex" # default "flex"

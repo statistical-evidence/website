@@ -1,16 +1,12 @@
 ---
 title: "Home"
-description: "Hire A Professional Statistician For Your Research Project Online"
 keywords : 
   - statistician
   - online
   - hire
-  - find
+  - consultant
   - freelance
   - statistics
-  - dissertation
-  - Thesis
-  - internet
   
 disable_comments : true
 ---
