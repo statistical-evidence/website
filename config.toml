@@ -1,7 +1,7 @@
 baseURL = "https://www.statistician-online.com/"
 languageCode = "en-gb"
 DefaultContentLanguage = "en"
-title = "Consult Professional & Accredited Statistician for your Data Analysis | Statistician-Online.com"
+title = "Consult Professional & Accredited Statistician Online | Statistician-Online.com"
 theme = "hugo-theme-docdock"
 pygmentsCodeFences = false
 pygmentsStyle = ""
