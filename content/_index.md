@@ -9,6 +9,10 @@ keywords :
   - statistics
   
 disable_comments : true
+
+sitemap:
+  ChangeFreq: monthly
+  Priority: 1
 ---
 <img alt="statistician online statistics chetan prajapati hire find consultant internet" src="/images/bio.png" />
 

@@ -27,6 +27,10 @@ tags:
 categories: 
 - data management
 
+sitemap:
+  ChangeFreq: daily
+  Priority: 0.9
+
 ---
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 require(knitr)
