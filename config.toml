@@ -61,7 +61,7 @@ height = 600
 appid = "2107085849337279"
 
 [params.twitter]
-username = "xxx"
+username = ""
 
 
 [outputs]
