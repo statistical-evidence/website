@@ -3,43 +3,43 @@
 	"uri": "https://www.statistician-online.com/1-data-management/",
 	"title": "Data Management",
 	"tags": [],
-	"description": "",
-	"content": "  How to reshape data - wide or long form in the R programming language     "
+	"description": "hire freelance statistician online for statistics help. this page summarise various tools and function of data management in R",
+	"content": " This section provides complete illustrations of various tools and functions available in R for data management.  How to reshape data - wide or long form in the R programming language     "
 },
 {
 	"uri": "https://www.statistician-online.com/4-statistical-modelling/4-1-discrete-response/",
 	"title": "Discrete response",
 	"tags": [],
-	"description": "Models for binary and count outcomes",
+	"description": "This section includes explanation of statistical model for discrete data in R.hire freelance statistician online for statistics help in dissertation.",
 	"content": "  Generalized linear model (GLM) : Poisson regression for count and rate     "
 },
 {
 	"uri": "https://www.statistician-online.com/4-statistical-modelling/4-2-continuous-response/",
 	"title": "Continuous response",
 	"tags": [],
-	"description": "",
+	"description": "This section includes explanation of statistical model for continuous data in R.hire freelance statistician online for statistics help in dissertation.",
 	"content": ""
 },
 {
 	"uri": "https://www.statistician-online.com/2-data-visualisation/",
 	"title": "Data Visualisation",
 	"tags": [],
-	"description": "",
-	"content": " Data Visualisation in R  "
+	"description": "This section includes explanation of various data visualisation techniques in R using ggplot2 package.hire freelance statistician online for statistics help in dissertation.",
+	"content": " This section provides complete illustrations of various tools and functions available in R for data visualisation  work is underway  "
 },
 {
 	"uri": "https://www.statistician-online.com/3-basic-statistics/",
 	"title": "Basic Statistics",
 	"tags": [],
-	"description": "",
-	"content": "  Bootstrapping: Parametric and Non-parametric bootstrap using loops and boot function in R     "
+	"description": "This section is about basic statistics, distributions, t-test, paired t-test, proportion, ratio, risk ratio, rate ratio.hire freelance statistician online for statistics help in dissertation.",
+	"content": " This section comprise some essential and fundamental concepts in statistics  Bootstrapping: Parametric and Non-parametric bootstrap using loops and boot function in R     "
 },
 {
 	"uri": "https://www.statistician-online.com/4-statistical-modelling/",
 	"title": "Statistical Models",
 	"tags": [],
-	"description": "",
-	"content": "  Discrete response    Generalized linear model (GLM) : Poisson regression for count and rate      Continuous response     "
+	"description": "This section includes statistics modelling techniques .hire freelance statistician online for statistics help in dissertation.",
+	"content": " This section includes various basic and advanced statistical modelling techniques used in varieties of data types  Discrete response    Generalized linear model (GLM) : Poisson regression for count and rate      Continuous response     "
 },
 {
 	"uri": "https://www.statistician-online.com/3-basic-statistics/bootstrapping-parametric-and-non-parametric-bootstrap-using-loops-and-boot-function-in-r/",

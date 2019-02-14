@@ -14,7 +14,7 @@ sitemap:
   ChangeFreq: monthly
   Priority: 1
 ---
-<img alt="statistician online statistics chetan prajapati hire find consultant internet" src="/images/bio.png" />
+<img alt="hire statistician online freelance statistical consultant statistics help" src="/images/bio.png" />
 
 {{< button theme="danger" >}} About me{{< /button >}}
 

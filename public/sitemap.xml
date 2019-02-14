@@ -16,6 +16,8 @@
   <url>
     <loc>https://www.statistician-online.com/4-statistical-modelling/4-1-discrete-response/</loc>
     <lastmod>2019-11-02T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="x-default"
@@ -25,6 +27,8 @@
   
   <url>
     <loc>https://www.statistician-online.com/4-statistical-modelling/4-2-continuous-response/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="x-default"
@@ -34,6 +38,8 @@
   
   <url>
     <loc>https://www.statistician-online.com/2-data-visualisation/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="x-default"

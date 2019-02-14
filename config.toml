@@ -1,7 +1,7 @@
 baseURL = "https://www.statistician-online.com/"
 languageCode = "en-gb"
 DefaultContentLanguage = "en"
-title = "Consult Accredited Statistician Online | Statistician-Online.com"
+title = "Hire Accredited Statistician Online | Ask for Statistics Help"
 theme = "hugo-theme-docdock"
 pygmentsCodeFences = false
 pygmentsStyle = ""
@@ -18,7 +18,7 @@ name = "Chetan Prajapati"
 [params]
 #editURL = "https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/"
 author = "Chetan Prajapati"
-description = "Statistics | Data analysis with R, STATA, SPSS | Timely completion | Professional and Affordable consultancy service online"
+description = "Statistical consultant for study design, data analysis, statistical modelling in R,STATA,Winbugs,SPSS. Click here to book free initial consultation on Skype"
 images = ["images/bio.png"]
 showVisitedLinks = true # default is false
 themeStyle = "original" # "original" or "flex" # default "flex"
