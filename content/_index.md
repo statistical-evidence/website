@@ -14,7 +14,7 @@ date: "2019-01-23"
 lastmod: "2019-02-14"
 
 sitemap:
-  ChangeFreq: weekly
+  ChangeFreq: daily
   Priority: 1
 ---
 <img alt="hire statistician online freelance statistical consultant statistics help" src="/images/bio.png" />
