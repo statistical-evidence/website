@@ -38,8 +38,8 @@
 	"uri": "/4-statistical-modelling/",
 	"title": "Statistical Models",
 	"tags": [],
-	"description": "This section includes statistics modelling techniques .hire freelance statistician online for statistics help in dissertation.",
-	"content": " This section includes various basic and advanced statistical modelling techniques used in varieties of data types  Discrete response    Generalized linear model (GLM) : Poisson regression for count and rate      Continuous response     "
+	"description": "",
+	"content": "  Discrete response    Generalized linear model (GLM) : Poisson regression for count and rate      Continuous response     "
 },
 {
 	"uri": "/3-basic-statistics/bootstrapping-parametric-and-non-parametric-bootstrap-using-loops-and-boot-function-in-r/",

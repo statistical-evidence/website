@@ -1,6 +1,6 @@
 ---
 title: "Home"
-keywords : 
+keywords: 
   - statistician
   - online
   - hire
@@ -8,11 +8,7 @@ keywords :
   - freelance
   - statistics
   
-disable_comments : true
-
-sitemap:
-  ChangeFreq: monthly
-  Priority: 1
+disable_comments: true
 ---
 <img alt="hire statistician online freelance statistical consultant statistics help" src="/images/bio.png" />
 
