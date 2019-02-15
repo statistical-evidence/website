@@ -67,7 +67,7 @@ home = [ "HTML", "RSS", "JSON"]
 
 
 [[menu.shortcuts]]
-pre = "<h4>Let's connect on</h4>"
+pre = "Let's connect on>"
 name = "<i class='fa fa-twitter'>&nbsp;&nbsp;</i>Twitter"
 url = "https://twitter.com/Stat_online"
 weight = 8
