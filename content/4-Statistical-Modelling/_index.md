@@ -4,7 +4,21 @@ weight: 4
 pre: "<b>4. </b>"
 disable_comments : true
 alwaysopen : true
----
+author: Chetan Prajapati
 
+description: This section is about statistical model applied in varieties of data type.hire freelance statistician online for statistics help in dissertation. 
+
+keywords:
+- statistics
+- online
+- hire
+- dissertation
+- Statistician
+
+sitemap:
+  ChangeFreq: daily
+  Priority: 0.9
+---
+This section comprise various statistical modelling techniques applied in variety of data types
 
 {{% children depth="3" showhidden="true" %}}

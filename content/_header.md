@@ -1,2 +1,2 @@
 
-![statistics online hire freelance cheap]( /images/logo.png)
+![Hire Accredited Statistician Online | Ask for Statistics Help]( /images/logo.png)
