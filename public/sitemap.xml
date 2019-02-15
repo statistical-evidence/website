@@ -167,17 +167,6 @@
   </url>
   
   <url>
-    <loc>/tags/glm/</loc>
-    <lastmod>2019-11-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="x-default"
-                href="/tags/glm/"
-                />
-  </url>
-  
-  <url>
     <loc>/categories/glm/</loc>
     <lastmod>2019-11-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -185,6 +174,17 @@
                 rel="alternate"
                 hreflang="x-default"
                 href="/categories/glm/"
+                />
+  </url>
+  
+  <url>
+    <loc>/tags/glm/</loc>
+    <lastmod>2019-11-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="x-default"
+                href="/tags/glm/"
                 />
   </url>
   
