@@ -9,7 +9,7 @@ defaultContentLanguageInSubdir= true
 enableMissingTranslationPlaceholders = false
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 disqusShortname = "https-chetan-prajapati-netlify-com"
-canonifyURLs = true
+canonifyURLs = false
 enableRobotsTXT = true
 
 [author]

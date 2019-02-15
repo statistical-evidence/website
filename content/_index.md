@@ -9,6 +9,13 @@ keywords:
   - statistics
   
 disable_comments: true
+
+
+lastmod: "2019-01-01"
+
+sitemap:
+  ChangeFreq: monthly
+  Priority: 1
 ---
 <img alt="hire statistician online freelance statistical consultant statistics help" src="/images/bio.png" />
 
