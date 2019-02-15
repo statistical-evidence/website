@@ -59,7 +59,7 @@ height = 600
 appid = "2107085849337279"
 
 [params.twitter]
-username = ""
+username = "Stat_online"
 
 
 [outputs]
@@ -69,12 +69,12 @@ home = [ "HTML", "RSS", "JSON"]
 [[menu.shortcuts]]
 pre = "<h4>Let's connect on</h4>"
 name = "<i class='fa fa-twitter'>&nbsp;&nbsp;</i>Twitter"
-url = "https://twitter.com/chetan_oxforduk"
+url = "https://twitter.com/Stat_online"
 weight = 8
 
 [[menu.shortcuts]]
 name = "<i class='fa fa-facebook'>&nbsp;&nbsp;</i> Facebook"
-url = "https://www.facebook.com/MadhavMedStats"
+url = "https://www.facebook.com/Statistician-Online-2287783558211416"
 weight = 9
 
 [[menu.shortcuts]]
