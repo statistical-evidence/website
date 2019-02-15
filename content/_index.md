@@ -10,11 +10,11 @@ keywords:
   
 disable_comments: true
 
-
-lastmod: "2019-01-01"
+date: "2019-23-01"
+lastmod: "2019-15-02"
 
 sitemap:
-  ChangeFreq: monthly
+  ChangeFreq: weekly
   Priority: 1
 ---
 <img alt="hire statistician online freelance statistical consultant statistics help" src="/images/bio.png" />

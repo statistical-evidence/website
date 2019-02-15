@@ -14,8 +14,11 @@ keywords:
 - dissertation
 - Statistician
 
+date: "2019-23-01"
+lastmod: "2019-15-02"
+
 sitemap:
-  ChangeFreq: daily
+  ChangeFreq: weekly
   Priority: 0.9
 ---
 

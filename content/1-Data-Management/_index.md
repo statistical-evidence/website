@@ -12,10 +12,11 @@ keywords:
 pre: "<b>1. </b>"
 disable_comments : true
 alwaysopen : true
-date: "2019-01-01"
-lastmod: "2019-01-30"
+
+date: "2019-23-01"
+lastmod: "2019-15-02"
 sitemap:
-  ChangeFreq: monthly
+  ChangeFreq: weekly
   Priority: 0.9
 ---
 ### This section provides complete illustrations of various tools and functions available in R for data management.
