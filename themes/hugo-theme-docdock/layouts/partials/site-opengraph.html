@@ -8,6 +8,9 @@
 
 <meta property="og:url" content="{{ .Permalink }}" />
 
+<meta property="og:image" content="{{ with .Param "pageimage.image" }}{{ .url | absURL }}{{ else }}{{ with .Site.Params.image }}{{ .url | absURL }}{{ end }}{{ end }}" />
+
+
 <meta property="og:image:secure_url" content="{{ with .Param "pageimage.image" }}{{ .url | absURL }}{{ else }}{{ with .Site.Params.image }}{{ .url | absURL }}{{ end }}{{ end }}" />
 
 {{ with .Site.Params.facebook.appid }}<meta property="fb:app_id" content="{{ . }}" />{{ end }}
