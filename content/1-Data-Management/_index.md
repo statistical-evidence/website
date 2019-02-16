@@ -14,7 +14,7 @@ disable_comments : true
 alwaysopen : true
 
 date: "2019-01-23"
-lastmod: "2019-02-15"
+
 sitemap:
   ChangeFreq: weekly
   Priority: 0.9

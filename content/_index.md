@@ -11,7 +11,6 @@ keywords:
 disable_comments: true
 
 date: "2019-01-23"
-lastmod: "2019-02-14"
 
 sitemap:
   ChangeFreq: daily
@@ -22,7 +21,7 @@ sitemap:
 
 <img alt="hire statistician online freelance statistical consultant statistics help" src="/images/bio.png" />
 
-### {{< button theme="danger" >}}About me{{< /button >}}
+{{< button theme="danger" >}}About me{{< /button >}}
 
 I am a [Research Associate (Statistician) at **the University of Bristol**](http://www.bristol.ac.uk/clinical-sciences/people/chetan-a-prajapati/index.html), and previously I worked as Statistician in [Centre for the Prevention of Stroke and Dementia, **University of Oxford**](https://www.ndcn.ox.ac.uk/divisions/cpsd). I hold masters in Medical Statistics from the [**University of Leicester**](https://le.ac.uk/courses/medical-statistics-msc/2019) where I also hold specialization in **Genetic Epidemiology**. I am also [John Henry Brookes Scholar](https://www.brookes.ac.uk/studying-at-brookes/finance/postgraduate-finance---uk-and-eu-students/sources-of-funding-for-postgraduate-uk-and-eu-students/) of [**Oxford Brookes University**](https://www.brookes.ac.uk/courses/postgraduate/public-health/). 
 
@@ -33,7 +32,7 @@ I am fully registered with our professional body [Royal Statistical Society UK](
 The plethora of web resources available online about how to use statistical tools (like A->B->C) but very few explained why. And, I also firmly believe that difficulties faced by many in the field of statistics do not from the science itself but how it has been taught and practised. My aim of developing this repository is to **enhance the understanding of the subject, and to share my experience in implementing complex statistical methods**.
 <br>
 <br>
-### {{< button theme="danger" >}} Services I offer{{< /button >}}
+{{< button theme="danger" >}} Services I offer{{< /button >}}
 <br>
 {{% panel %}}
 + Advice on proposed study, optimum study design and it's conduct and analysis in context of statistical power and validity
