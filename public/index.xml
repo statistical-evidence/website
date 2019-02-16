@@ -955,14 +955,7 @@ model is under 1%. If mean of count response is 5 or below and some 30% of the c
       <guid>/thankyou/</guid>
       <description>&lt;p&gt;Thank you for getting in touch with me. I will be in touch with you shortly..&lt;/p&gt;
 
-
-
-&lt;button class=&#34;btn  btn-primary&#34; type=&#34;button&#34;  onclick=&#34;location.href=&#39;{{.Site.BaseURL}}&#39;&#34; &gt; Go To Homepage &lt;/button&gt;
-
-
-
-
-&lt;p&gt;&lt;a href=&#34;{{.Site.BaseURL}}&#34;&gt;&#34;Go-to-homepage&#34;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;{{.Site.BaseURL}}&#34;&gt;Go-to-homepage&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
