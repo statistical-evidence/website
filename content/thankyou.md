@@ -3,4 +3,6 @@ title: "thank you"
 disable_comments: true
 ---
 
-Thank you for getting in touch with me. I will be in touch with you shortly
+Thank you for getting in touch with me. I will be in touch with you shortly..
+
+<p><a href="{{.Site.BaseURL}}">{{T "Go-to-homepage"}}</a></p>
