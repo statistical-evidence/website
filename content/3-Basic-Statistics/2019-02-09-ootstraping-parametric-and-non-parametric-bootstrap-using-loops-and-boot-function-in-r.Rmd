@@ -3,7 +3,6 @@ title: ' Bootstrapping: Parametric and Non-parametric bootstrap using loops and 
   function in R'
 author: Chetan Prajapati
 date: '2019-02-09'
-lastmod: "2019-02-10"
 slug: bootstrapping-parametric-and-non-parametric-bootstrap-using-loops-and-boot-function-in-r
 categories:
   - bootstrap

@@ -14,7 +14,6 @@ keywords:
 - Statistician
 
 date: "2019-01-23"
-lastmod: "2019-02-14"
 
 sitemap:
   ChangeFreq: weekly

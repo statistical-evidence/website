@@ -2,7 +2,6 @@
 title: "How to reshape data - wide or long form in the R programming language"
 author: "Chetan Prajapati"
 date: "2019-02-02"
-lastmod: "2019-02-14"
 description: Reshape data frame or matrix either in wide or long format in R programming language.
 keywords: 
 - matrix
