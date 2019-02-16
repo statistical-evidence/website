@@ -77,4 +77,5 @@ The plethora of web resources available online about how to use statistical tool
 
 {{% notice info %}}
 The views and opinions expressed in this site are those of the author and do not necessarily reflect the official policy or position of any university or author's past or current employer
+
 {{% /notice %}}
