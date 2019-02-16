@@ -53,7 +53,9 @@ The plethora of web resources available about how to use statistical tools (like
     <input type="submit" value="Submit" style="">
 </form>
 
-
+<br>
+<br>
+<br>
 
 {{< button theme="danger" >}} Feel free to contact me on {{< /button >}}
 
