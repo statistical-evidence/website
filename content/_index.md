@@ -62,7 +62,8 @@ The plethora of web resources available online about how to use statistical tool
 <br>
 
 {{< button theme="danger" >}} Feel free to contact me on {{< /button >}}
-
+<br>
+<br>
 {{% panel %}}
 
 {{< button >}} Email : **Statistician-Online@outlook.com** {{< /button >}}
