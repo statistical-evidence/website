@@ -27,7 +27,6 @@ I have extensive experience in analysing longitudinal, time to event data from e
 
 I am fully registered with our professional body [Royal Statistical Society UK](https://www.rss.org.uk/) (Registration number 125676). You can search the register here with the surname - Prajapati [RSS register](http://www.rss.org.uk/RSS/pro_dev/pro_awards/Graduate_statistician/Prof%20reg/Prof_Reg_G.aspx?hkey=6f3595d4-6887-46ea-8025-ebb2daae7dc2)
 
-
 The plethora of web resources available about how to use statistical tools (like A->B->C) but very few explained why. And, I also firmly believe that difficulties faced by many in the field of statistics do not from the science itself but how it has been taught and practised. My aim of developing this repository is to **enhance the understanding of the subject, and to share my experience in implementing complex statistical methods**.
 
 {{< button theme="danger" >}} Services I offer{{< /button >}}
@@ -41,6 +40,20 @@ The plethora of web resources available about how to use statistical tools (like
 + Publication ready graphics and report writing for research articles, thesis or abstract
 
 {{% /panel %}}
+
+<form action="/thankyou" method="post" name="Contact" data-netlify="true" netlify-honeypot="bot-field" netlify>
+    <p style="visibility: hidden">
+        <label> Don't Fill This Out If You're Human:" </label><input name=bot-field/>
+    </p>
+    <label for="contact"> Get in Touch </label> 
+    <input type="text" id="name" name="Your name" placeholder="Your name.. ">
+    <input type="text" id="email" name="email" placeholder="email@example.com">
+    <label for="message">Message</label>
+    <textarea id="message" name="message" placeholder="Your research questions or data analysis query" style="height: 200px"></textarea>
+    <input type="submit" value="Submit" style="">
+</form>
+
+
 
 {{< button theme="danger" >}} Feel free to contact me on {{< /button >}}
 
