@@ -20,7 +20,7 @@
 {{ partial "site-opengraph.html" . }}
 {{ partial "site-twittercard.html" . }}
 {{ partial "seo_schema" . }}
-
+{{ template "_internal/google_analytics.html" . }}
 
 
 
@@ -44,15 +44,7 @@
 
 
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-134274550-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-134274550-1',{ 'optimize_id': 'GTM-WP8NZ63'});
-</script>
 
 <script src="{{"js/jquery-2.x.min.js" | relURL}}"></script>
 
