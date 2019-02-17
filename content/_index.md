@@ -17,6 +17,11 @@ sitemap:
   Priority: 1
 ---
 
+
+<span id="sidebar-toggle-span">
+<a href="#" id="sidebar-toggle" data-sidebar-toggle=""><i class="fa fa-bars"></i> navigation</a>
+</span>
+
 # Hire statistician for your research project online | Ask statistics
 
 <img alt="hire statistician online freelance statistical consultant statistics help" src="/images/bio.png" />
