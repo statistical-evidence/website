@@ -69,16 +69,16 @@ home = [ "HTML", "RSS", "JSON"]
 
 [[menu.shortcuts]]
 pre = "Let's connect on>"
-name = "<i class='fa fa-twitter'>&nbsp;&nbsp;</i>Twitter"
+name = "<i class='fas fa-twitter'>&nbsp;&nbsp;</i>Twitter"
 url = "https://twitter.com/Stat_online"
 weight = 8
 
 [[menu.shortcuts]]
-name = "<i class='fa fa-facebook'>&nbsp;&nbsp;</i> Facebook"
+name = "<i class='fas fa-facebook'>&nbsp;&nbsp;</i> Facebook"
 url = "https://www.facebook.com/Statistician-Online-2287783558211416"
 weight = 9
 
 [[menu.shortcuts]]
-name = "<i class='fa fa-linkedin'>&nbsp;&nbsp;</i> Linkedin"
+name = "<i class='fas fa-linkedin'>&nbsp;&nbsp;</i> Linkedin"
 url = "https://www.linkedin.com/in/statistical-evidence/"
 weight = 10
