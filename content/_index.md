@@ -69,9 +69,9 @@ The plethora of web resources available online about how to use statistical tool
 <br>
 {{% panel %}}
 
-{{< button >}} Email : **Statistician-Online@outlook.com** {{< /button >}}
+{{< button >}} Email : **chetan.prajapati@live.com** {{< /button >}}
 
-{{< button >}}{{< icon name="phone" size="large" >}} **+44 7392 339 862**  {{< /button >}}
+{{< button >}} Phone or text on **+44 7392 339 862**  {{< /button >}}
 
 {{< button href= "https://web.Skype.com/en/" theme="info" >}} Skype **Statistician-Online** {{< /button >}}
 {{% /panel %}}
