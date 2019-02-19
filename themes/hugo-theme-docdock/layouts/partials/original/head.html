@@ -1,7 +1,7 @@
 
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta http-equiv="content-language" content="en-gb">
 <meta name="referrer" content="origin-when-crossorigin">
 <meta name="google-site-verification" content="79pJaZL9Ml5SMwNBDpQtddr8CW9_mU1Sr0CR7hNIBws" />
@@ -16,6 +16,10 @@
 {{- else -}}
   {{ .Title }} – {{ .Site.Title }}
 {{- end }}" />
+<link href="https://www.statistician-online.com/index.xml" rel="alternate" type="application/rss+xml" title="statistician-online">
+<link href="https://www.statistician-online.com/index.xml" rel="feed" type="application/rss+xml" title="statistician-online">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320"/>
 
 
 {{ partial "site-opengraph.html" . }}
