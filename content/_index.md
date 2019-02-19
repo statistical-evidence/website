@@ -11,12 +11,6 @@ keywords:
 - freelance medical statistician
 - statistics
 ---
-
-
-<span id="sidebar-toggle-span">
-<a href="#" id="sidebar-toggle" data-sidebar-toggle=""><i class="fas fa-bars"></i> Menu </a>
-</span>
-
 # Looking to hire a professional and accredited freelance Statistician ?
 
 <img alt="hire statistician online freelance statistical consultant statistics help" src="/images/bio.png" />
