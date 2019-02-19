@@ -28,7 +28,7 @@
 {{/*
   "potentialAction": {
     "@type": "SearchAction",
-    "target": "http://example.com/search?&q={query}",
+    "target": "https://www.statistician-online.com//search?&q={query}",
     "query-input": "required"
   } */}}
   
@@ -42,12 +42,13 @@
     "@type": "WebPage",
     "@id": "{{ .Permalink }}"
   },
-  {{ if ge (.Param "lua.image.width") 696 -}}
+  {{ if ge (.Param "pageimage.image.width") 696 -}}
   "image": {
     "@type": "ImageObject",
-    "url": "{{ .Param "lua.image.url" | absURL }}",
-    "width": {{ .Param "lua.image.width" }},
-    "height": {{ .Param "lua.image.height" }}
+    "url": "{{ .Param "pageimage.image.url" | absURL }}",
+    "width": {{ .Param "pageimage.image.width" }},
+    "height": {{ .Param "pageimage.image.height" }}
+    "alt": {{ .Param "pageimage.image.alt" }}
   },
   {{- else if ge .Site.Params.image.width 696 -}}
    "image": {
@@ -55,6 +56,7 @@
     "url": "{{ .Site.Params.image.url | absURL }}",
     "width": {{ .Site.Params.image.width }},
     "height": {{ .Site.Params.image.height }}
+    "alt": {{ .Param "pageimage.image.alt" }}
   },
   {{- end }}
   "genre": "{{ .Type }}",
