@@ -14,7 +14,7 @@ keywords:
 
 
 <span id="sidebar-toggle-span">
-<a href="#" id="sidebar-toggle" data-sidebar-toggle=""><i class="fa fa-bars"></i> navigation</a>
+<a href="#" id="sidebar-toggle" data-sidebar-toggle=""><i class="fas fa-bars"></i> Menu </a>
 </span>
 
 # Looking to hire a professional and accredited freelance Statistician ?
