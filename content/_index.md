@@ -1,20 +1,15 @@
 ---
 title: "Home"
-keywords: 
-  - statistician
-  - online
-  - hire
-  - consultant
-  - freelance
-  - statistics
-  
-disable_comments: true
-
-date: "2019-01-23"
-
+disable_comments: yes
+date: '2019-01-23'
 sitemap:
   ChangeFreq: daily
   Priority: 1
+
+keywords:
+- hire a statistician
+- freelance medical statistician
+- statistics
 ---
 
 
@@ -22,19 +17,23 @@ sitemap:
 <a href="#" id="sidebar-toggle" data-sidebar-toggle=""><i class="fa fa-bars"></i> navigation</a>
 </span>
 
-# Hire statistician for your research project online | Ask statistics
+# Looking to hire a professional and accredited freelance Statistician ?
 
 <img alt="hire statistician online freelance statistical consultant statistics help" src="/images/bio.png" />
 
+
+> ## I am freelance medical statistician, based in Bristol (UK) offering consultancy services online in all statistical aspect of data analysis
+
+
 {{< button theme="danger" >}}About me{{< /button >}}
 
-I am a [Research Associate (Statistician) at **the University of Bristol**](http://www.bristol.ac.uk/clinical-sciences/people/chetan-a-prajapati/index.html), and previously I worked as Statistician in [Centre for the Prevention of Stroke and Dementia, **University of Oxford**](https://www.ndcn.ox.ac.uk/divisions/cpsd). I hold masters in Medical Statistics from the [**University of Leicester**](https://le.ac.uk/courses/medical-statistics-msc/2019) where I also hold specialization in **Genetic Epidemiology**. I am also [John Henry Brookes Scholar](https://www.brookes.ac.uk/studying-at-brookes/finance/postgraduate-finance---uk-and-eu-students/sources-of-funding-for-postgraduate-uk-and-eu-students/) of [**Oxford Brookes University**](https://www.brookes.ac.uk/courses/postgraduate/public-health/). 
+I am a [Research Associate (Statistician) at **the University of Bristol**](http://www.bristol.ac.uk/clinical-sciences/people/chetan-a-prajapati/index.html), and previously I worked as Statistician in [Centre for the Prevention of Stroke and Dementia, **University of Oxford**](https://www.ndcn.ox.ac.uk/divisions/cpsd). I hold masters in Medical Statistics from the [**University of Leicester**](https://le.ac.uk) where I also hold specialization in **Genetic Epidemiology**. I am also [John Henry Brookes Scholar](https://www.brookes.ac.uk/studying-at-brookes/finance/postgraduate-finance---uk-and-eu-students/sources-of-funding-for-postgraduate-uk-and-eu-students/) of [**Oxford Brookes University**](https://www.brookes.ac.uk/courses/postgraduate/public-health/). 
 
-I have extensive experience in analysing longitudinal, time to event data from epidemiological studies. As a mix of both, theoretical and applied Statistician, I thrive to explore and apply novel statistical models to data of various types. Most recently, this has included the implementation of multivariate time series models to explore the relationship between multiple time-series. My other interests are **clinical trial design and analysis**, **survival analysis**, **mixed models and analysis of data-set with statistical complexities**(i.e. with missing data, sparse or unbalanced).  I am a proud **R** user and experienced in analysing data with **STATA**, **WinBUGS**, **StatXact**, and **MLWin**.
+I have extensive experience in analysing longitudinal, time to event data from epidemiological studies. As a mix of both, theoretical and applied Statistician, I thrive to explore and apply novel statistical methods to data of various types. Most recently, this has included the implementation of multivariate time series models to explore the relationship between multiple time-series. My other interests are **clinical trial design and analysis**, **survival analysis**, **mixed models and analysis of data-set with statistical complexities**(i.e. with missing data, sparse or unbalanced).  I am a proud **R** user and experienced in analysing data with **STATA**, **WinBUGS**, **StatXact**, and **MLWin**.
 
-I am fully registered with our professional body [Royal Statistical Society UK](https://www.rss.org.uk/) (Registration number 125676). You can search the [RSS register](http://www.rss.org.uk/RSS/pro_dev/pro_awards/Graduate_statistician/Prof%20reg/Prof_Reg_G.aspx?hkey=6f3595d4-6887-46ea-8025-ebb2daae7dc2) with the surname - Prajapati.
+I am fully registered with our professional body [Royal Statistical Society  RSS UK](https://www.rss.org.uk/) (Registration number 125676). You can search the [RSS register](http://www.rss.org.uk/RSS/pro_dev/pro_awards/Graduate_statistician/Prof%20reg/Prof_Reg_G.aspx?hkey=6f3595d4-6887-46ea-8025-ebb2daae7dc2) with the surname - Prajapati.
 
-The plethora of web resources available online about how to use statistical tools (like A->B->C) but very few explained why. And, I also firmly believe that difficulties faced by many in the field of statistics do not from the science itself but how it has been taught and practised. My aim of developing this repository is to **enhance the understanding of the subject, and to share my experience in implementing complex statistical methods**.
+The plethora of web resources available online about how to use statistical tools (like A->B->C) but very few explained why. And, I also firmly believe that difficulties faced by many in the field of statistics do not come from the science itself but how it has been taught and practised. My aim of developing this online repository is to **to develop greater understanding of statistics in non-statistical audiance, and to share my experience in implementing advanced statistical methods in varites of data types**.
 <br>
 <br>
 {{< button theme="danger" >}} Services I offer{{< /button >}}
@@ -51,7 +50,7 @@ The plethora of web resources available online about how to use statistical tool
     <p style="visibility: hidden">
         <label> Don't Fill This Out If You're Human:" </label><input name=bot-field/>
     </p>
-    {{< button theme="danger" >}} Send me a message by simply filling up the form and press the send button{{< /button >}}
+    {{< button theme="danger" >}} Send me a message {{< /button >}}
     <br>
     <br>
     <input type="text" id="name" name="Your name" placeholder="Your name.. ">
@@ -77,7 +76,6 @@ The plethora of web resources available online about how to use statistical tool
 {{< button href= "https://web.Skype.com/en/" theme="info" >}} Skype **Statistician-Online** {{< /button >}}
 {{% /panel %}}
 
-## Timely completion | Detailed Analysis using robust statistics methods | Reliable | Economical
 
 {{% notice info %}}
 The views and opinions expressed in this site are those of the author and do not necessarily reflect the official policy or position of any university or author's past or current employer

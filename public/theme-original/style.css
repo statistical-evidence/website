@@ -274,18 +274,18 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   font-weight: inherit; }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   line-height: 110% !important;
   margin: 2.5rem 0 1.5rem 0;
-  text-transform: capitalize; }
+  text-transform: inherit; }
 
 h3 {
-  font-size: 2rem;
+  font-size: 1.4rem;
   line-height: 110% !important;
   margin: 2rem 0 1rem 0; }
 
 h4 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   line-height: 110% !important;
   margin: 1.5rem 0 0.75rem 0; }
 
@@ -578,7 +578,7 @@ body {
     font-weight: bold; }
 
 h2, h3, h4, h5, h6 {
-  font-family: "Lato", "Work Sans Bold", "Helvetica Bold", "Tahoma Bold", "Geneva Bold", "Arial Bold", sans-serif;
+  font-family: "Work Sans", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
   text-rendering: optimizeLegibility;
   color: #5e5e5e;
   font-weight: 400;
@@ -586,13 +586,14 @@ h2, h3, h4, h5, h6 {
 
 h1 {
   font-family: "Novacento Sans Wide", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-size: 2.00rem;
   text-align: center;
   text-transform: inherit;
   color: #060606;
   font-weight: 800; }
 
 blockquote {
-  border-left: 10px solid #f2f2f2; }
+  border-left: 10px solid #5a5454; }
 
 blockquote p {
   font-size: 1.1rem;
