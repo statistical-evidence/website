@@ -33,7 +33,7 @@ I have extensive experience in analysing longitudinal, time to event data from e
 
 I am fully registered with our professional body [Royal Statistical Society  RSS UK](https://www.rss.org.uk/) (Registration number 125676). You can search the [RSS register](http://www.rss.org.uk/RSS/pro_dev/pro_awards/Graduate_statistician/Prof%20reg/Prof_Reg_G.aspx?hkey=6f3595d4-6887-46ea-8025-ebb2daae7dc2) with the surname - Prajapati.
 
-The plethora of web resources available online about how to use statistical tools (like A->B->C) but very few explained why. And, I also firmly believe that difficulties faced by many in the field of statistics do not come from the science itself but how it has been taught and practised. My aim of developing this online repository is to **to develop greater understanding of statistics in non-statistical audiance, and to share my experience in implementing advanced statistical methods in varites of data types**.
+The plethora of web resources available online about how to use statistical tools (like A->B->C) but very few explained why. And, I also firmly believe that difficulties faced by many in the field of statistics do not come from the science itself but how it has been taught and practised. My aim of developing this online repository is to **to develop greater understanding of statistics in non-statistical audiance, and to share my experience in implementing advanced statistical methods in varieties of data types**.
 <br>
 <br>
 {{< button theme="danger" >}} Services I offer{{< /button >}}
