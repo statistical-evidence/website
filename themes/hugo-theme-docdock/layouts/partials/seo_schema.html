@@ -1,11 +1,47 @@
 {{ if .IsHome -}}
 <script type="application/ld+json">
+
+{
+  "@context": "http://schema.org",
+  "@type": "WebSite",
+  "url": "{{ .Site.BaseURL }}",
+  {{ if .Site.Author.name -}}
+  "author": {
+    "@type": "Person",
+    "name": "{{ .Site.Author.name }}"
+  },
+  {{- end }}
+  {{ if .Site.Params.description -}}
+  "description": "{{ .Site.Params.description }}",
+  {{- end }}
+  {{ with .Site.Params.image -}}
+  "image": "{{ .url | absURL }}",
+  {{- end }}
+  {{ with .Site.Params.logo -}}
+  "thumbnailUrl": "{{ .url | absURL }}",
+  {{- end }}
+  {{ with .Site.Copyright -}}
+  "license": "{{ . }}",
+  {{- end }}
+  "name": "{{ .Site.Title }}"
+}
+
+</script>
+{{/*
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://www.statistician-online.com//search?&q={query}",
+    "query-input": "required"
+  } */}}
+  
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "image": [
-    "https://www.statistician-online.com/images/cover.png",
-    "https://www.statistician-online.com/images/bio.png"
+    "/bio.png",
+    "/cover.png",
+    "/logo.png"
    ],
   "@id": "https://www.statistician-online.com/",
   "name": "Statistician Online",
@@ -59,6 +95,9 @@
   
   
 }
+</script>
+
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
@@ -84,30 +123,9 @@
     "item": "https://www.statistician-online.com/reviews"
   }]
 }
-{
-  "@context": "http://schema.org",
-  "@type": "WebSite",
-  "url": "{{ .Site.BaseURL }}",
-  {{ if .Site.Author.name -}}
-  "author": {
-    "@type": "Person",
-    "name": "{{ .Site.Author.name }}"
-  },
-  {{- end }}
-  {{ if .Site.Params.description -}}
-  "description": "{{ .Site.Params.description }}",
-  {{- end }}
-  {{ with .Site.Params.image -}}
-  "image": "{{ .url | absURL }}",
-  {{- end }}
-  {{ with .Site.Params.logo -}}
-  "thumbnailUrl": "{{ .url | absURL }}",
-  {{- end }}
-  {{ with .Site.Copyright -}}
-  "license": "{{ . }}",
-  {{- end }}
-  "name": "{{ .Site.Title }}"
-}
+</script>
+
+<script type="application/ld+json">
 <ul itemscope itemtype="http://www.schema.org/SiteNavigationElement">
 
   <li itemprop="name"><a itemprop="url" href="https://www.statistician-online.com/">About me</a></li>
@@ -120,13 +138,7 @@
 
 </ul>
 </script>
-{{/*
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": "https://www.statistician-online.com//search?&q={query}",
-    "query-input": "required"
-  } */}}
-  
+
 {{- else if .IsPage -}}
 <script type="application/ld+json">
 {
