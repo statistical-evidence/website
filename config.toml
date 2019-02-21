@@ -55,7 +55,7 @@ height = 40
 url = "/images/cover.png"
 width = 600
 height = 600
-alt = "cover page"
+
 
 
 [params.facebook]

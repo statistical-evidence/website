@@ -140,16 +140,14 @@
     "@type": "ImageObject",
     "url": "{{ .Param "pageimage.image.url" | absURL }}",
     "width": {{ .Param "pageimage.image.width" }},
-    "height": {{ .Param "pageimage.image.height" }},
-    "alt": "{{ .Param "pageimage.image.alt" }}"
+    "height": {{ .Param "pageimage.image.height" }}
   },
   {{- else if ge .Site.Params.image.width 696 -}}
    "image": {
     "@type": "ImageObject",
     "url": "{{ .Site.Params.image.url | absURL }}",
     "width": {{ .Site.Params.image.width }},
-    "height": {{ .Site.Params.image.height }},
-    "alt": "{{ .Param "pageimage.image.alt" }}"
+    "height": {{ .Site.Params.image.height }}
   },
   {{- end }}
   "genre": "{{ .Type }}",
