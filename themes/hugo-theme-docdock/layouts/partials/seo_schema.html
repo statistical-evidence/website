@@ -39,12 +39,12 @@
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "image": [
-    "/bio.png",
-    "/cover.png",
-    "/logo.png"
+    "https://www.statistician-online.com/images/bio.png",
+    "https://www.statistician-online.com/images/cover.png"
    ],
   "@id": "https://www.statistician-online.com/",
   "name": "Statistician Online",
+  "priceRange" : "£££",
   "description": "Looking to hire a professional and accredited statistician online? I am freelance medical statistician, based in UK offering consultancy services online in all statistics aspect of data analysis",
   "address": {
     "@type": "PostalAddress",
@@ -125,20 +125,6 @@
 }
 </script>
 
-<script type="application/ld+json">
-<ul itemscope itemtype="http://www.schema.org/SiteNavigationElement">
-
-  <li itemprop="name"><a itemprop="url" href="https://www.statistician-online.com/">About me</a></li>
-  
-  <li itemprop="name"><a itemprop="url" href="https://www.statistician-online.com/"> Services I offer</a></li>
-  
-  <li itemprop="name"><a itemprop="url" href="https://www.statistician-online.com/">Send me a message</a></li>
-  
-  <li itemprop="name"><a itemprop="url" href="https://www.statistician-online.com/reviews">Reviews</a></li>
-
-</ul>
-</script>
-
 {{- else if .IsPage -}}
 <script type="application/ld+json">
 {
@@ -209,4 +195,6 @@
   "description": "{{ .Description }}"
 }
 </script>
+
+
 {{- end }}
