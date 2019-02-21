@@ -141,7 +141,7 @@
     "url": "{{ .Param "pageimage.image.url" | absURL }}",
     "width": {{ .Param "pageimage.image.width" }},
     "height": {{ .Param "pageimage.image.height" }},
-    "alt": {{ .Param "pageimage.image.alt" }}
+    "alt": "{{ .Param "pageimage.image.alt" }}"
   },
   {{- else if ge .Site.Params.image.width 696 -}}
    "image": {
@@ -149,7 +149,7 @@
     "url": "{{ .Site.Params.image.url | absURL }}",
     "width": {{ .Site.Params.image.width }},
     "height": {{ .Site.Params.image.height }},
-    "alt": {{ .Param "pageimage.image.alt" }}
+    "alt": "{{ .Param "pageimage.image.alt" }}"
   },
   {{- end }}
   "genre": "{{ .Type }}",
