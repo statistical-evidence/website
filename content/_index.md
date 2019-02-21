@@ -55,8 +55,6 @@ The plethora of web resources available online about how to use statistical tool
 </form>
 <br>
 <br>
-{{< button theme="danger" >}} Clients feedbacks {{< /button >}}
-
 <div class="yotpo yotpo-main-widget"
 data-product-id="statistical-analysis"
 data-price="500"
