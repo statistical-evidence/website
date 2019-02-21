@@ -54,6 +54,7 @@ The plethora of web resources available online about how to use statistical tool
     <input type="submit" value="Send" style="">
 </form>
 <br>
+{{< button theme="danger" >}} Clients feedbacks {{< /button >}}
 <br>
 <div class="yotpo yotpo-main-widget"
 data-product-id="statistical-analysis"
