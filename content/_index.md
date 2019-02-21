@@ -53,8 +53,19 @@ The plethora of web resources available online about how to use statistical tool
     <textarea id="message" name="message" placeholder="Your research questions or data analysis query" style="height: 200px"></textarea>
     <input type="submit" value="Send" style="">
 </form>
-
 <br>
+<br>
+{{< button theme="danger" >}} Clients feedbacks {{< /button >}}
+
+<div class="yotpo yotpo-main-widget"
+data-product-id="statistical-analysis"
+data-price="500"
+data-currency="GBP"
+data-name="data analysis"
+data-url=""
+data-image-url=""
+data-description="Product description">
+</div>
 <br>
 <br>
 
@@ -69,7 +80,6 @@ The plethora of web resources available online about how to use statistical tool
 
 {{< button href= "https://web.Skype.com/en/" theme="info" >}} Skype **Statistician-Online** {{< /button >}}
 {{% /panel %}}
-
 
 {{% notice info %}}
 The views and opinions expressed in this site are those of the author and do not necessarily reflect the official policy or position of any university or author's past or current employer
