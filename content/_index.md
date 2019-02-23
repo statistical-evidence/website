@@ -40,7 +40,7 @@ The plethora of web resources available online about how to use statistical tool
 + Complex statistical modelling in variety of data types
 + Publication ready graphics and report writing for research articles, thesis or abstract
 {{% /panel %}}
-<form action="/thankyou" method="post" name="Contact" data-netlify="true" netlify-honeypot="bot-field" netlify>
+<form action="/thankyou" method="post" name="Contact" data-netlify="true" netlify-honeypot="bot-field" netlify >
     <p style="visibility: hidden">
         <label> Don't Fill This Out If You're Human:" </label><input name=bot-field/>
     </p>
