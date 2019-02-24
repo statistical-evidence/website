@@ -67,10 +67,6 @@
 
 
 <section id="body">
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WRMT96N"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
 <div id="overlay"></div>
 <div class="padding highlightable">
 {{if not .IsHome}}
@@ -110,7 +106,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   </div>
 {{end}}
-
+{{if .Params.tags }}
+  <div id="tags">
+    {{ range $index, $tag := .Params.tags }}
+      <a class="label label-default" href="{{$.Site.BaseURL}}tags/{{ $tag | urlize }}">{{ $tag }}</a>
+    {{ end }}
+  </div>
+{{end}}
 <div id="body-inner">
   {{if not .IsHome}}
     <h1>{{.Title}}</h1>
