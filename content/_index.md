@@ -25,25 +25,12 @@ I am a [Research Associate (Statistician) at **the University of Bristol**](http
 
 I have extensive experience in analysing longitudinal, time to event data from epidemiological studies. As a mix of both, theoretical and applied Statistician, I thrive to explore and apply novel statistical methods to data of various types. Most recently, this has included the implementation of multivariate time series models to explore the relationship between multiple time-series. My other interests are **clinical trial design and analysis**, **survival analysis**, **mixed models and analysis of data-set with statistical complexities**(i.e. with missing data, sparse or unbalanced).  I am a proud **R** user and experienced in analysing data with **STATA**, **WinBUGS**, **StatXact**, and **MLWin**.
 
-I am fully registered with our professional body [Royal Statistical Society  RSS UK](https://www.rss.org.uk/) (Registration number 125676). You can search the [RSS register](http://www.rss.org.uk/RSS/pro_dev/pro_awards/Graduate_statistician/Prof%20reg/Prof_Reg_G.aspx?hkey=6f3595d4-6887-46ea-8025-ebb2daae7dc2) with the surname - Prajapati.
+I am fully registered with our professional body [Royal Statistical Society (RSS) UK](https://www.rss.org.uk/) ([RSS](http://www.rss.org.uk/RSS/pro_dev/pro_awards/Graduate_statistician/Prof%20reg/Prof_Reg_G.aspx?hkey=6f3595d4-6887-46ea-8025-ebb2daae7dc2) Registration number 125676)
 
-The plethora of web resources available online about how to use statistical tools (like A->B->C) but very few explained why. And, I also firmly believe that difficulties faced by many in the field of statistics do not come from the science itself but how it has been taught and practised. My aim of developing this online repository is to **to develop greater understanding of statistics in non-statistical audiance, and to share my experience in implementing advanced statistical methods in varieties of data types**.
-<br>
-<br>
-{{< button theme="danger" >}} Services I offer{{< /button >}}
-<br>
-{{% panel %}}
-+ Advice on proposed study, optimum study design and it's conduct and analysis in context of statistical power and validity
-+ Data collection methods and data management, 
-+ Survey design and analysis
-+ Formulating statistical analysis plan, choice of methods and interpretation 
-+ Complex statistical modelling in variety of data types
-+ Publication ready graphics and report writing for research articles, thesis or abstract
-{{% /panel %}}
+> ## I aim to provide reliable and accessible freelance statistical consultancy service at affordable rates 
+
+To learn more about me, please take a look at my web site or send me a message to find out how can we work together.
 <form action="/thankyou" method="post" name="Contact" data-netlify="true" netlify-honeypot="bot-field" netlify >
-    <p style="visibility: hidden">
-        <label> Don't Fill This Out If You're Human:" </label><input name=bot-field/>
-    </p>
     {{< button theme="danger" >}} Send me a message {{< /button >}}
     <br>
     <br>
@@ -53,6 +40,22 @@ The plethora of web resources available online about how to use statistical tool
     <textarea id="message" name="message" placeholder="Your research questions or data analysis query" style="height: 200px"></textarea>
     <input type="submit" value="Send" style="">
 </form>
+<br>
+{{< button theme="danger" >}} Services I offer{{< /button >}}
+<br>
+<br>
+{{% panel %}}
+#### Advice on proposed study or investigation, optimum study design and it's conduct in context of statistical power and validity
+#### Formulating statistical analysis plan, choice of methods and interpretation 
+#### Advice on data collection methods, randomisation plans, sample size and power calculation 
+#### Survey design and analysis
+#### Advanced statistical modelling in variety of data types - time series, time to event data, Bayesian modelling
+#### Systematic reviews and meta analysis
+#### Data visualisation, publication quaility graphics
+#### report writing for research articles, dissertation, PhD thesis or abstract
+{{% /panel %}}
+
+
 <br>
 {{< button theme="danger" >}} Clients feedbacks {{< /button >}}
 <br>
