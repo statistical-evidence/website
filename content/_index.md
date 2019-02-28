@@ -52,7 +52,7 @@ To learn more about me, please take a look at my web site or send me a message t
 #### Advanced statistical modelling in variety of data types - time series, time to event data, Bayesian modelling
 #### Systematic reviews and meta analysis
 #### Data visualisation, publication quaility graphics
-#### report writing for research articles, dissertation, PhD thesis or abstract
+#### Reports for research articles, dissertation, PhD thesis or abstract
 {{% /panel %}}
 
 
