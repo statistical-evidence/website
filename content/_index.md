@@ -13,12 +13,12 @@ keywords:
 - statistician for hire 
 - dissertation
 ---
-# Looking to hire a statistician with academic research experience?
+# Hire a statistician with academic research experience
 
 <img alt="hire a statistician freelance medical statistician UK dissertation" src="/images/bio.png" />
 
 
-> ## I am freelance medical statistician, based in Bristol (UK) offering consultancy services online in all statistical aspect of data analysis
+> ## I am freelance medical statistician based in Bristol (UK) offering consultancy services online in all statistical aspect of data analysis
 
 
 {{< button theme="danger" >}}About me{{< /button >}}
