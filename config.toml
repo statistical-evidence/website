@@ -12,7 +12,7 @@ disqusShortname = "https-chetan-prajapati-netlify-com"
 canonifyURLs = false
 enableRobotsTXT = true
 enableGitInfo = true
-#googleAnalytics= "UA-134274550-1"
+googleAnalytics= "UA-135116594-1"
 
 [author]
 name = "Chetan Prajapati"

@@ -25,7 +25,7 @@
 {{ partial "site-opengraph.html" . }}
 {{ partial "site-twittercard.html" . }}
 {{ partial "seo_schema" . }}
-
+{{ template "_internal/google_analytics_async.html" . }}
 
 
 
@@ -53,7 +53,7 @@
 
 
 <script src="{{"js/jquery-3.3.1.min.js" | relURL}}"></script>
-{{ template "_internal/google_analytics_async.html" . }}
+
 {{ partial "custom-head.html" . }}
 
 
