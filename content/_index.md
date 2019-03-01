@@ -11,7 +11,7 @@ keywords:
 - freelance medical statistician
 - hire statistician
 ---
-# Looking to hire statistician ? I am freelance medical statistician available online for your research project !
+# Looking to hire a statistician with academic research experience?
 
 <img alt="hire a statistician freelance medical statistician UK dissertation" src="/images/bio.png" />
 
