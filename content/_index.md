@@ -1,7 +1,7 @@
 ---
 title: "Home"
 disable_comments: yes
-date: '2019-01-23'
+date: '2019-03-01'
 sitemap:
   ChangeFreq: daily
   Priority: 1
@@ -9,11 +9,11 @@ sitemap:
 keywords:
 - hire a statistician
 - freelance medical statistician
-- statistics
+- hire statistician
 ---
-# Looking to hire a professional and accredited freelance Statistician ?
+# Looking to hire statistician ? I am freelance medical statistician available online for your research project !
 
-<img alt="hire statistician online freelance statistical consultant statistics help" src="/images/bio.png" />
+<img alt="hire a statistician freelance medical statistician UK dissertation" src="/images/bio.png" />
 
 
 > ## I am freelance medical statistician, based in Bristol (UK) offering consultancy services online in all statistical aspect of data analysis
@@ -76,12 +76,16 @@ data-description="Product description">
 <br>
 {{% panel %}}
 
-{{< button >}} Email : **chetan.prajapati@live.com** {{< /button >}}
+{{< button >}} Email : **chetan@statistician-online.com** {{< /button >}}
 
 {{< button >}} Phone or text on **+44 7392 339 862**  {{< /button >}}
 
 {{< button href= "https://web.Skype.com/en/" theme="info" >}} Skype **Statistician-Online** {{< /button >}}
 {{% /panel %}}
+
+
+> hire statistician online | statistics help | research project | dissertation
+
 
 {{% notice info %}}
 The views and opinions expressed in this site are those of the author and do not necessarily reflect the official policy or position of any university or author's past or current employer

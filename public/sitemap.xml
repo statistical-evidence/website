@@ -38,6 +38,13 @@
   </url>
   
   <url>
+    <loc>https://www.statistician-online.com/</loc>
+    <lastmod>2019-02-28T22:17:19+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url>
+  
+  <url>
     <loc>https://www.statistician-online.com/3-basic-statistics/bootstrapping-parametric-and-non-parametric-bootstrap-using-loops-and-boot-function-in-r/</loc>
     <lastmod>2019-02-16T22:41:51+00:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -56,13 +63,6 @@
     <lastmod>2019-02-16T22:41:51+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.statistician-online.com/</loc>
-    <lastmod>2019-02-28T22:03:48+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1</priority>
   </url>
   
   <url>
