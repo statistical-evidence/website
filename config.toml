@@ -1,7 +1,7 @@
 baseURL = "https://www.statistician-online.com/"
 languageCode = "en-gb"
 DefaultContentLanguage = "en"
-title = "RSS (UK) Accredited Statistical Consultant - Hire a Statistician UK"
+title = "RSS (UK) Accredited Statistical Consultant -Hire a Statistician Online"
 theme = "hugo-theme-docdock"
 pygmentsCodeFences = false
 pygmentsStyle = ""
@@ -20,7 +20,7 @@ name = "Chetan Prajapati"
 [params]
 #editURL = "https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/"
 author = "Chetan Prajapati"
-description = "UK based Freelance Statistician with Academic Research Experience-Data Analysis using Robust Statistical Methods-Affordable Rates-Hire a Statistician Online"
+description = "UK based freelance statistician with academic research experience -Data analysis using robust statistical methods -Hire a statistician at affordable rates"
 images = ["images/bio.png"]
 showVisitedLinks = true # default is false
 themeStyle = "original" # "original" or "flex" # default "flex"
