@@ -10,6 +10,8 @@ keywords:
 - hire a statistician
 - freelance medical statistician
 - hire statistician
+- statistician for hire 
+- dissertation
 ---
 # Looking to hire a statistician with academic research experience?
 
@@ -25,7 +27,7 @@ I am a [Research Associate (Statistician) at **the University of Bristol**](http
 
 I have extensive experience in analysing longitudinal, time to event data from epidemiological studies. As a mix of both, theoretical and applied Statistician, I thrive to explore and apply novel statistical methods to data of various types. Most recently, this has included the implementation of multivariate time series models to explore the relationship between multiple time-series. My other interests are **clinical trial design and analysis**, **survival analysis**, **mixed models and analysis of data-set with statistical complexities**(i.e. with missing data, sparse or unbalanced).  I am a proud **R** user and experienced in analysing data with **STATA**, **WinBUGS**, **StatXact**, and **MLWin**.
 
-I am fully registered with our professional body [Royal Statistical Society (RSS) UK](https://www.rss.org.uk/) ([RSS](http://www.rss.org.uk/RSS/pro_dev/pro_awards/Graduate_statistician/Prof%20reg/Prof_Reg_G.aspx?hkey=6f3595d4-6887-46ea-8025-ebb2daae7dc2) Registration number 125676)
+I am fully registered with our professional body [Royal Statistical Society (RSS) UK](https://www.rss.org.uk/) ([RSS](http://www.rss.org.uk/RSS/pro_dev/pro_awards/Graduate_statistician/Prof%20reg/Prof_Reg_G.aspx?hkey=6f3595d4-6887-46ea-8025-ebb2daae7dc2) Registration number 125676). I advice you to check if you are looking to hire a statistician online for your research project.
 
 > ## I aim to provide reliable and accessible freelance statistical consultancy service at affordable rates 
 
@@ -40,6 +42,9 @@ To learn more about me, please take a look at my web site or send me a message t
     <textarea id="message" name="message" placeholder="Your research questions or data analysis query" style="height: 200px"></textarea>
     <input type="submit" value="Send" style="">
 </form>
+
+### Data analysis with robust statistical methods - Transparent reporting - Academic quality research output
+
 <br>
 {{< button theme="danger" >}} Services I offer{{< /button >}}
 <br>
@@ -84,7 +89,7 @@ data-description="Product description">
 {{% /panel %}}
 
 
-### hire statistician online | statistics help | research project | dissertation
+
 
 
 {{% notice info %}}

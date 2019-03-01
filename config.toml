@@ -1,7 +1,7 @@
 baseURL = "https://www.statistician-online.com/"
 languageCode = "en-gb"
 DefaultContentLanguage = "en"
-title = "RSS (UK) Accredited Statistical Consultant -Hire Academic Statistician"
+title = "RSS (UK) Accredited Statistical Consultant - Hire a Statistician UK"
 theme = "hugo-theme-docdock"
 pygmentsCodeFences = false
 pygmentsStyle = ""
