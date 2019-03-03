@@ -8,5 +8,4 @@ sitemap:
   Priority: 0.9
 ---
 
-
-![Hire a Statistician - RSS (UK) Accredited Statistical Consultant]( /images/logo.png)
+<img alt="hire a statistician freelance medical statistician UK dissertation" src="/images/logo.png" title=“Statistician-Online.com”/>
