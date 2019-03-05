@@ -7,16 +7,17 @@ sitemap:
   Priority: 0.9
 disable_comments: true
 ---
-<div class="yotpo yotpo-main-widget"
-data-product-id="1"
-data-price="100"
-data-currency="£"
-data-name="data-analysis"
-data-url=""
-data-image-url=""
-data-description="Statistical-data-analysis">
-</div>
 
+
+<div class="yotpo yotpo-main-widget"
+data-product-id="SKU/Product_ID"
+data-price="Product Price"
+data-currency="Price Currency"
+data-name="Product Title"
+data-url="The url to the page where the product is (url escaped)"
+data-image-url="The product image url. Url escaped"
+data-description="Product description">
+</div>
 
 
 {{< button href="/" >}} Go To Homepage {{< /button >}}
