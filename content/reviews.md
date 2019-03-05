@@ -7,9 +7,15 @@ sitemap:
   Priority: 0.9
 disable_comments: true
 ---
-
-<div class="yotpo yotpo-main-widget" </div>
-
+<div class="yotpo yotpo-main-widget"
+data-product-id="1"
+data-price="100"
+data-currency="£"
+data-name="data-analysis"
+data-url=""
+data-image-url=""
+data-description="Statistical-data-analysis">
+</div>
 
 
 

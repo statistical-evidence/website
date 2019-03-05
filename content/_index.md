@@ -64,7 +64,15 @@ To learn more about me, please take a look at my web site or send me a message t
 <br>
 {{< button theme="danger" >}} Clients feedbacks {{< /button >}}
 <br>
-<div class="yotpo yotpo-main-widget" </div>
+<div class="yotpo yotpo-main-widget"
+data-product-id="1"
+data-price="100"
+data-currency="£"
+data-name="data-analysis"
+data-url=""
+data-image-url=""
+data-description="Statistical-data-analysis">
+</div>
 <br>
 <br>
 
