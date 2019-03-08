@@ -1,8 +1,8 @@
 ---
-title: "How to reshape data - wide or long form in the R programming language"
+title: "How to reshape data in wide or long format in R"
 author: "Chetan Prajapati"
 date: "2019-02-02"
-description: Reshape data frame or matrix either in wide or long format in R programming language.
+description: Complete tutorial about reshaping data into wide or long format using standard r reshape function.
 keywords: 
 - matrix
 - data
@@ -16,7 +16,7 @@ pageimage:
     height: 600
     url: /images/Reshape.png
     width: 800
-slug: reshaping-data-into-wide-or-long-format-in-r
+slug: reshape-wide-long-data-r-how-to
 
 tags:
 - dataframe
@@ -37,8 +37,8 @@ sitemap:
 
 <p><img alt="reshape data wide long r gather melt dplyr" src="/images/Reshape.png" height="300px" width="400px" /></p>
 <p>Reshaping though frequently required in data analysis, so often it remains confusing even if you are frequent user of <code>reshape</code> function in R.Here I have provided more explanation with simulated data.</p>
-<div id="wide-to-long" class="section level4">
-<h4>[1] Wide to long</h4>
+<div id="reshape-data-from-wide-to-long" class="section level2">
+<h2>Reshape data from wide to long</h2>
 <p>Wide data: the observation has been made several time but all the observations for given person is recorded in single row in spreadsheet.For example, in clinic, person visiting every month for their blood pressure check, and nurse note down the value for each month in single row which belong to this specific person.</p>
 <p>Let’s first create small wide data</p>
 <pre class="r"><code># wide data
@@ -486,8 +486,8 @@ march
 </tbody>
 </table>
 </div>
-<div id="long-to-wide" class="section level4">
-<h4>[2] long to wide</h4>
+<div id="reshape-data-from-long-to-wide" class="section level2">
+<h2>Reshape data from long to wide</h2>
 <p>To make data “wide” from long, the <code>reshape</code> function will need only two main arguments apart from id.</p>
 <ul>
 <li><p><code>v.names</code> : which column represent <strong>values</strong> of the observations in long data ( so that <code>reshape</code> function can transform these values into rows for each ID)</p></li>

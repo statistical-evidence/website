@@ -1,5 +1,5 @@
 ---
-title: 'Generalized linear model (GLM) : Poisson regression for count and rate'
+title: "Poisson regression : Statistical models for counts and rates"
 author: "Chetan Prajapati"
 date: '2019-01-31'
 description: Poisson regression model part of Generalized linear models (GLM), its statistical assumptions and interpretation (risk ratio). Also about zero-inflated,negative binomial and generalized poisson models
@@ -14,7 +14,7 @@ keywords:
 - GLM
 - Quasi-poisson
 menuTitle: Count
-slug: count-data-models
+slug: poisson-regression-overdispersion-how-to
 tags:
 - Poisson
 - Quasi-poisson
@@ -27,14 +27,14 @@ sitemap:
   Priority: 0.9
 ---
 
-###  What is a count ?
+##  What is a count ?
 
 Count is a number which is **discrete** and **non-negative**. Discrete means a number which is a countable and distinct. For example, number of road accidents. Road accidents can be 2 or 852 but can not be 2.1 or 85.5. So its discrete i.e integer. This is different to numeric continuous variable (such as blood pressure 120.2,135.9) which modelled differently.
 
 Count may also have contextual information i.e with time, area or length. Such as number of road accidents in given year, number of rain drops in square meter area. When the count is associated with any denominators, rate can be derived. For example, we observe 25 number of maternity claims from 850 women in  year then the rate of claims will be 29 per 1000 women per year.
 
 
-### Probability distribution(s) associated with the count random variable
+## Probability distribution(s) associated with the counts
 
 First we need to clarify what is a distribution.**The Distribution is the specification of probability associated with the value taken by random variable on random experiment**. For example, in random experiment of counting number of rain drops in square meter area. The random variable is number of rain drops. Once the experiment has been performed, we count the drop which may be 10. The random variable X taken the value of 10.We do this experiment again and its 35. So random variable X has taken the value of 35.
 
@@ -96,12 +96,14 @@ knitr::include_graphics('/images/poisson_models_types.PNG')
 
 ![Figure 1 **Models for count data: mean-variance relationships and its parameterisation**](/images/poisson_models_types.PNG)
 
-#### 1 Poisson distribution
+### Poisson distribution
+
 + single parameter
 + mean $[\mu]$ is equal to variance $[\mu]$, also called dispersion
 + in real life datasets, more often there will be higher variability or correlation than model allows (over-dispersion) which leads to biased standard errors ( so as misleading significance of covariate)
 
-#### 2 Negative Binomial 
+### Negative binomial distribution
+
 + has additional dispersion parameter $[\alpha]$ to accommodate excess variability. when the dispersion parameter is zero,
 the model becomes Poisson
 + can be traditional negative binomial (NB1) or quadratic negative binomial (NB2)
@@ -109,23 +111,28 @@ the model becomes Poisson
 + form of Poisson-gamma mixture with  dispersion parameter $[\alpha]$ has gamma distribution. Gamma distribution is very flexible in shape so most (not all) dispersed count data modelled well with NB
 + It is possible that NB may not correct over-dispersion in a Poisson model
 
-#### 3 Poisson Inverse Gaussian (PIG)
+### Poisson Inverse Gaussian (PIG)
+
 + Similler to negative binomial except the dispersion parameter $[\alpha]$ has inverse Gaussian distribution
 + Available in R `gamlass` package
 
-#### 4 Generalized Negative Binomial Model (GNB)
+### Generalized Negative Binomial Model (GNB)
+
 + The GNB parametrizes the exponent on the second term of the
 negative binomial variance.
 + To get initial idea whether data is suited to NB1 or NB2 or NB-P
 
 
-#### 5 Generalised Poissson Models
+### Generalised Poissson Models
+
 + Si miller to above models but dispersion parameter can take negative values which also correct under dispersion if present
 
-#### 6 Heterogeneous Negative Binomail model (NB-H)
+### Heterogeneous Negative Binomail model (NB-H)
+
 + Dispersion parameter can be associated with particular covariate which bring significant dispersion in the model.
 
-#### 7 Exact poisson regression
+### Exact poisson regression
+
 for unbalanced and sparse count data
 
 

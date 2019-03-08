@@ -9,11 +9,13 @@ keywords:
 - hire
 - disseration
 - Statistician
-pre: "<b>1. </b>"
+
 disable_comments : true
 alwaysopen : true
 
 date: "2019-01-23"
+
+slug: data-management
 
 sitemap:
   ChangeFreq: weekly

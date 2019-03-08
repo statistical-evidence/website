@@ -1,7 +1,6 @@
 ---
 title: Data Visualisation
 weight: 2
-pre: "<b>2. </b>"
 disable_comments : true
 author: Chetan Prajapati
 description: This section includes explanation of various data visualisation techniques in R using ggplot2 package.hire freelance statistician online for statistics help in dissertation. 

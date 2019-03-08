@@ -1,7 +1,6 @@
 ---
 title: Statistical Models
 weight: 4
-pre: "<b>4. </b>"
 disable_comments : true
 alwaysopen : true
 author: Chetan Prajapati
