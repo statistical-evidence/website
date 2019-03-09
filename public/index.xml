@@ -35,12 +35,12 @@
       
       <guid>https://www.statistician-online.com/reviews/</guid>
       <description>&lt;div class=&#34;yotpo yotpo-main-widget&#34;
-data-product-id=&#34;SKU/Product_ID&#34;
-data-price=&#34;Product Price&#34;
-data-currency=&#34;Price Currency&#34;
-data-name=&#34;Product Title&#34;
-data-url=&#34;The url to the page where the product is (url escaped)&#34;
-data-image-url=&#34;The product image url. Url escaped&#34;
+data-product-id=&#34;statistical-analysis&#34;
+data-price=&#34;500&#34;
+data-currency=&#34;GBP&#34;
+data-name=&#34;data analysis&#34;
+data-url=&#34;&#34;
+data-image-url=&#34;&#34;
 data-description=&#34;Product description&#34;&gt;
 &lt;/div&gt;
 

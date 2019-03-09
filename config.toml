@@ -70,6 +70,11 @@ home = [ "HTML", "RSS", "JSON"]
 
 
 [[menu.shortcuts]]
+name = "<i class='fas fa-comment-medical'></i> Clients feedbacks"
+url = "/reviews"
+weight = 7
+
+[[menu.shortcuts]]
 name = "<i class='fab fa-twitter-square'></i> Twitter"
 url = "https://twitter.com/Stat_online"
 weight = 8

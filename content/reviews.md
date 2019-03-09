@@ -10,12 +10,12 @@ disable_comments: true
 
 
 <div class="yotpo yotpo-main-widget"
-data-product-id="SKU/Product_ID"
-data-price="Product Price"
-data-currency="Price Currency"
-data-name="Product Title"
-data-url="The url to the page where the product is (url escaped)"
-data-image-url="The product image url. Url escaped"
+data-product-id="statistical-analysis"
+data-price="500"
+data-currency="GBP"
+data-name="data analysis"
+data-url=""
+data-image-url=""
 data-description="Product description">
 </div>
 

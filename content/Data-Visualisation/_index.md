@@ -21,7 +21,7 @@ sitemap:
 
 ### This section provides complete illustrations of various tools and functions available in R for data visualisation
 
-#### {{< icon name="shopping-cart" size="large" >}} work is underway
+#### <i class="fas fa-spinner"></i>  work is underway
 
 {{%children style="h2" description="true"%}}
 
