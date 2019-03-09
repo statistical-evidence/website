@@ -68,6 +68,10 @@ username = "Stat_online"
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
 
+[[menu.shortcuts]]
+name = "<i class='fas fa-comment-medical'></i> Clients feedbacks"
+url = "/reviews"
+weight = 7
 
 [[menu.shortcuts]]
 name = "<i class='fab fa-twitter-square'></i> Twitter"
@@ -83,3 +87,9 @@ weight = 9
 name = "<i class='fab fa-linkedin'></i> Linkedin"
 url = "https://www.linkedin.com/in/statistician-online-308544180/"
 weight = 10
+
+
+
+
+
+
