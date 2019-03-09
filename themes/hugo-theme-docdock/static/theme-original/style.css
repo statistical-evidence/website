@@ -920,6 +920,11 @@ td {
   bottom: 50%;
   margin-top: -5px;
   border-right-color: rgba(0, 0, 0, 0.8); }
+  
+.reverse {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+  }
 
 #footer {
   min-height: 3s0px; }
