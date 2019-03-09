@@ -20,7 +20,7 @@ sitemap:
   Priority: 0.9
 ---
 
-### This section comprise some essential and fundamental concepts in statistics
+## This section comprise some essential and fundamental concepts in statistics
 
 
 {{% children depth="3" showhidden="true" %}}

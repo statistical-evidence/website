@@ -68,7 +68,7 @@ To learn more about me, please take a look at my web site or send me a message t
 <br>
 {{% panel %}}
 
-{{< button >}} Email : **chetan@statistician-online.com** {{< /button >}}
+{{< button >}} Email : <span class="reverse">moc.enilno-naicitsitats@natehc</span> {{< /button >}}
 
 {{< button >}} Phone or text on **+44 7392 339 862**  {{< /button >}}
 

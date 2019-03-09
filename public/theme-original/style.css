@@ -1362,4 +1362,8 @@ td {
   #body {
     margin-left: 0px; } }
 
+.reverse {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+  }
 /*# sourceMappingURL=style.css.map */
