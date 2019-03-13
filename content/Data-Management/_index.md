@@ -2,13 +2,12 @@
 title: Data Management
 weight: 1
 author: Chetan Prajapati
-description: hire freelance statistician online for statistics help. this page summarise various tools and function of data management in R
+description: This page summarise various tools and function for data management in R. The packages includes ggplot2, dplyr and other tidyverse packages.
+
 keywords:
-- statistics
-- online
-- hire
-- disseration
-- Statistician
+
+- dplyr
+- ggplot2
 
 disable_comments : true
 alwaysopen : true

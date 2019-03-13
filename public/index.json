@@ -3,14 +3,14 @@
 	"uri": "https://www.statistician-online.com/data-management/",
 	"title": "Data Management",
 	"tags": [],
-	"description": "hire freelance statistician online for statistics help. this page summarise various tools and function of data management in R",
+	"description": "This page summarise various tools and function for data management in R. The packages includes ggplot2, dplyr and other tidyverse packages.",
 	"content": " This section provides complete illustrations of various tools and functions available in R for data management.  How to reshape data in wide or long format in R     "
 },
 {
 	"uri": "https://www.statistician-online.com/statistical-models/discrete-response/",
 	"title": "Discrete response",
 	"tags": [],
-	"description": "This section includes explanation of statistical model for discrete data in R.hire freelance statistician online for statistics help in dissertation.",
+	"description": "This section includes explanation of statistical model for discrete data in R.Hire freelance statistician online for statistics help in dissertation.",
 	"content": "  Poisson regression : Statistical models for counts and rates     "
 },
 {
@@ -24,7 +24,7 @@
 	"uri": "https://www.statistician-online.com/basic-statistics/",
 	"title": "Basic Statistics",
 	"tags": [],
-	"description": "This section is about basic statistics, distributions, t-test, paired t-test, proportion, ratio, risk ratio, rate ratio. hire freelance statistician online for statistics help in dissertation.",
+	"description": "This section is about basic statistics, distributions, t-test, paired t-test, proportion, ratio, risk ratio, rate ratio. Hire freelance statistician online for statistics help in dissertation.",
 	"content": " This section comprise some essential and fundamental concepts in statistics  Bootstrap R tutorial : Learn about parametric and nonparametric bootstrap through simulation     "
 },
 {
@@ -119,14 +119,14 @@
 	"content": ""
 },
 {
-	"uri": "https://www.statistician-online.com/categories/glm/",
+	"uri": "https://www.statistician-online.com/tags/glm/",
 	"title": "Glm",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "https://www.statistician-online.com/tags/glm/",
+	"uri": "https://www.statistician-online.com/categories/glm/",
 	"title": "Glm",
 	"tags": [],
 	"description": "",

@@ -4,14 +4,12 @@ weight: 3
 disable_comments : true
 alwaysopen : true
 author: Chetan Prajapati
-description: This section is about basic statistics, distributions, t-test, paired t-test, proportion, ratio, risk ratio, rate ratio. hire freelance statistician online for statistics help in dissertation. 
+description: This section is about basic statistics, distributions, t-test, paired t-test, proportion, ratio, risk ratio, rate ratio. Hire freelance statistician online for statistics help in dissertation. 
 
 keywords:
 - statistics
-- online
-- hire
-- dissertation
-- Statistician
+- probability
+- p-value
 
 date: "2019-01-23"
 

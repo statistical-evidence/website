@@ -8,11 +8,10 @@ author: Chetan Prajapati
 description: This section is about statistical model applied in varieties of data type.hire freelance statistician online for statistics help in dissertation. 
 
 keywords:
+
 - statistics
-- online
-- hire
-- dissertation
-- Statistician
+- regression
+- probability
 
 date: "2019-01-23"
 

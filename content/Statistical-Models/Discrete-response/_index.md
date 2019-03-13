@@ -3,15 +3,14 @@ title: Discrete response
 weight: 1
 disable_comments : true
 author: Chetan Prajapati
-description: This section includes explanation of statistical model for discrete data in R.hire freelance statistician online for statistics help in dissertation. 
+
+description: This section includes explanation of statistical model for discrete data in R.Hire freelance statistician online for statistics help in dissertation. 
+
 keywords:
-- count
-- rate ratio
-- statistics
-- online
-- hire
-- dissertation
-- Statistician
+
+- logistic regression
+- Poisson regression
+- multinomial regression
 
 date: "2019-01-23"
 
