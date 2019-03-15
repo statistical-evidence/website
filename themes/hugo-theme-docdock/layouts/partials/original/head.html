@@ -29,11 +29,6 @@
 {{ with .OutputFormats.Get "rss" -}}
     {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
 {{ end -}}
-
-<link rel="preload" href="{{"fonts/Novecentosanswide-Ultralight-webfont.woff2" | relURL}}" as="font" type="font/woff2">
-<link rel="preload" href="{{"webfonts/fa-brands-400.woff2" | relURL}}" as="font" type="font/woff2">
-
-
 <link rel="canonical" href="{{ .Permalink }}"/>
 <link rel="alternate" href="{{ .Permalink }}" hreflang="x-default" />
 <link rel="shortcut icon" href="{{"images/favicon.ico" | relURL}}" type="image/x-icon" />
