@@ -30,7 +30,9 @@
     {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
 {{ end -}}
 
-<link rel="preload" href="https://code.jquery.com/jquery-2.2.3.min.js" as="script">
+<link rel="preload" href="{{"fonts/Novecentosanswide-Ultralight-webfont.woff2" | relURL}}" as="font" type="font/woff2">
+<link rel="preload" href="{{"webfonts/fa-brands-400.woff2" | relURL}}" as="font" type="font/woff2">
+
 
 <link rel="canonical" href="{{ .Permalink }}"/>
 <link rel="alternate" href="{{ .Permalink }}" hreflang="x-default" />
