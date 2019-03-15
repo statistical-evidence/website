@@ -30,6 +30,8 @@
     {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
 {{ end -}}
 
+<link rel="preload" href="https://code.jquery.com/jquery-2.2.3.min.js" as="script">
+
 <link rel="canonical" href="{{ .Permalink }}"/>
 <link rel="alternate" href="{{ .Permalink }}" hreflang="x-default" />
 <link rel="shortcut icon" href="{{"images/favicon.ico" | relURL}}" type="image/x-icon" />
@@ -45,11 +47,11 @@
 <link href="{{"css/auto-complete.css" | relURL}}" rel="stylesheet">
 <link href="{{"theme-original/style.css" | relURL}}" rel="stylesheet">
 <link rel="stylesheet" href="{{"css/bootstrap.min.css" | relURL}}">
-
 <script
   src="https://code.jquery.com/jquery-2.2.3.min.js"
   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="
   crossorigin="anonymous"></script>
+
 
 
 <style type="text/css">
