@@ -34,7 +34,11 @@
       <pubDate>Fri, 01 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>https://www.statistician-online.com/reviews/</guid>
-      <description>&lt;div class=&#34;yotpo yotpo-main-widget&#34;
+      <description>&lt;script type=&#34;text/javascript&#34;&gt;
+(function e(){var e=document.createElement(&#34;script&#34;);e.type=&#34;text/javascript&#34;,e.async=true,e.src=&#34;//staticw2.yotpo.com/2htNWav9UZ2zomAxet41ezNcBR6lTEXDAOHh3nEU/widget.js&#34;;var t=document.getElementsByTagName(&#34;script&#34;)[0];t.parentNode.insertBefore(e,t)})();
+&lt;/script&gt;
+
+&lt;div class=&#34;yotpo yotpo-main-widget&#34;
 data-product-id=&#34;statistical-analysis&#34;
 data-price=&#34;500&#34;
 data-currency=&#34;GBP&#34;
