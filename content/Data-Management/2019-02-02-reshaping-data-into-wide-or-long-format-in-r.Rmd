@@ -17,15 +17,12 @@ pageimage:
     url: /images/Reshape.png
     width: 800
 slug: reshape-wide-long-data-r-how-to
-
 tags:
 - dataframe
 - r
 - reshape
-
 categories: 
 - data management
-
 sitemap:
   ChangeFreq: daily
   Priority: 0.9
@@ -40,6 +37,7 @@ require(dplyr)
 <img alt="reshape data wide long r gather melt dplyr" src="/images/Reshape.png" height="300px" width="400px" />
 
 Reshaping though frequently required in data analysis, so often it remains confusing even if you are frequent  user of `reshape` function in R.Here I have provided more explanation with simulated data.
+
 
 ## Reshape data from wide to long
 

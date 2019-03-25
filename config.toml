@@ -1,7 +1,7 @@
 baseURL = "https://www.statistician-online.com/"
 languageCode = "en-gb"
 DefaultContentLanguage = "en"
-title = "Hire a Statistician - RSS (UK) Accredited Statistical Consultant"
+title = "Bio-Statistics Consulting | RSS(UK) Accredited Statistician for Hire"
 theme = "hugo-theme-docdock"
 pygmentsCodeFences = false
 pygmentsStyle = ""
@@ -20,7 +20,7 @@ name = "Chetan Prajapati"
 [params]
 #editURL = "https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/"
 author = "Chetan Prajapati"
-description = "UK based freelance statistician with academic research experience -Data analysis using robust statistical methods -Hire a statistician at affordable rates"
+description = "Delivers results - not just the numbers. Statistician-Online offers transparent & reliable statistical consultancy service to researchers, businesses & PhD students. Contact and hire freelance statistician for your data analysis or medical statistics help in research project or dissertation"
 images = ["images/bio.png"]
 showVisitedLinks = true # default is false
 themeStyle = "original" # "original" or "flex" # default "flex"
