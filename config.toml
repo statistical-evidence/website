@@ -1,7 +1,7 @@
 baseURL = "https://www.statistician-online.com/"
 languageCode = "en-gb"
 DefaultContentLanguage = "en"
-title = "RSS(UK) Accredited Statistician for Hire | BioStatistics Consulting"
+title = "Hire Accredited Statistician Online | Freelance Statistical Consulting"
 theme = "hugo-theme-docdock"
 pygmentsCodeFences = false
 pygmentsStyle = ""
@@ -15,7 +15,7 @@ enableGitInfo = true
 googleAnalytics= "UA-135116594-1"
 
 [author]
-name = "Chetan Prajapati"
+name = "Chetan Prajapati-Statistician"
 
 [params]
 #editURL = "https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/"
@@ -36,7 +36,7 @@ menushortcutsnewtab = true # set true to open shortcuts links to a new tab/windo
 
 
 [params.publisher]
-name = "Chetan Prajapati"
+name = "Statistician-Online.com"
 
 [params.publisher.logo]
 url = "/images/logo.png"
