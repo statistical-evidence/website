@@ -20,7 +20,7 @@ name = "Chetan Prajapati-Statistician"
 [params]
 #editURL = "https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/"
 author = "Chetan Prajapati"
-description = "Statistician-Online.com offers Transparent & Reliable Statistical Consultancy Service Online to Researchers, Businesses & PhD students. Hire Freelance Statistician for Data Analysis or Medical Statistics help in Research project or Dissertation"
+description = "Looking to hire a professional and accredited statistical consultant for your research or dissertation? UK based freelance statistician offers reliable statistics consulting services online to researchers, businesses, PhD students at affordable rates. Consultancy service for data analysis or medical statistics help"
 images = ["images/bio.png"]
 showVisitedLinks = true # default is false
 themeStyle = "original" # "original" or "flex" # default "flex"
