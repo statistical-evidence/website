@@ -18,7 +18,7 @@ keywords:
 <img alt="Statistician-Online offers transparent & reliable statistical consultancy service to researchers, businesses & PhD students. Contact and hire freelance statistician for your data analysis or medical statistics help in research project or dissertation" src="/images/bio.png" title=“Chetan-Prajapati”/>
 
 
-> ## Delivers results - not just the numbers. I am freelance medical statistician based in Bristol (UK) offering consultancy services online in all statistical aspect of data analysis
+> ## I am freelance medical statistician based in Bristol (UK) offering consultancy services online in all statistical aspect of data analysis
 
 
 {{< button theme="danger" >}}About me{{< /button >}}

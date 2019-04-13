@@ -8,4 +8,6 @@ sitemap:
   Priority: 0.9
 ---
 
-<img alt="hire a statistician freelance medical statistician UK dissertation" src="/images/logo.png" title=“Statistician-Online.com”/>
+<a href="/" title = "Home">
+  <img src="/images/logo.png" alt="hire a statistician freelance medical statistician UK dissertation">
+</a>

@@ -123,12 +123,6 @@
   </url>
   
   <url>
-    <loc>https://www.statistician-online.com/categories/glm/</loc>
-    <lastmod>2019-03-09T16:57:08+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://www.statistician-online.com/tags/negative-binomial/</loc>
     <lastmod>2019-03-09T16:57:08+00:00</lastmod>
     <priority>0</priority>
@@ -167,6 +161,12 @@
   <url>
     <loc>https://www.statistician-online.com/tags/reshape/</loc>
     <lastmod>2019-03-25T21:47:43+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.statistician-online.com/categories/statistical-models/</loc>
+    <lastmod>2019-03-09T16:57:08+00:00</lastmod>
     <priority>0</priority>
   </url>
   
