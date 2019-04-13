@@ -13,7 +13,7 @@ keywords:
 - medical statistician
 - dissertation
 ---
-# Biostatistics Consulting | RSS(UK) Accredited Statistician for Hire
+# Biostatistics Consulting | RSS(UK) Accredited Statistician
 
 <img alt="Statistician-Online offers transparent & reliable statistical consultancy service to researchers, businesses & PhD students. Contact and hire freelance statistician for your data analysis or medical statistics help in research project or dissertation" src="/images/bio.png" title=“Chetan-Prajapati”/>
 
