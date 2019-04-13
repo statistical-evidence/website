@@ -1,5 +1,5 @@
 ---
-title: "hire a statistician"
+title: "hire freelance statistician statistical consultant"
 description : "Hire a statistician for disseration or research project online. Freelance medical statistician or statistical consultant"
 date: "2019-01-23"
 

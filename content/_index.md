@@ -7,27 +7,27 @@ sitemap:
   Priority: 1
 
 keywords:
-- hire statistician
+- Statistical consultant
 - freelance statistician
 - statistics help
 - medical statistician
-- dissertation
+- consultancy services
 ---
-# Biostatistics Consulting | RSS(UK) Accredited Statistician
+#  RSS(UK) Accredited Statistician - Statistical consultant
 
-<img alt="Statistician-Online offers transparent & reliable statistical consultancy service to researchers, businesses & PhD students. Contact and hire freelance statistician for your data analysis or medical statistics help in research project or dissertation" src="/images/bio.png" title=“Chetan-Prajapati”/>
+<img alt="Statistician-Online offers transparent & reliable statistical consultancy service to researchers, businesses & PhD students. Contact and hire freelance statistical consultant for your data analysis or medical statistics help in research project or dissertation" src="/images/bio.png" title=“Chetan-Prajapati”/>
 
 
-> ## I am freelance medical statistician based in Bristol (UK) offering consultancy services online in all statistical aspect of data analysis
+> ## I am freelance statistical consultant based in Bristol (UK) offering consultancy services online in all statistical aspect of data analysis
 
 
 {{< button theme="danger" >}}About me{{< /button >}}
 
-I am a [Research Associate (Statistician) at **the University of Bristol**](http://www.bristol.ac.uk/clinical-sciences/people/chetan-a-prajapati/index.html), and previously I worked as Statistician in [Centre for the Prevention of Stroke and Dementia, **University of Oxford**](https://www.ndcn.ox.ac.uk/divisions/cpsd). I hold masters in Medical Statistics from the **University of Leicester** where I also hold specialization in **Genetic Epidemiology**. I am also [John Henry Brookes Scholar](https://www.brookes.ac.uk/studying-at-brookes/finance/postgraduate-finance---uk-and-eu-students/sources-of-funding-for-postgraduate-uk-and-eu-students/) of [**Oxford Brookes University**](https://www.brookes.ac.uk/courses/postgraduate/public-health/). 
+I am a [Research Associate (Statistician) at **the University of Bristol**](http://www.bristol.ac.uk/clinical-sciences/people/chetan-a-prajapati/index.html), and previously I worked as Medical Statistician at [Centre for the Prevention of Stroke and Dementia, **University of Oxford**](https://www.ndcn.ox.ac.uk/divisions/cpsd). I hold masters in Medical Statistics from the **University of Leicester** where I also hold specialization in **Genetic Epidemiology**. I am also [John Henry Brookes Scholar](https://www.brookes.ac.uk/studying-at-brookes/finance/postgraduate-finance---uk-and-eu-students/sources-of-funding-for-postgraduate-uk-and-eu-students/) of [**Oxford Brookes University**](https://www.brookes.ac.uk/courses/postgraduate/public-health/). 
 
-I have extensive experience in analysing longitudinal, time to event data from epidemiological studies. As a mix of both, theoretical and applied Statistician, I thrive to explore and apply novel statistical methods to data of various types. Most recently, this has included the implementation of multivariate time series models to explore the relationship between multiple time-series. My other interests are **clinical trial design and analysis**, **survival analysis**, **mixed models and analysis of data-set with statistical complexities**(i.e. with missing data, sparse or unbalanced).  I am a proud **R** user and experienced in analysing data with **SPSS**,**STATA**, **WinBUGS**, **StatXact**, and **MLWin**.
+I have extensive experience in analysing longitudinal, time to event data from epidemiological studies. As a mix of both, theoretical and applied Statistician, I thrive to explore and apply novel statistical methods to data of various types. Most recently, this has included the implementation of multivariate time series models to explore the relationship between two or more time-series. My other interests are **clinical trial design and analysis**, **survival analysis**, **mixed models and analysis of data-set with statistical complexities**(i.e. with missing data, sparse or unbalanced).  I am a proud **R** user and experienced in analysing data with **SPSS**, **STATA**, **WinBUGS**, **StatXact**, and **MLWin**.
 
-I am fully registered with our professional body [Royal Statistical Society (RSS) UK](https://www.rss.org.uk/) ([RSS](http://www.rss.org.uk/RSS/pro_dev/pro_awards/Graduate_statistician/Prof%20reg/Prof_Reg_G.aspx?hkey=6f3595d4-6887-46ea-8025-ebb2daae7dc2) Registration number 125676). I advice you to check if you are looking to hire a statistician online for your research project.
+I am fully registered with our professional body [Royal Statistical Society (RSS) UK](https://www.rss.org.uk/) ([RSS](http://www.rss.org.uk/RSS/pro_dev/pro_awards/Graduate_statistician/Prof%20reg/Prof_Reg_G.aspx?hkey=6f3595d4-6887-46ea-8025-ebb2daae7dc2) Registration number 125676). I advice you to check if you are looking to hire statistical consultant online for your research project.
 
 > ## I aim to provide reliable and accessible freelance statistical consultancy service at affordable rates 
 
@@ -54,7 +54,7 @@ To learn more about me, please take a look at my web site or send me a message t
 #### Formulating statistical analysis plan, choice of methods and interpretation 
 #### Advice on data collection methods, randomisation plans, sample size and power calculation 
 #### Survey design and analysis
-#### Advanced statistical modelling in variety of data types - time series, time to event data, Bayesian modelling
+#### Advanced statistical modelling in variety of data types - time series, time to event data, Bayesian modelling in clinical trials, biostatistics.
 #### Systematic reviews and meta analysis
 #### Data visualisation, publication quaility graphics
 #### Reports for research articles, dissertation, PhD thesis or abstract
