@@ -16,6 +16,7 @@ pageimage:
     height: 600
     url: /images/Reshape.png
     width: 800
+    text: reshape wide long r
 slug: reshape-wide-long-data-r-how-to
 tags:
 - dataframe
