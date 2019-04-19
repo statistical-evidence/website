@@ -7,8 +7,7 @@
 <meta name="p:domain_verify" content="6835ae5ad93aab1538e521c2642334a4"/>
 <meta name="msvalidate.01" content="6CF94B92C7D01E764F5BC3DDEB0B98FF" />
 <meta name="yandex-verification" content="0c5c6634f3024f99" />
-<meta content="{{ delimit .Keywords ", " }}" name="keywords">
-<meta name="revised" content="{{ now.Format "2006-01-02T15:04:05 MST" }}">
+
 <meta name="description" content="{{if .IsHome}}{{ $.Site.Params.description }}{{else}}{{.Description}}{{end}}" />
 <meta name="title" content="{{ if .IsHome -}}
   {{ .Site.Title }}
@@ -64,11 +63,8 @@
 <link href="{{"css/main.css" | relURL}}" rel="stylesheet">
 <link href="{{"css/fa.css" | relURL}}" rel="stylesheet">
 
-<script
-  src="https://code.jquery.com/jquery-2.2.3.min.js"
-  integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="
-  crossorigin="anonymous"></script>
 
+<script src="{{"js/jquery-2.2.3.min.js" | relURL}}"></script>
 
 
 <style type="text/css">
