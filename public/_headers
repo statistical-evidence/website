@@ -5,5 +5,13 @@
  X-Content-Type-Options: nosniff
  Content-Security-Policy: object-src 'none'; report-uri https://chetanonline.report-uri.com/r/d/csp/reportOnly
  Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
- 
+
+/images/*
+  Cache-Control: public, s-max-age=604800
+/css/*.css
+  Cache-Control: public, s-max-age=604800
+/js/*.js
+  Cache-Control: public, s-max-age=604800
+  
+
  
