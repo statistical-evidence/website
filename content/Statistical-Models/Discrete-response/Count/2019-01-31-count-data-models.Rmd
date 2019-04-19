@@ -3,6 +3,7 @@ title: "Poisson regression : Statistical models for counts and rates"
 author: "Chetan Prajapati"
 date: '2019-01-31'
 description: Poisson regression model part of Generalized linear models (GLM), its statistical assumptions and interpretation (risk ratio). Also about zero-inflated,negative binomial and generalized poisson models
+
 keywords:
 - poisson
 - zero inflated
@@ -13,6 +14,13 @@ keywords:
 - generalized linear model
 - GLM
 - Quasi-poisson
+
+pageimage:
+  image:
+    height: 628
+    url: /images/poissoncover.png
+    width: 1200
+    text: poisson regression overdispersion
 menuTitle: Count
 slug: poisson-regression-overdispersion-how-to
 tags:
@@ -21,11 +29,15 @@ tags:
 - Negative binomial
 - Zero inflated
 - GLM
-categories: statistical models
+categories: statistical modelling
 sitemap:
   ChangeFreq: weekly
   Priority: 0.9
 ---
+
+<img alt="poisson regression overdispersion" src="/images/poissoncover.png"/>
+
+
 
 ##  What is a count ?
 

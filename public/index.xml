@@ -66,6 +66,7 @@ data-description=&#34;Product description&#34;&gt;
       <description>
 
 
+&lt;p&gt;&lt;img alt=&#34;bootstrap parametric nonparametric r&#34; src=&#34;https://www.statistician-online.com/images/bootcover.png&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;We first need to understand following some fundamental concepts. The idea behind bootstrapping is very closely aligned with those concepts.&lt;/p&gt;
 &lt;p&gt;Here I have created a hypothetical study in which we are interested in finding out the average birth weight of the babies born in the UK at 37 weeks of gestation.&lt;/p&gt;
 &lt;ul&gt;
@@ -249,7 +250,7 @@ B&lt;/code&gt;&lt;/pre&gt;
 &lt;script src=&#34;https://www.statistician-online.com/rmarkdown-libs/kePrint/kePrint.js&#34;&gt;&lt;/script&gt;
 
 
-&lt;p&gt;&lt;img alt=&#34;reshape data wide long r gather melt dplyr&#34; src=&#34;https://www.statistician-online.com/images/Reshape.png&#34; height=&#34;300px&#34; width=&#34;400px&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;reshape data wide long r gather melt dplyr&#34; src=&#34;https://www.statistician-online.com/images/Reshape.png&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Reshaping though frequently required in data analysis, so often it remains confusing even if you are frequent user of &lt;code&gt;reshape&lt;/code&gt; function in R.Here I have provided more explanation with simulated data.&lt;/p&gt;
 &lt;div id=&#34;reshape-data-from-wide-to-long&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Reshape data from wide to long&lt;/h2&gt;
@@ -853,6 +854,7 @@ C
       <description>
 
 
+&lt;p&gt;&lt;img alt=&#34;poisson regression overdispersion&#34; src=&#34;https://www.statistician-online.com/images/poissoncover.png&#34;/&gt;&lt;/p&gt;
 &lt;div id=&#34;what-is-a-count&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;What is a count ?&lt;/h2&gt;
 &lt;p&gt;Count is a number which is &lt;strong&gt;discrete&lt;/strong&gt; and &lt;strong&gt;non-negative&lt;/strong&gt;. Discrete means a number which is a countable and distinct. For example, number of road accidents. Road accidents can be 2 or 852 but can not be 2.1 or 85.5. So its discrete i.e integer. This is different to numeric continuous variable (such as blood pressure 120.2,135.9) which modelled differently.&lt;/p&gt;

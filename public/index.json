@@ -91,13 +91,6 @@
 	"content": ""
 },
 {
-	"uri": "https://www.statistician-online.com/categories/bootstrap/",
-	"title": "Bootstrap",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
 	"uri": "https://www.statistician-online.com/categories/",
 	"title": "Categories",
 	"tags": [],
@@ -105,8 +98,8 @@
 	"content": ""
 },
 {
-	"uri": "https://www.statistician-online.com/categories/data-management/",
-	"title": "Data Management",
+	"uri": "https://www.statistician-online.com/categories/data-manipulation/",
+	"title": "Data Manipulation",
 	"tags": [],
 	"description": "",
 	"content": ""
@@ -175,8 +168,15 @@
 	"content": ""
 },
 {
-	"uri": "https://www.statistician-online.com/categories/statistical-models/",
-	"title": "Statistical Models",
+	"uri": "https://www.statistician-online.com/categories/statistical-methods/",
+	"title": "Statistical Methods",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://www.statistician-online.com/categories/statistical-modelling/",
+	"title": "Statistical Modelling",
 	"tags": [],
 	"description": "",
 	"content": ""

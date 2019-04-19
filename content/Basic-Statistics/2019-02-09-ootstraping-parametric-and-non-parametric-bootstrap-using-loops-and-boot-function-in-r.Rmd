@@ -4,7 +4,7 @@ author: Chetan Prajapati
 date: '2019-02-09'
 slug: bootstrap-resampling-parametric-nonparametric-boot-how-to
 categories:
-  - bootstrap
+  - statistical methods
 tags:
   - parametric
   - Non-parametric
@@ -20,6 +20,13 @@ keywords:
 - resampling
 - monte Carlo
 
+pageimage:
+  image:
+    height: 628
+    url: /images/bootcover.png
+    width: 1200
+    text: bootstrap parametric nonparametric r 
+
 sitemap:
   ChangeFreq: monthly
   Priority: 0.9
@@ -30,6 +37,9 @@ menuTitle: "Bootstrap re-sampling"
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE,fig.height=3.5, fig.width=3.5, message=FALSE, warning=FALSE)
 ```
+
+<img alt="bootstrap parametric nonparametric r" src="/images/bootcover.png" />
+
 
 We first need to understand following some fundamental concepts. The idea behind bootstrapping is very closely aligned with those concepts.
 
