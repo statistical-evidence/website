@@ -39,9 +39,9 @@ menushortcutsnewtab = true # set true to open shortcuts links to a new tab/windo
 name = "Statistician-Online"
 
 [params.publisher.logo]
-url = "/images/logo.png"
-width = 127
-height = 40
+url = "/images/publisherlogo.png"
+width = 300
+height = 60
 
 
 [params.logo]
@@ -52,9 +52,9 @@ height = 40
 
 
 [params.image]
-url = "/images/cover.png"
-width = 600
-height = 600
+url = "/images/mainpagecover.png"
+width = 1200
+height = 456
 
 
 
