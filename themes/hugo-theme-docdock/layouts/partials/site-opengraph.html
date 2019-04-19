@@ -34,8 +34,17 @@
 {{- with .Params.tags }}{{ range first 3 . }}
 <meta property="article:tag" content="{{ . }}" />
 {{ end }}{{ end }}
+
+
 <meta property="og:image" content="{{ with .Param "pageimage.image" }}{{ .url | absURL }}{{ else }}{{ with .Site.Params.image }}{{ .url | absURL }}{{ end }}{{ end }}" />
+
 <meta property="og:image:secure_url" content="{{ with .Param "pageimage.image" }}{{ .url | absURL }}{{ else }}{{ with .Site.Params.image }}{{ .url | absURL }}{{ end }}{{ end }}" />
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="628" />
+
+<meta property="og:image:width" content="{{ with .Param "pageimage.image.width" }}{{ . }}{{ else }}{{ with .Site.Params.image.width }}{{ .}}{{ end }}{{ end }}"/>
+<meta property="og:image:height" content= "{{ with .Param "pageimage.image.height" }}{{ . }}{{ else }}{{ with .Site.Params.image.height }}{{ .}}{{ end }}{{ end }}"/>
+<meta property="og:image:alt" content= "{{ with .Param "pageimage.image.text" }}{{ . }}{{ else }}{{ with .Site.Params.image.text }}{{ .}}{{ end }}{{ end }}"/>
+
+
+
+
 {{ with .Site.Params.facebook.appid }}<meta property="fb:app_id" content="{{ . }}" />{{ end }}
