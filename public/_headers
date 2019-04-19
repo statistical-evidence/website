@@ -8,10 +8,6 @@
 /fonts/*
   Cache-Control: public, s-max-age=604800
   
-/*
-  Link: </fonts/webfonts/fa-solid-900.woff2>; rel=preload; as=font
-  Link: </fonts/webfonts/fa-brands-400.woff2>; rel=preload; as=font
-  
   
 
  /*
