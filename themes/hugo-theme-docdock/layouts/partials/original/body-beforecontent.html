@@ -29,8 +29,9 @@
     {{- end}}
   </div>
 
-      <ul class="topics">
-        {{- if not .Site.Params.disableHomeIcon}}
+<ul class="topics">
+  
+ {{- if not .Site.Params.disableHomeIcon}}
             <li data-nav-id="{{"/" | relLangURL}}" class="dd-item">
             <a href="{{"/" | relLangURL}}" title = "Home" ><i class="fa fa-fw fa-home"></i></a>
             </li>
@@ -95,7 +96,8 @@
 {{end}}
 
 
-<div id="body-inner">
+<div id="body-inner" role="main">
+<main>
   {{if not .IsHome}}
     <h1>{{.Title}}</h1>
     
