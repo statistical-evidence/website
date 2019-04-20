@@ -43,7 +43,6 @@ To learn more about me, please take a look at my web site or send me a message t
     <textarea id="message" name="message" placeholder="Your research questions or data analysis query" style="height: 200px"></textarea>
     <input type="submit" value="Send" style="">
 </form>
-
 ### Data analysis with robust statistical methods - Transparent reporting - Academic quality research output
 
 <br>
