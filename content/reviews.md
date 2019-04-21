@@ -1,7 +1,7 @@
 ---
 title: "Reviews"
 date: '2019-03-01'
-description : "Reviews for hire a statistician for disseration or research project online. Freelance medical statistician or statistical consultant"
+description : "Reviews and testimonials of statistical consultancy services provided by Statistician Online. Reviews are provided by Yotpo"
 sitemap:
   ChangeFreq: weekly
   Priority: 0.9

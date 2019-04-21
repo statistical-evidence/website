@@ -1,6 +1,6 @@
 ---
-title: "hire freelance statistician statistical consultant"
-description : "Hire a statistician for disseration or research project online. Freelance medical statistician or statistical consultant"
+title: "Hire a statistician from freelance statistical consulting Online"
+description : "logo of Statistician Online"
 date: "2019-01-23"
 
 sitemap:
@@ -8,6 +8,6 @@ sitemap:
   Priority: 0.9
 ---
 
-<a href="/" title = "Home">
-  <img src="/images/logo.png" alt="hire a statistician freelance medical statistician UK dissertation">
+<a href="/" title = "Statistician Online">
+  <img src="/images/logo.png" alt="Hire a statistician or freelance medical statistician UK dissertation or research project">
 </a>
