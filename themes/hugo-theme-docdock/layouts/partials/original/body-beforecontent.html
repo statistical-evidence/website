@@ -1,10 +1,6 @@
-<div id="headermain"></div>
 
-
-<nav id="sidebar" class="{{if $.Site.Params.showVisitedLinks }}showVisitedLinks{{end}}">
-
-
-
+<header> 
+<nav aria-labelledby="mainnavigation" id="sidebar" class="{{if $.Site.Params.showVisitedLinks }}showVisitedLinks{{end}}">
 <div class="highlightable">
   <div id="header-wrapper">
     <div id="header">
@@ -62,15 +58,18 @@
 
 </div>
 </nav>
+</header>
 
 
-
-<section id="body">
-<div id="overlay"></div>
+<div id="body">
+<main>
 <div class="padding highlightable">
 {{if not .IsHome}}
+<nav aria-labelledby="pagenavigation">
 <div id="top-bar">
-    <div id="breadcrumbs">
+    
+    
+<div id="breadcrumbs">
         
         
 <span id="sidebar-toggle-span">
@@ -79,32 +78,27 @@
           </a>
 </span>
 
-<span id="toc-menu"><i class="fa fa-list-alt"></i>
-</span>
-
 <span class="links">
 {{ template "breadcrumb" dict "page" . "value" .Title }}   
 </span>
-</div>
-<div class="progress">
-    <div class="wrapper">
-{{ .TableOfContents }}
-    </div>
-</div>
+
 </div>
 
+</div>
 {{end}}
-
-
+</nav>
+<article>
 <div id="body-inner">
 
-  {{if not .IsHome}} <h1>{{.Title}}</h1> {{end}}
-  
+{{if not .IsHome}} <h1>{{.Title}}</h1> {{end}}
+
+
 {{ if .IsPage }}
-{{ with .Lastmod -}}{{ .Format "January 2, 2006" | safeHTML }}{{end }}
-| Tags:{{ if .Params.tags }} {{range .Params.tags}}
+<span>{{ with .Lastmod -}}{{ .Format "January 2, 2006" | safeHTML }}{{end }}</span>
+<span>|</span>
+<span>Tags:{{ if .Params.tags }} {{range .Params.tags}}
   <a class="label label-default" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{end}}
-{{end}}
+{{end}}</span>
 {{end}}
   
 {{define "breadcrumb"}}

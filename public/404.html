@@ -116,13 +116,9 @@ if (!doNotTrack) {
   </head>
   <body data-url="">
     
-      <div id="headermain"></div>
-
-
-<nav id="sidebar" class="showVisitedLinks">
-
-
-
+      
+<header> 
+<nav aria-labelledby="mainnavigation" id="sidebar" class="showVisitedLinks">
 <div class="highlightable">
   <div id="header-wrapper">
     <div id="header">
@@ -235,24 +231,24 @@ if (!doNotTrack) {
 
 </div>
 </nav>
+</header>
 
 
-
-<section id="body">
-<div id="overlay"></div>
+<div id="body">
+<main>
 <div class="padding highlightable">
 
+<nav aria-labelledby="pagenavigation">
 <div id="top-bar">
-    <div id="breadcrumbs">
+    
+    
+<div id="breadcrumbs">
         
         
 <span id="sidebar-toggle-span">
           <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
             <i class="fa fa-bars"></i>
           </a>
-</span>
-
-<span id="toc-menu"><i class="fa fa-list-alt"></i>
 </span>
 
 <span class="links">
@@ -262,21 +258,18 @@ if (!doNotTrack) {
 
    
 </span>
-</div>
-<div class="progress">
-    <div class="wrapper">
 
-    </div>
-</div>
 </div>
 
+</div>
 
-
-
+</nav>
+<article>
 <div id="body-inner">
 
-   <h1>404 Page not found</h1> 
-  
+ <h1>404 Page not found</h1> 
+
+
 
   
 
@@ -321,10 +314,11 @@ if (!doNotTrack) {
   </div>
 </div>
 
-<div id="navigation">
-</div>
+<nav aria-labelledby="nextprevnavigation" id="navigation">
+</nav>
 
-</section>
+</article>
+</main>
 <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
   <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
 </div>    
