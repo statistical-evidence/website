@@ -59,12 +59,12 @@
 </header>
 
 
-<div id="body">
-<main>
-<div class="padding highlightable">
+<main id="body">
+
+<div class="padding highlightable"> 
   
 {{if not .IsHome}}
-<nav aria-labelledby="pagenavigation">
+<nav>
 <div id="top-bar">
     
     
@@ -87,13 +87,14 @@
 </nav>
 {{end}}
 
+
+
 <article>
   
 <div id="body-inner">
 
+<header>
 {{if not .IsHome}} <h1>{{.Title}}</h1> {{end}}
-
-
 {{ if .IsPage }}
 <span>{{ with .Lastmod -}}{{ .Format "January 2, 2006" | safeHTML }}{{end }}</span>
 <span>|</span>
@@ -101,7 +102,7 @@
   <a class="label label-default" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{end}}
 {{end}}</span>
 {{end}}
-  
+</header>
 {{define "breadcrumb"}}
 {{ if .page.Parent}}
 {{$value := (printf "<a href='%s'>%s</a> > %s" .page.Parent.URL .page.Parent.Title .value)}}
