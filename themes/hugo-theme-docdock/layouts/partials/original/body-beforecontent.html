@@ -98,18 +98,13 @@
 
 <div id="body-inner">
 
-  {{if not .IsHome}}
-    <h1>{{.Title}}</h1>
-    
-  {{end}}
+  {{if not .IsHome}} <h1>{{.Title}}</h1> {{end}}
   
-  
-{{ if .Params.tags }}
-<div class="tags">
-{{range .Params.tags}}
-  <a class="label label-default" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+{{ if .IsPage }}
+{{ with .Lastmod -}}{{ .Format "January 2, 2006" | safeHTML }}{{end }}
+| Tags:{{ if .Params.tags }} {{range .Params.tags}}
+  <a class="label label-default" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{end}}
 {{end}}
-</div>
 {{end}}
   
 {{define "breadcrumb"}}
