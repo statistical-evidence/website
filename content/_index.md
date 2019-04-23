@@ -34,6 +34,7 @@ I am fully registered with our professional body [Royal Statistical Society (RSS
 > ## I aim to provide reliable and accessible freelance statistical consultancy service at affordable rates 
 
 To learn more about me, please take a look at my web site or send me a message to find out how can we work together.
+<div>
 <form action="/thankyou" method="post" name="Contact" data-netlify="true" netlify-honeypot="bot-field" netlify >
     {{< button theme="danger" >}} Send me a message {{< /button >}}
     <br>
@@ -44,6 +45,7 @@ To learn more about me, please take a look at my web site or send me a message t
     <textarea id="message" name="message" placeholder="Your research questions or data analysis query" style="height: 200px"></textarea>
     <input type="submit" value="Send" style="">
 </form>
+</div>
 ### Data analysis with robust statistical methods - Transparent reporting - Academic quality research output
 
 <br>
