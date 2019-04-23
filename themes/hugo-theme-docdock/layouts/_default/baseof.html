@@ -1,40 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+{{ if .IsHome -}} <title>{{ .Site.Title }}</title>{{- else -}} <title>{{ .Title }} | Statistician Online </title>{{- end }}
+{{ partial "original/head.html" . }}
+</head>
 
-  <head>
-    {{ if .IsHome -}}
-  <title>{{ .Site.Title }}</title>
-{{- else -}}
-  <title>{{ .Title }} | Statistician Online </title>
-{{- end }}
-
-    {{if .Site.Params.themeStyle}}
-      {{ partial (printf "%s/head.html" .Site.Params.themeStyle) . }}
-    {{else}}
-      {{ partial "flex/head.html" . }}
-    {{end}}
-  </head>
-  <body data-url="{{ .RelPermalink }}">
-    {{if .Site.Params.themeStyle}}
-      {{ partial (printf "%s/body-beforecontent.html" .Site.Params.themeStyle) . }}
-    {{else}}
-      {{ partial "flex/body-beforecontent.html" . }}
-    {{end}}
-    
-    {{ block "main" . }}
-    {{ end }}
-    
-    {{if .Site.Params.themeStyle}}
-      {{ partial (printf "%s/body-aftercontent.html" .Site.Params.themeStyle) . }}
-    {{else}}
-      {{ partial "flex/body-aftercontent.html" . }}
-    {{ end }}
-
-    {{ block "footer" . }}
-    {{ end }}
-    
-
-    {{ partial "custom-footer.html" . }}
-  
+ <body data-url="{{ .RelPermalink }}">
+{{ partial "original/body-beforecontent.html" . }}
+{{ block "main" . }}{{ end }}
+{{ partial "original/body-aftercontent.html" . }}
+{{ block "footer" . }}{{ end }}
+{{ partial "custom-footer.html" . }}
 </body>
 </html>

@@ -57,42 +57,26 @@
 </div>
 </nav>
 </header>
-
-
 <main id="body">
-
 <div class="padding highlightable"> 
-  
-{{if not .IsHome}}
+  {{if not .IsHome}}
 <nav>
 <div id="top-bar">
-    
-    
 <div id="breadcrumbs">
-        
-        
 <span id="sidebar-toggle-span">
           <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
             <i class="fa fa-bars"></i>
-          </a>
-</span>
+          </a></span>
 
 <span class="links">
 {{ template "breadcrumb" dict "page" . "value" .Title }}   
 </span>
-
 </div>
-
 </div>
 </nav>
 {{end}}
 
-
-
-
-  
 <article id="body-inner">
-
 <header>
 {{if not .IsHome}} <h1>{{.Title}}</h1> {{end}}
 {{ if .IsPage }}
