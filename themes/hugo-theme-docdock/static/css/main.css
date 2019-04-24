@@ -629,7 +629,7 @@ h6 {
 
 h1 {
 	font-size: 2.5rem;
-	border-bottom: 4px solid #f0f2f4
+	border-bottom: 4px solid #c91e00
 }
 
 h2 {
@@ -2741,7 +2741,7 @@ td {
 
 @media only all and (max-width:47.938em) {
 	#body .padding {
-		padding: 5px 1rem
+		padding: 5px 3rem
 	}
 }
 
@@ -5130,7 +5130,7 @@ a.badge:hover {
 
 #social-share {
 	position: relative;
-	top: 0.5em;
+	top: -0.5em;
 }
 
 #social-share ul {
