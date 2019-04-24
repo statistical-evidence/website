@@ -79,14 +79,17 @@
 <article id="body-inner">
 <header>
 {{if not .IsHome}} <h1>{{.Title}}</h1> {{end}}
-{{ if .IsPage }}
-<span>{{ with .Lastmod -}}{{ .Format "January 2, 2006" | safeHTML }}{{end }}</span>
-<span>|</span>
-<span>Tags:{{ if .Params.tags }} {{range .Params.tags}}
-  <a class="label label-default" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{end}}
-{{end}}</span>
-{{end}}
+
 </header>
+{{if not .IsHome}}
+{{ if .Site.Params.socialShare }}
+    <section id="social-share">
+      <ul class="icons">
+        {{ partial "share-links" . }}
+      </ul>
+    </section>
+     {{ end }}
+     {{ end }}
 {{define "breadcrumb"}}
 {{ if .page.Parent}}
 {{$value := (printf "<a href='%s'>%s</a> > %s" .page.Parent.URL .page.Parent.Title .value)}}

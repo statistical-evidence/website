@@ -1,6 +1,12 @@
 {{ if and (not (eq .Site.DisqusShortname "")) (not .Params.disable_comments) }}
 <footer class=" footline" >
-
+{{ if .IsPage }}
+<span> Last updated:{{ with .Lastmod -}}{{ .Format "January 2, 2006" | safeHTML }}{{end }}</span>
+<span>|</span>
+<span>Tags:{{ if .Params.tags }} {{range .Params.tags}}
+  <a class="label label-default" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{end}}
+{{end}}</span>
+{{end}}
   <h2> Leave a comment or suggestion to improve this article ! </h2>
   <div id="disqus_thread"></div>
   <script>
