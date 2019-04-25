@@ -56,7 +56,7 @@
 <!-- Email -->
 {{ if .Site.Params.socialShareEmail | default true}}
 <li>
-  <a href="mailto:?subject=Check out this post by {{ .Params.author }}&amp;body={{ .Permalink }}" target="_blank" class="share-btn email" title="Email this page">
+  <a href="mailto:?subject=Check out this post by {{ .Params.author }}&amp;body={{ .Permalink }}" target="_top" class="share-btn email" title="Email this page">
     <i class="fas fa-envelope"></i>
     <p>Email</p>
   </a>

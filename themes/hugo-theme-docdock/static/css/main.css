@@ -960,7 +960,7 @@ html.with-featherlight {
 	width: 25px;
 	cursor: pointer;
 	text-align: center;
-	font-family: Arial, sans-serif;
+	font-family: Helvetica;
 	background: #fff;
 	background: rgba(255, 255, 255, .3);
 	color: #000;
@@ -1058,20 +1058,11 @@ html.with-featherlight {
 }
 
 @font-face {
-	font-family: 'Novacento Sans Wide';
-	src: url(../fonts/Novecentosanswide-UltraLight-webfont.eot);
-	src: url(../fonts/Novecentosanswide-UltraLight-webfont.eot?#iefix) format("embedded-opentype"), url(../fonts/Novecentosanswide-UltraLight-webfont.woff2) format("woff2"), url(../fonts/Novecentosanswide-UltraLight-webfont.woff) format("woff"), url(../fonts/Novecentosanswide-UltraLight-webfont.ttf) format("truetype"), url(../fonts/Novecentosanswide-UltraLight-webfont.svg#novecento_sans_wideultralight) format("svg");
-	font-style: normal;
-	font-weight: 200;
-	font-display: optional
-}
-
-@font-face {
 	font-family: 'Work Sans';
 	font-style: normal;
 	font-weight: 300;
 	src: url(../fonts/Work_Sans_300.eot?#iefix) format("embedded-opentype"), url(../fonts/Work_Sans_300.woff) format("woff"), url(../fonts/Work_Sans_300.woff2) format("woff2"), url(../fonts/Work_Sans_300.svg#WorkSans) format("svg"), url(../fonts/Work_Sans_300.ttf) format("truetype");
-	font-display: optional
+	
 }
 
 @font-face {
@@ -1079,7 +1070,7 @@ html.with-featherlight {
 	font-style: normal;
 	font-weight: 500;
 	src: url(../fonts/Work_Sans_500.eot?#iefix) format("embedded-opentype"), url(../fonts/Work_Sans_500.woff) format("woff"), url(../fonts/Work_Sans_500.woff2) format("woff2"), url(../fonts/Work_Sans_500.svg#WorkSans) format("svg"), url(../fonts/Work_Sans_500.ttf) format("truetype");
-	font-display: optional
+	
 }
 
 .progress ul {
@@ -1226,13 +1217,12 @@ body {
 
 #body a.highlight {
 	line-height: 1.1;
-	display: inline-block
+	
 }
 
 #body a.highlight:after {
 	margin-left: 0;
 	margin-right: auto;
-	display: block;
 	content: "";
 	height: 1px;
 	width: 0%;
@@ -1422,7 +1412,8 @@ h6 {
 }
 
 p {
-	margin: 1rem 0
+	margin: 1rem 0;
+	text-align: left
 }
 
 figcaption h4 {
@@ -1697,7 +1688,7 @@ textarea:focus {
 
 #body .video-container,
 #body img {
-	margin: 3rem auto;
+	margin: auto;
 	display: block;
 	text-align: center
 }
@@ -1784,7 +1775,7 @@ textarea:focus {
 }
 
 #chapter h3 {
-	font-family: Lato, "Work Sans", Helvetica, Tahoma, Geneva, Arial, sans-serif;
+	font-family: Helvetica;
 	font-weight: 300;
 	text-align: center
 }
@@ -1810,14 +1801,14 @@ textarea:focus {
 }
 
 body {
-	font-family: Lato, "Work Sans", Helvetica, Tahoma, Geneva, Arial, sans-serif;
-	font-weight: 400;
-	line-height: 1.6;
-	font-size: 18px!important
+	    font-family: Helvetica;
+    font-weight: 500;
+    line-height: 1.6;
+    font-size: 17px!important
 }
 
 body strong {
-	font-family: "Lato Bold", "Work Sans", Helvetica, Tahoma, Geneva, Arial, sans-serif;
+	font-family: Helvetica;
 	font-weight: 700
 }
 
@@ -1826,7 +1817,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: Helvetica, Tahoma, Geneva, Arial, sans-serif;
+	font-family: Helvetica;
 	text-rendering: optimizeLegibility;
 	color: #5f5858;
 	font-weight: 600;
@@ -1834,7 +1825,7 @@ h6 {
 }
 
 h1 {
-	font-family: Helvetica, Tahoma, Geneva, Arial, sans-serif;
+	font-family: Helvetica;
 	font-size: 2rem;
 	text-align: left;
 	text-transform: inherit;
@@ -2120,7 +2111,7 @@ td {
 	z-index: 1000000;
 	display: none;
 	padding: 5px 8px;
-	font: normal normal 11px/1.5 Lato, "Work Sans", Helvetica, Tahoma, Geneva, Arial, sans-serif;
+	font: normal normal 11px/1.5 Helvetica;
 	color: #fff;
 	text-align: center;
 	text-decoration: none;
@@ -2596,7 +2587,7 @@ td {
 
 #sidebar ul li.active>div>a {
 	background: #fff;
-	color: gray!important;
+	color: #000000;
 	padding-left: 1rem;
 	padding-right: 0
 }
@@ -2627,7 +2618,10 @@ td {
 	overflow: hidden;
 	white-space: nowrap;
 	display: block;
-	width: calc(100% - 20px)
+	width: calc(100% - 20px);
+	font-weight: 400;
+  line-height: 1.5;
+  font-size: 17px!important;
 }
 
 #sidebar ul li>div>a {
@@ -2682,7 +2676,7 @@ td {
 }
 
 #sidebar #shortcuts h3 {
-	font-family: 'Novacento Sans Wide', Helvetica, Tahoma, Geneva, Arial, sans-serif;
+	font-family: Helvetica;
 	color: #fff
 }
 
@@ -2741,7 +2735,7 @@ td {
 
 @media only all and (max-width:47.938em) {
 	#body .padding {
-		padding: 5px 3rem
+		padding: 5px 0.9rem
 	}
 }
 
@@ -5535,7 +5529,7 @@ ul.posts article header h3 {
 
 ul.posts article header .published {
 	display: block;
-	font-family: "Raleway", Helvetica, sans-serif;
+	font-family: Helvetica;
 	font-size: 0.6em;
 	font-weight: 400;
 	letter-spacing: 0.25em;

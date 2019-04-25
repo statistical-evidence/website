@@ -13,7 +13,7 @@ canonifyURLs = false
 enableRobotsTXT = true
 enableGitInfo = true
 googleAnalytics= "UA-135116594-1"
-
+disableHugoGeneratorInject = true
 [author]
 name = "Chetan Prajapati-Statistician"
 
