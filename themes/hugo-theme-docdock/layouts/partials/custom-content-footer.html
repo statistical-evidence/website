@@ -7,7 +7,17 @@
   <a class="label label-default" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{end}}
 {{end}}</span>
 {{end}}
-  <h2> Leave a comment or suggestion to improve this article ! </h2>
+  <h2> Sharing is caring! </h2>
+  {{if not .IsHome}}
+{{ if .Site.Params.socialShare }}
+    <section id="social-share">
+      <ul class="icons">
+        {{ partial "share-links" . }}
+      </ul>
+    </section>
+     {{ end }}
+     {{ end }}
+  
   <div id="disqus_thread"></div>
   <script>
   var disqus_config = function () {
