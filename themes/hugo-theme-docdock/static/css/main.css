@@ -628,8 +628,9 @@ h6 {
 }
 
 h1 {
-	font-size: 2.5rem;
-	border-bottom: 4px solid #c91e00
+	border-bottom: 4px solid #c91e00;
+	padding-bottom: 5px
+	
 }
 
 h2 {
@@ -1826,11 +1827,12 @@ h6 {
 
 h1 {
 	font-family: Helvetica;
-	font-size: 2rem;
+	font-size: 1.9rem;
 	text-align: left;
 	text-transform: inherit;
 	color: #060606;
-	font-weight: 800
+	font-weight: 800;
+	line-height: 120%!important;
 }
 
 blockquote {
