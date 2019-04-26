@@ -43,7 +43,7 @@ To learn more about me, please take a look at my web site or send me a message t
     <input type="text" id="email" name="email" placeholder="email@example.com">
     <label for="message">Message</label>
     <textarea id="message" name="message" placeholder="Your research questions or data analysis query" style="height: 200px"></textarea>
-    <input type="submit" value="Send" class="button">
+    <input type="submit" value="Send" class="btn  btn-danger">
 </form>
 </div>
 ### Data analysis with robust statistical methods - Transparent reporting - Academic quality research output
