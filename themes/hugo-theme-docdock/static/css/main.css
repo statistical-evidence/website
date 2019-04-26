@@ -40,7 +40,6 @@ body {
 article,
 aside,
 details,
-figcaption,
 figure,
 footer,
 header,
@@ -1317,17 +1316,9 @@ h6 {
 }
 
 p {
-	margin: 1rem 0;
-	text-align: left
+	margin: 1rem 0
 }
 
-figcaption h4 {
-	font-weight: 300!important;
-	opacity: .85;
-	font-size: 1em;
-	text-align: center;
-	margin-top: -1.5em
-}
 
 .is_stuck {
 	position: fixed;
