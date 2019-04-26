@@ -15,7 +15,7 @@ keywords:
 - Biostatistics consulting
 ---
 
-# Statistical Consulting: RSS(UK) Accredited Freelance Statistician
+# Statistical Consulting | RSS(UK) Accredited Freelance Statistician
 
 <img alt="Statistician-Online offers transparent & reliable statistical consultancy service to researchers, businesses & PhD students. Contact and hire freelance statistical consultant for your data analysis or medical statistics help in research project or dissertation" src="/images/bio.png" title=“Chetan-Prajapati”/>
 
@@ -23,7 +23,7 @@ keywords:
 > ## I am freelance statistician based in Bristol (UK) offering statistical consulting services online in all aspect of statistical data analysis
 
 
-{{< button theme="danger" >}}About me{{< /button >}}
+{{< button >}}About me{{< /button >}}
 
 I am [Research Associate (Statistician) at **the University of Bristol**](http://www.bristol.ac.uk/clinical-sciences/people/chetan-a-prajapati/index.html) and I have previously worked for [Centre for the Prevention of Stroke and Dementia, **University of Oxford**](https://www.ndcn.ox.ac.uk/divisions/cpsd) as a Medical Statistician. I hold masters in Medical Statistics from the **University of Leicester** where I also hold specialization in **Genetic Epidemiology**. I am also [John Henry Brookes Scholar](https://www.brookes.ac.uk/studying-at-brookes/finance/postgraduate-finance---uk-and-eu-students/sources-of-funding-for-postgraduate-uk-and-eu-students/) of [**Oxford Brookes University**](https://www.brookes.ac.uk/courses/postgraduate/public-health/). 
 
@@ -43,13 +43,13 @@ To learn more about me, please take a look at my web site or send me a message t
     <input type="text" id="email" name="email" placeholder="email@example.com">
     <label for="message">Message</label>
     <textarea id="message" name="message" placeholder="Your research questions or data analysis query" style="height: 200px"></textarea>
-    <input type="submit" value="Send" style="">
+    <input type="submit" value="Send" class="button">
 </form>
 </div>
 ### Data analysis with robust statistical methods - Transparent reporting - Academic quality research output
 
 <br>
-{{< button theme="danger" >}} Services I offer{{< /button >}}
+{{< button >}} Services I offer{{< /button >}}
 <br>
 <br>
 {{% panel %}}
@@ -66,7 +66,7 @@ To learn more about me, please take a look at my web site or send me a message t
 <br>
 <br>
 
-{{< button theme="danger" >}} Feel free to contact me on {{< /button >}}
+{{< button>}} Feel free to contact me on {{< /button >}}
 <br>
 <br>
 {{% panel %}}
@@ -75,7 +75,7 @@ To learn more about me, please take a look at my web site or send me a message t
 
 {{< button >}} Phone or text on **+44 7392 339 862**  {{< /button >}}
 
-{{< button href= "https://web.Skype.com/en/" theme="info" >}} Skype **Statistician-Online** {{< /button >}}
+{{< button href= "https://web.Skype.com/en/" >}} Skype **Statistician-Online** {{< /button >}}
 {{% /panel %}}
 
 {{% notice info %}}

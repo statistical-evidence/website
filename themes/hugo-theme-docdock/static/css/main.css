@@ -795,7 +795,6 @@ select {
 button,
 input[type=submit] {
 	cursor: pointer;
-	user-select: none;
 	vertical-align: middle;
 	white-space: nowrap;
 	border: inherit
@@ -1198,7 +1197,7 @@ body {
 
 .btn:focus,
 .btn:hover {
-	color: #000!important;
+	color: #fff!important;
 	text-decoration: none!important;
 	-webkit-transition: all .35s!important;
 	-moz-transition: all .35s!important;
@@ -1916,9 +1915,8 @@ td {
 }
 
 .button {
-	background: #183f81;
-	color: #fff;
-	box-shadow: 0 3px 0 #00a5d4
+	  background: rgba(0, 0, 0, .8);
+    color: #fff;
 }
 
 .button:hover {
@@ -4074,15 +4072,15 @@ fieldset[disabled] .btn-default:hover {
 
 .btn-primary {
 	color: #fff;
-	background-color: #337ab7;
-	border-color: #2e6da4
+	background-color: #5c5f61;
+	border-color: #5c5f61
 }
 
 .btn-primary.focus,
 .btn-primary:focus {
 	color: #fff;
-	background-color: #286090;
-	border-color: #122b40
+	background-color: #5c5f61;
+	border-color: #5c5f61
 }
 
 .btn-primary.active,
@@ -4090,8 +4088,8 @@ fieldset[disabled] .btn-default:hover {
 .btn-primary:hover,
 .open>.dropdown-toggle.btn-primary {
 	color: #fff;
-	background-color: #286090;
-	border-color: #204d74
+	background-color: #5c5f61;
+	border-color: #5c5f61
 }
 
 .btn-primary.active.focus,
@@ -4104,8 +4102,8 @@ fieldset[disabled] .btn-default:hover {
 .open>.dropdown-toggle.btn-primary:focus,
 .open>.dropdown-toggle.btn-primary:hover {
 	color: #fff;
-	background-color: #204d74;
-	border-color: #122b40
+	background-color: #5c5f61;
+	border-color: #5c5f61
 }
 
 .btn-primary.disabled,
