@@ -106,12 +106,16 @@ kable(df_long,format = "pandoc", caption = "long data")
 
 Sometime, not only one type of measurement (BP) but also other types (such as Heart rate -HR) are measured and recorded row wise. For example,
 
-```{r echo=FALSE}
+```{r}
 # wide data
 df <- data.frame(matrix(data = NA, nrow = 3, ncol = 8, dimnames = list(NULL, paste0(c("id","name","BP_jan","BP_feb","BP_march","HR_jan","HR_feb","HR_march")))))
 df[1,] <- c(1,"A",123,120,125,72,70,71)
 df[2,] <- c(2,"B",140,150,155,85,82,86)
 df[3,] <- c(3,"C",96,86,97,65,52,59)
+```
+
+```{r}
+kable(df,format = "pandoc", caption = "wide data- multiple category")
 ```
 
 This data can be converted into "long" by using `list` for group of time-varying columns for `varying`
@@ -127,12 +131,8 @@ v.names = c("BP","HR"),
 direction = "long")   
 ```
 
-
 ```{r message=FALSE, warning=FALSE}
 df_long <- arrange(df_long, id)
-```
-
-```{r echo=FALSE}
 kable(df_long,format = "pandoc", caption = "long data")
 ```
 

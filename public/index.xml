@@ -438,6 +438,59 @@ kable(df_long,format = &amp;quot;pandoc&amp;quot;, caption = &amp;quot;long data
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;Sometime, not only one type of measurement (BP) but also other types (such as Heart rate -HR) are measured and recorded row wise. For example,&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# wide data
+df &amp;lt;- data.frame(matrix(data = NA, nrow = 3, ncol = 8, dimnames = list(NULL, paste0(c(&amp;quot;id&amp;quot;,&amp;quot;name&amp;quot;,&amp;quot;BP_jan&amp;quot;,&amp;quot;BP_feb&amp;quot;,&amp;quot;BP_march&amp;quot;,&amp;quot;HR_jan&amp;quot;,&amp;quot;HR_feb&amp;quot;,&amp;quot;HR_march&amp;quot;)))))
+df[1,] &amp;lt;- c(1,&amp;quot;A&amp;quot;,123,120,125,72,70,71)
+df[2,] &amp;lt;- c(2,&amp;quot;B&amp;quot;,140,150,155,85,82,86)
+df[3,] &amp;lt;- c(3,&amp;quot;C&amp;quot;,96,86,97,65,52,59)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;kable(df,format = &amp;quot;pandoc&amp;quot;, caption = &amp;quot;wide data- multiple category&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;table&gt;
+&lt;caption&gt;&lt;span id=&#34;tab:unnamed-chunk-7&#34;&gt;Table 3: &lt;/span&gt;wide data- multiple category&lt;/caption&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th align=&#34;left&#34;&gt;id&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;name&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;BP_jan&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;BP_feb&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;BP_march&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;HR_jan&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;HR_feb&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;HR_march&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;A&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;123&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;120&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;125&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;72&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;70&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;71&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;2&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;B&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;140&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;150&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;155&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;85&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;82&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;86&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;C&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;96&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;86&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;97&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;65&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;52&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;59&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 &lt;p&gt;This data can be converted into “long” by using &lt;code&gt;list&lt;/code&gt; for group of time-varying columns for &lt;code&gt;varying&lt;/code&gt;&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;df_long &amp;lt;- reshape(df,
 idvar = &amp;quot;id&amp;quot;,  
@@ -446,9 +499,10 @@ timevar = &amp;quot;month&amp;quot;,
 times = c(&amp;quot;jan&amp;quot;,&amp;quot;feb&amp;quot;,&amp;quot;march&amp;quot;),
 v.names = c(&amp;quot;BP&amp;quot;,&amp;quot;HR&amp;quot;), 
 direction = &amp;quot;long&amp;quot;)   &lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;df_long &amp;lt;- arrange(df_long, id)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;df_long &amp;lt;- arrange(df_long, id)
+kable(df_long,format = &amp;quot;pandoc&amp;quot;, caption = &amp;quot;long data&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
 &lt;table&gt;
-&lt;caption&gt;&lt;span id=&#34;tab:unnamed-chunk-9&#34;&gt;Table 3: &lt;/span&gt;long data&lt;/caption&gt;
+&lt;caption&gt;&lt;span id=&#34;tab:unnamed-chunk-9&#34;&gt;Table 4: &lt;/span&gt;long data&lt;/caption&gt;
 &lt;thead&gt;
 &lt;tr class=&#34;header&#34;&gt;
 &lt;th align=&#34;left&#34;&gt;id&lt;/th&gt;
@@ -545,7 +599,7 @@ direction = &amp;quot;long&amp;quot;)   &lt;/code&gt;&lt;/pre&gt;
         )&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Here is the wide data&lt;/p&gt;
 &lt;table&gt;
-&lt;caption&gt;&lt;span id=&#34;tab:unnamed-chunk-11&#34;&gt;Table 4: &lt;/span&gt;wide data&lt;/caption&gt;
+&lt;caption&gt;&lt;span id=&#34;tab:unnamed-chunk-11&#34;&gt;Table 5: &lt;/span&gt;wide data&lt;/caption&gt;
 &lt;thead&gt;
 &lt;tr class=&#34;header&#34;&gt;
 &lt;th&gt;&lt;/th&gt;
