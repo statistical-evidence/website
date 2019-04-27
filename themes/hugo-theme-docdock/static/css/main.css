@@ -830,7 +830,7 @@ input[type=submit] {
 .hljs-tag .hljs-attr,
 .hljs-template-variable,
 .hljs-variable {
-	color: #f90256
+	color: #d80049
 }
 
 .hljs-doctag,
@@ -1830,7 +1830,7 @@ samp {
 code {
 	padding: 2px 4px;
 	font-size: 90%;
-	color: #f1220b;
+	color: #de0000;
 	background-color: #f9f7f6;
 	border-radius: 4px
 }
