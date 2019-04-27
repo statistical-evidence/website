@@ -30,97 +30,57 @@ sitemap:
 
 ---
 
-<script src="/rmarkdown-libs/kePrint/kePrint.js"></script>
 
 
 <p><img alt="reshape data wide long r gather melt dplyr" src="/images/Reshape.png" /></p>
-<p>Reshaping though frequently required in data analysis, so often it remains confusing even if you are frequent user of <code>reshape</code> function in R.Here I have provided more explanation with simulated data.</p>
+<p>Reshaping though frequently required in data analysis, so often it remains confusing even if you are frequent user of <code>reshape</code> function. Here I have provided an simple example to elaborate more on each argument of <code>reshape</code>.</p>
 <div id="reshape-data-from-wide-to-long" class="section level2">
 <h2>Reshape data from wide to long</h2>
-<p>Wide data: the observation has been made several time but all the observations for given person is recorded in single row in spreadsheet.For example, in clinic, person visiting every month for their blood pressure check, and nurse note down the value for each month in single row which belong to this specific person.</p>
-<p>Let’s first create small wide data</p>
+<p>Your data in wide form if the multiple observations of item, place or person (i.e. units) has been recorded in single row (in different column). This multiple observations may be of repeated measure type (observation are made repeatedly at different time point) or multiple characteristics of some unit (eg. height, length and width of square).</p>
+<p>Let’s take an example of wide data of repeated measure type. Person A is visiting clinic every month for their blood pressure check, and nurse note down the value for each month in single row which belong to this specific person A. See example below,</p>
 <pre class="r"><code># wide data
 df &lt;- data.frame(matrix(data = NA, nrow = 3, ncol = 5, dimnames = list(NULL, paste0(c(&quot;id&quot;,&quot;name&quot;,&quot;jan&quot;,&quot;feb&quot;,&quot;march&quot;)))))
 df[1,] &lt;- c(1,&quot;A&quot;,123,120,125)
 df[2,] &lt;- c(2,&quot;B&quot;,140,150,155)
 df[3,] &lt;- c(3,&quot;C&quot;,96,86,97)</code></pre>
 <p>Our “wide” data look like</p>
-<table class="table" style="font-size: 14px; width: auto !important; margin-left: auto; margin-right: auto;">
+<pre class="r"><code>kable(df,format = &quot;pandoc&quot;, caption = &quot;wide data&quot;)</code></pre>
+<table>
+<caption><span id="tab:unnamed-chunk-3">Table 1: </span>wide data</caption>
 <thead>
-<tr>
-<th style="text-align:left;">
-id
-</th>
-<th style="text-align:left;">
-name
-</th>
-<th style="text-align:left;">
-jan
-</th>
-<th style="text-align:left;">
-feb
-</th>
-<th style="text-align:left;">
-march
-</th>
+<tr class="header">
+<th align="left">id</th>
+<th align="left">name</th>
+<th align="left">jan</th>
+<th align="left">feb</th>
+<th align="left">march</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td style="text-align:left;">
-1
-</td>
-<td style="text-align:left;">
-A
-</td>
-<td style="text-align:left;">
-123
-</td>
-<td style="text-align:left;">
-120
-</td>
-<td style="text-align:left;">
-125
-</td>
+<tr class="odd">
+<td align="left">1</td>
+<td align="left">A</td>
+<td align="left">123</td>
+<td align="left">120</td>
+<td align="left">125</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-2
-</td>
-<td style="text-align:left;">
-B
-</td>
-<td style="text-align:left;">
-140
-</td>
-<td style="text-align:left;">
-150
-</td>
-<td style="text-align:left;">
-155
-</td>
+<tr class="even">
+<td align="left">2</td>
+<td align="left">B</td>
+<td align="left">140</td>
+<td align="left">150</td>
+<td align="left">155</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-3
-</td>
-<td style="text-align:left;">
-C
-</td>
-<td style="text-align:left;">
-96
-</td>
-<td style="text-align:left;">
-86
-</td>
-<td style="text-align:left;">
-97
-</td>
+<tr class="odd">
+<td align="left">3</td>
+<td align="left">C</td>
+<td align="left">96</td>
+<td align="left">86</td>
+<td align="left">97</td>
 </tr>
 </tbody>
 </table>
-<p>Now rather than recording each month’s observation in row, we want data each which only one observation per row for that given person. for that we need to use standard <code>reshape</code> command in <code>R</code>.</p>
-<p>The <code>reshape</code> has following argument:</p>
+<p>We want a data in which each new observation in new row but within same column i.e. long data. To achieve that we need to use standard <code>reshape</code> command in <code>R</code>. The <code>reshape</code> has following argument:</p>
 <ul>
 <li><p><code>idvar</code> : unique identifier for person,place or object on which observations(measurements) are made at different time points or repeatedly. Example <code>Case ID</code></p></li>
 <li><p><code>varying</code> : if observation for specific individuals are made at different time points, in which columns values are recorded i.e time-varying columns. Example <code>Jan</code>, <code>Feb</code>, <code>March</code></p></li>
@@ -150,150 +110,71 @@ direction = &quot;long&quot;)
 <p>Our “long” data look like</p>
 <pre class="r"><code>df_long &lt;- arrange(df_long, id)
 
-kable(df_long,format = &quot;html&quot;) %&gt;%  kable_styling(full_width = F, position = &quot;center&quot;,font_size = 14)</code></pre>
-<table class="table" style="font-size: 14px; width: auto !important; margin-left: auto; margin-right: auto;">
+kable(df_long,format = &quot;pandoc&quot;, caption = &quot;long data&quot;)</code></pre>
+<table>
+<caption><span id="tab:unnamed-chunk-5">Table 2: </span>long data</caption>
 <thead>
-<tr>
-<th style="text-align:left;">
-id
-</th>
-<th style="text-align:left;">
-name
-</th>
-<th style="text-align:left;">
-month
-</th>
-<th style="text-align:left;">
-BP
-</th>
+<tr class="header">
+<th align="left">id</th>
+<th align="left">name</th>
+<th align="left">month</th>
+<th align="left">BP</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td style="text-align:left;">
-1
-</td>
-<td style="text-align:left;">
-A
-</td>
-<td style="text-align:left;">
-jan
-</td>
-<td style="text-align:left;">
-123
-</td>
+<tr class="odd">
+<td align="left">1</td>
+<td align="left">A</td>
+<td align="left">jan</td>
+<td align="left">123</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-1
-</td>
-<td style="text-align:left;">
-A
-</td>
-<td style="text-align:left;">
-feb
-</td>
-<td style="text-align:left;">
-120
-</td>
+<tr class="even">
+<td align="left">1</td>
+<td align="left">A</td>
+<td align="left">feb</td>
+<td align="left">120</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-1
-</td>
-<td style="text-align:left;">
-A
-</td>
-<td style="text-align:left;">
-march
-</td>
-<td style="text-align:left;">
-125
-</td>
+<tr class="odd">
+<td align="left">1</td>
+<td align="left">A</td>
+<td align="left">march</td>
+<td align="left">125</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-2
-</td>
-<td style="text-align:left;">
-B
-</td>
-<td style="text-align:left;">
-jan
-</td>
-<td style="text-align:left;">
-140
-</td>
+<tr class="even">
+<td align="left">2</td>
+<td align="left">B</td>
+<td align="left">jan</td>
+<td align="left">140</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-2
-</td>
-<td style="text-align:left;">
-B
-</td>
-<td style="text-align:left;">
-feb
-</td>
-<td style="text-align:left;">
-150
-</td>
+<tr class="odd">
+<td align="left">2</td>
+<td align="left">B</td>
+<td align="left">feb</td>
+<td align="left">150</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-2
-</td>
-<td style="text-align:left;">
-B
-</td>
-<td style="text-align:left;">
-march
-</td>
-<td style="text-align:left;">
-155
-</td>
+<tr class="even">
+<td align="left">2</td>
+<td align="left">B</td>
+<td align="left">march</td>
+<td align="left">155</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-3
-</td>
-<td style="text-align:left;">
-C
-</td>
-<td style="text-align:left;">
-jan
-</td>
-<td style="text-align:left;">
-96
-</td>
+<tr class="odd">
+<td align="left">3</td>
+<td align="left">C</td>
+<td align="left">jan</td>
+<td align="left">96</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-3
-</td>
-<td style="text-align:left;">
-C
-</td>
-<td style="text-align:left;">
-feb
-</td>
-<td style="text-align:left;">
-86
-</td>
+<tr class="even">
+<td align="left">3</td>
+<td align="left">C</td>
+<td align="left">feb</td>
+<td align="left">86</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-3
-</td>
-<td style="text-align:left;">
-C
-</td>
-<td style="text-align:left;">
-march
-</td>
-<td style="text-align:left;">
-97
-</td>
+<tr class="odd">
+<td align="left">3</td>
+<td align="left">C</td>
+<td align="left">march</td>
+<td align="left">97</td>
 </tr>
 </tbody>
 </table>
@@ -307,179 +188,80 @@ times = c(&quot;jan&quot;,&quot;feb&quot;,&quot;march&quot;),
 v.names = c(&quot;BP&quot;,&quot;HR&quot;), 
 direction = &quot;long&quot;)   </code></pre>
 <pre class="r"><code>df_long &lt;- arrange(df_long, id)</code></pre>
-<table class="table" style="font-size: 14px; width: auto !important; margin-left: auto; margin-right: auto;">
+<table>
+<caption><span id="tab:unnamed-chunk-9">Table 3: </span>long data</caption>
 <thead>
-<tr>
-<th style="text-align:left;">
-id
-</th>
-<th style="text-align:left;">
-name
-</th>
-<th style="text-align:left;">
-month
-</th>
-<th style="text-align:left;">
-BP
-</th>
-<th style="text-align:left;">
-HR
-</th>
+<tr class="header">
+<th align="left">id</th>
+<th align="left">name</th>
+<th align="left">month</th>
+<th align="left">BP</th>
+<th align="left">HR</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td style="text-align:left;">
-1
-</td>
-<td style="text-align:left;">
-A
-</td>
-<td style="text-align:left;">
-jan
-</td>
-<td style="text-align:left;">
-123
-</td>
-<td style="text-align:left;">
-72
-</td>
+<tr class="odd">
+<td align="left">1</td>
+<td align="left">A</td>
+<td align="left">jan</td>
+<td align="left">123</td>
+<td align="left">72</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-1
-</td>
-<td style="text-align:left;">
-A
-</td>
-<td style="text-align:left;">
-feb
-</td>
-<td style="text-align:left;">
-120
-</td>
-<td style="text-align:left;">
-70
-</td>
+<tr class="even">
+<td align="left">1</td>
+<td align="left">A</td>
+<td align="left">feb</td>
+<td align="left">120</td>
+<td align="left">70</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-1
-</td>
-<td style="text-align:left;">
-A
-</td>
-<td style="text-align:left;">
-march
-</td>
-<td style="text-align:left;">
-125
-</td>
-<td style="text-align:left;">
-71
-</td>
+<tr class="odd">
+<td align="left">1</td>
+<td align="left">A</td>
+<td align="left">march</td>
+<td align="left">125</td>
+<td align="left">71</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-2
-</td>
-<td style="text-align:left;">
-B
-</td>
-<td style="text-align:left;">
-jan
-</td>
-<td style="text-align:left;">
-140
-</td>
-<td style="text-align:left;">
-85
-</td>
+<tr class="even">
+<td align="left">2</td>
+<td align="left">B</td>
+<td align="left">jan</td>
+<td align="left">140</td>
+<td align="left">85</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-2
-</td>
-<td style="text-align:left;">
-B
-</td>
-<td style="text-align:left;">
-feb
-</td>
-<td style="text-align:left;">
-150
-</td>
-<td style="text-align:left;">
-82
-</td>
+<tr class="odd">
+<td align="left">2</td>
+<td align="left">B</td>
+<td align="left">feb</td>
+<td align="left">150</td>
+<td align="left">82</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-2
-</td>
-<td style="text-align:left;">
-B
-</td>
-<td style="text-align:left;">
-march
-</td>
-<td style="text-align:left;">
-155
-</td>
-<td style="text-align:left;">
-86
-</td>
+<tr class="even">
+<td align="left">2</td>
+<td align="left">B</td>
+<td align="left">march</td>
+<td align="left">155</td>
+<td align="left">86</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-3
-</td>
-<td style="text-align:left;">
-C
-</td>
-<td style="text-align:left;">
-jan
-</td>
-<td style="text-align:left;">
-96
-</td>
-<td style="text-align:left;">
-65
-</td>
+<tr class="odd">
+<td align="left">3</td>
+<td align="left">C</td>
+<td align="left">jan</td>
+<td align="left">96</td>
+<td align="left">65</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-3
-</td>
-<td style="text-align:left;">
-C
-</td>
-<td style="text-align:left;">
-feb
-</td>
-<td style="text-align:left;">
-86
-</td>
-<td style="text-align:left;">
-52
-</td>
+<tr class="even">
+<td align="left">3</td>
+<td align="left">C</td>
+<td align="left">feb</td>
+<td align="left">86</td>
+<td align="left">52</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-3
-</td>
-<td style="text-align:left;">
-C
-</td>
-<td style="text-align:left;">
-march
-</td>
-<td style="text-align:left;">
-97
-</td>
-<td style="text-align:left;">
-59
-</td>
+<tr class="odd">
+<td align="left">3</td>
+<td align="left">C</td>
+<td align="left">march</td>
+<td align="left">97</td>
+<td align="left">59</td>
 </tr>
 </tbody>
 </table>
@@ -503,124 +285,54 @@ march
        sep = &quot;_&quot;
         )</code></pre>
 <p>Here is the wide data</p>
-<table class="table" style="font-size: 14px; width: auto !important; margin-left: auto; margin-right: auto;">
+<table>
+<caption><span id="tab:unnamed-chunk-11">Table 4: </span>wide data</caption>
 <thead>
-<tr>
-<th style="text-align:left;">
-</th>
-<th style="text-align:left;">
-id
-</th>
-<th style="text-align:left;">
-name
-</th>
-<th style="text-align:left;">
-BP_jan
-</th>
-<th style="text-align:left;">
-HR_jan
-</th>
-<th style="text-align:left;">
-BP_feb
-</th>
-<th style="text-align:left;">
-HR_feb
-</th>
-<th style="text-align:left;">
-BP_march
-</th>
-<th style="text-align:left;">
-HR_march
-</th>
+<tr class="header">
+<th></th>
+<th align="left">id</th>
+<th align="left">name</th>
+<th align="left">BP_jan</th>
+<th align="left">HR_jan</th>
+<th align="left">BP_feb</th>
+<th align="left">HR_feb</th>
+<th align="left">BP_march</th>
+<th align="left">HR_march</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td style="text-align:left;">
-1
-</td>
-<td style="text-align:left;">
-1
-</td>
-<td style="text-align:left;">
-A
-</td>
-<td style="text-align:left;">
-123
-</td>
-<td style="text-align:left;">
-72
-</td>
-<td style="text-align:left;">
-120
-</td>
-<td style="text-align:left;">
-70
-</td>
-<td style="text-align:left;">
-125
-</td>
-<td style="text-align:left;">
-71
-</td>
+<tr class="odd">
+<td>1</td>
+<td align="left">1</td>
+<td align="left">A</td>
+<td align="left">123</td>
+<td align="left">72</td>
+<td align="left">120</td>
+<td align="left">70</td>
+<td align="left">125</td>
+<td align="left">71</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-4
-</td>
-<td style="text-align:left;">
-2
-</td>
-<td style="text-align:left;">
-B
-</td>
-<td style="text-align:left;">
-140
-</td>
-<td style="text-align:left;">
-85
-</td>
-<td style="text-align:left;">
-150
-</td>
-<td style="text-align:left;">
-82
-</td>
-<td style="text-align:left;">
-155
-</td>
-<td style="text-align:left;">
-86
-</td>
+<tr class="even">
+<td>4</td>
+<td align="left">2</td>
+<td align="left">B</td>
+<td align="left">140</td>
+<td align="left">85</td>
+<td align="left">150</td>
+<td align="left">82</td>
+<td align="left">155</td>
+<td align="left">86</td>
 </tr>
-<tr>
-<td style="text-align:left;">
-7
-</td>
-<td style="text-align:left;">
-3
-</td>
-<td style="text-align:left;">
-C
-</td>
-<td style="text-align:left;">
-96
-</td>
-<td style="text-align:left;">
-65
-</td>
-<td style="text-align:left;">
-86
-</td>
-<td style="text-align:left;">
-52
-</td>
-<td style="text-align:left;">
-97
-</td>
-<td style="text-align:left;">
-59
-</td>
+<tr class="odd">
+<td>7</td>
+<td align="left">3</td>
+<td align="left">C</td>
+<td align="left">96</td>
+<td align="left">65</td>
+<td align="left">86</td>
+<td align="left">52</td>
+<td align="left">97</td>
+<td align="left">59</td>
 </tr>
 </tbody>
 </table>

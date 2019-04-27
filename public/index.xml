@@ -289,97 +289,57 @@ Figure 7: Parametric bootstrap using boot package
       
       <guid>https://www.statistician-online.com/data-management/reshape-wide-long-data-r-how-to/</guid>
       <description>
-&lt;script src=&#34;https://www.statistician-online.com/rmarkdown-libs/kePrint/kePrint.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;&lt;img alt=&#34;reshape data wide long r gather melt dplyr&#34; src=&#34;https://www.statistician-online.com/images/Reshape.png&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;Reshaping though frequently required in data analysis, so often it remains confusing even if you are frequent user of &lt;code&gt;reshape&lt;/code&gt; function in R.Here I have provided more explanation with simulated data.&lt;/p&gt;
+&lt;p&gt;Reshaping though frequently required in data analysis, so often it remains confusing even if you are frequent user of &lt;code&gt;reshape&lt;/code&gt; function. Here I have provided an simple example to elaborate more on each argument of &lt;code&gt;reshape&lt;/code&gt;.&lt;/p&gt;
 &lt;div id=&#34;reshape-data-from-wide-to-long&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Reshape data from wide to long&lt;/h2&gt;
-&lt;p&gt;Wide data: the observation has been made several time but all the observations for given person is recorded in single row in spreadsheet.For example, in clinic, person visiting every month for their blood pressure check, and nurse note down the value for each month in single row which belong to this specific person.&lt;/p&gt;
-&lt;p&gt;Let’s first create small wide data&lt;/p&gt;
+&lt;p&gt;Your data in wide form if the multiple observations of item, place or person (i.e. units) has been recorded in single row (in different column). This multiple observations may be of repeated measure type (observation are made repeatedly at different time point) or multiple characteristics of some unit (eg. height, length and width of square).&lt;/p&gt;
+&lt;p&gt;Let’s take an example of wide data of repeated measure type. Person A is visiting clinic every month for their blood pressure check, and nurse note down the value for each month in single row which belong to this specific person A. See example below,&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# wide data
 df &amp;lt;- data.frame(matrix(data = NA, nrow = 3, ncol = 5, dimnames = list(NULL, paste0(c(&amp;quot;id&amp;quot;,&amp;quot;name&amp;quot;,&amp;quot;jan&amp;quot;,&amp;quot;feb&amp;quot;,&amp;quot;march&amp;quot;)))))
 df[1,] &amp;lt;- c(1,&amp;quot;A&amp;quot;,123,120,125)
 df[2,] &amp;lt;- c(2,&amp;quot;B&amp;quot;,140,150,155)
 df[3,] &amp;lt;- c(3,&amp;quot;C&amp;quot;,96,86,97)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Our “wide” data look like&lt;/p&gt;
-&lt;table class=&#34;table&#34; style=&#34;font-size: 14px; width: auto !important; margin-left: auto; margin-right: auto;&#34;&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;kable(df,format = &amp;quot;pandoc&amp;quot;, caption = &amp;quot;wide data&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;table&gt;
+&lt;caption&gt;&lt;span id=&#34;tab:unnamed-chunk-3&#34;&gt;Table 1: &lt;/span&gt;wide data&lt;/caption&gt;
 &lt;thead&gt;
-&lt;tr&gt;
-&lt;th style=&#34;text-align:left;&#34;&gt;
-id
-&lt;/th&gt;
-&lt;th style=&#34;text-align:left;&#34;&gt;
-name
-&lt;/th&gt;
-&lt;th style=&#34;text-align:left;&#34;&gt;
-jan
-&lt;/th&gt;
-&lt;th style=&#34;text-align:left;&#34;&gt;
-feb
-&lt;/th&gt;
-&lt;th style=&#34;text-align:left;&#34;&gt;
-march
-&lt;/th&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th align=&#34;left&#34;&gt;id&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;name&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;jan&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;feb&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;march&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-1
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-A
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-123
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-120
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-125
-&lt;/td&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;A&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;123&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;120&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;125&lt;/td&gt;
 &lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-2
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-B
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-140
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-150
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-155
-&lt;/td&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;2&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;B&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;140&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;150&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;155&lt;/td&gt;
 &lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-3
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-C
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-96
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-86
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-97
-&lt;/td&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;C&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;96&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;86&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;97&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;Now rather than recording each month’s observation in row, we want data each which only one observation per row for that given person. for that we need to use standard &lt;code&gt;reshape&lt;/code&gt; command in &lt;code&gt;R&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;The &lt;code&gt;reshape&lt;/code&gt; has following argument:&lt;/p&gt;
+&lt;p&gt;We want a data in which each new observation in new row but within same column i.e. long data. To achieve that we need to use standard &lt;code&gt;reshape&lt;/code&gt; command in &lt;code&gt;R&lt;/code&gt;. The &lt;code&gt;reshape&lt;/code&gt; has following argument:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;&lt;code&gt;idvar&lt;/code&gt; : unique identifier for person,place or object on which observations(measurements) are made at different time points or repeatedly. Example &lt;code&gt;Case ID&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;code&gt;varying&lt;/code&gt; : if observation for specific individuals are made at different time points, in which columns values are recorded i.e time-varying columns. Example &lt;code&gt;Jan&lt;/code&gt;, &lt;code&gt;Feb&lt;/code&gt;, &lt;code&gt;March&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
@@ -409,150 +369,71 @@ direction = &amp;quot;long&amp;quot;)
 &lt;p&gt;Our “long” data look like&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;df_long &amp;lt;- arrange(df_long, id)
 
-kable(df_long,format = &amp;quot;html&amp;quot;) %&amp;gt;%  kable_styling(full_width = F, position = &amp;quot;center&amp;quot;,font_size = 14)&lt;/code&gt;&lt;/pre&gt;
-&lt;table class=&#34;table&#34; style=&#34;font-size: 14px; width: auto !important; margin-left: auto; margin-right: auto;&#34;&gt;
+kable(df_long,format = &amp;quot;pandoc&amp;quot;, caption = &amp;quot;long data&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;table&gt;
+&lt;caption&gt;&lt;span id=&#34;tab:unnamed-chunk-5&#34;&gt;Table 2: &lt;/span&gt;long data&lt;/caption&gt;
 &lt;thead&gt;
-&lt;tr&gt;
-&lt;th style=&#34;text-align:left;&#34;&gt;
-id
-&lt;/th&gt;
-&lt;th style=&#34;text-align:left;&#34;&gt;
-name
-&lt;/th&gt;
-&lt;th style=&#34;text-align:left;&#34;&gt;
-month
-&lt;/th&gt;
-&lt;th style=&#34;text-align:left;&#34;&gt;
-BP
-&lt;/th&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th align=&#34;left&#34;&gt;id&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;name&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;month&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;BP&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-1
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-A
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-jan
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-123
-&lt;/td&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;A&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;jan&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;123&lt;/td&gt;
 &lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-1
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-A
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-feb
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-120
-&lt;/td&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;A&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;feb&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;120&lt;/td&gt;
 &lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-1
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-A
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-march
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-125
-&lt;/td&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;A&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;march&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;125&lt;/td&gt;
 &lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-2
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-B
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-jan
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-140
-&lt;/td&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;2&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;B&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;jan&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;140&lt;/td&gt;
 &lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-2
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-B
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-feb
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-150
-&lt;/td&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;2&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;B&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;feb&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;150&lt;/td&gt;
 &lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-2
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-B
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-march
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-155
-&lt;/td&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;2&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;B&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;march&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;155&lt;/td&gt;
 &lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-3
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-C
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-jan
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-96
-&lt;/td&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;C&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;jan&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;96&lt;/td&gt;
 &lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-3
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-C
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-feb
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-86
-&lt;/td&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;C&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;feb&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;86&lt;/td&gt;
 &lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-3
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-C
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-march
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-97
-&lt;/td&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;C&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;march&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;97&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -566,179 +447,80 @@ times = c(&amp;quot;jan&amp;quot;,&amp;quot;feb&amp;quot;,&amp;quot;march&amp;qu
 v.names = c(&amp;quot;BP&amp;quot;,&amp;quot;HR&amp;quot;), 
 direction = &amp;quot;long&amp;quot;)   &lt;/code&gt;&lt;/pre&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;df_long &amp;lt;- arrange(df_long, id)&lt;/code&gt;&lt;/pre&gt;
-&lt;table class=&#34;table&#34; style=&#34;font-size: 14px; width: auto !important; margin-left: auto; margin-right: auto;&#34;&gt;
+&lt;table&gt;
+&lt;caption&gt;&lt;span id=&#34;tab:unnamed-chunk-9&#34;&gt;Table 3: &lt;/span&gt;long data&lt;/caption&gt;
 &lt;thead&gt;
-&lt;tr&gt;
-&lt;th style=&#34;text-align:left;&#34;&gt;
-id
-&lt;/th&gt;
-&lt;th style=&#34;text-align:left;&#34;&gt;
-name
-&lt;/th&gt;
-&lt;th style=&#34;text-align:left;&#34;&gt;
-month
-&lt;/th&gt;
-&lt;th style=&#34;text-align:left;&#34;&gt;
-BP
-&lt;/th&gt;
-&lt;th style=&#34;text-align:left;&#34;&gt;
-HR
-&lt;/th&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th align=&#34;left&#34;&gt;id&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;name&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;month&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;BP&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;HR&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-1
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-A
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-jan
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-123
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-72
-&lt;/td&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;A&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;jan&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;123&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;72&lt;/td&gt;
 &lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-1
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-A
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-feb
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-120
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-70
-&lt;/td&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;A&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;feb&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;120&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;70&lt;/td&gt;
 &lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-1
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-A
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-march
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-125
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-71
-&lt;/td&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;A&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;march&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;125&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;71&lt;/td&gt;
 &lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-2
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-B
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-jan
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-140
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-85
-&lt;/td&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;2&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;B&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;jan&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;140&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;85&lt;/td&gt;
 &lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-2
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-B
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-feb
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-150
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-82
-&lt;/td&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;2&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;B&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;feb&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;150&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;82&lt;/td&gt;
 &lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-2
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-B
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-march
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-155
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-86
-&lt;/td&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;2&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;B&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;march&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;155&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;86&lt;/td&gt;
 &lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-3
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-C
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-jan
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-96
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-65
-&lt;/td&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;C&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;jan&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;96&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;65&lt;/td&gt;
 &lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-3
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-C
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-feb
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-86
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-52
-&lt;/td&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;C&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;feb&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;86&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;52&lt;/td&gt;
 &lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-3
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-C
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-march
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-97
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-59
-&lt;/td&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;left&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;C&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;march&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;97&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;59&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
@@ -762,124 +544,54 @@ march
        sep = &amp;quot;_&amp;quot;
         )&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Here is the wide data&lt;/p&gt;
-&lt;table class=&#34;table&#34; style=&#34;font-size: 14px; width: auto !important; margin-left: auto; margin-right: auto;&#34;&gt;
+&lt;table&gt;
+&lt;caption&gt;&lt;span id=&#34;tab:unnamed-chunk-11&#34;&gt;Table 4: &lt;/span&gt;wide data&lt;/caption&gt;
 &lt;thead&gt;
-&lt;tr&gt;
-&lt;th style=&#34;text-align:left;&#34;&gt;
-&lt;/th&gt;
-&lt;th style=&#34;text-align:left;&#34;&gt;
-id
-&lt;/th&gt;
-&lt;th style=&#34;text-align:left;&#34;&gt;
-name
-&lt;/th&gt;
-&lt;th style=&#34;text-align:left;&#34;&gt;
-BP_jan
-&lt;/th&gt;
-&lt;th style=&#34;text-align:left;&#34;&gt;
-HR_jan
-&lt;/th&gt;
-&lt;th style=&#34;text-align:left;&#34;&gt;
-BP_feb
-&lt;/th&gt;
-&lt;th style=&#34;text-align:left;&#34;&gt;
-HR_feb
-&lt;/th&gt;
-&lt;th style=&#34;text-align:left;&#34;&gt;
-BP_march
-&lt;/th&gt;
-&lt;th style=&#34;text-align:left;&#34;&gt;
-HR_march
-&lt;/th&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;id&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;name&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;BP_jan&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;HR_jan&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;BP_feb&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;HR_feb&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;BP_march&lt;/th&gt;
+&lt;th align=&#34;left&#34;&gt;HR_march&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-1
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-1
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-A
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-123
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-72
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-120
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-70
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-125
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-71
-&lt;/td&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;1&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;A&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;123&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;72&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;120&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;70&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;125&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;71&lt;/td&gt;
 &lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-4
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-2
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-B
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-140
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-85
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-150
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-82
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-155
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-86
-&lt;/td&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;4&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;2&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;B&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;140&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;85&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;150&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;82&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;155&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;86&lt;/td&gt;
 &lt;/tr&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-7
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-3
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-C
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-96
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-65
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-86
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-52
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-97
-&lt;/td&gt;
-&lt;td style=&#34;text-align:left;&#34;&gt;
-59
-&lt;/td&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;7&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;3&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;C&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;96&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;65&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;86&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;52&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;97&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;59&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
