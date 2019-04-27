@@ -7,8 +7,10 @@
   Cache-Control: public, s-max-age=604800
 /fonts/*
   Cache-Control: public, s-max-age=604800
-  
-  
+/webfonts/*
+  Cache-Control: public, s-max-age=604800  
+/scss/*
+  Cache-Control: public, s-max-age=604800  
 
  /*
  X-Frame-Options: DENY
