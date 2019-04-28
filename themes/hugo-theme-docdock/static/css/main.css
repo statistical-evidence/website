@@ -1136,13 +1136,7 @@ body {
 #body a.highlight:focus,
 #body a.highlight:hover {
 	text-decoration: none;
-	outline: 0;
 	outline: 0
-}
-
-#body a.highlight {
-	line-height: 1.1;
-	
 }
 
 #body a.highlight:after {
@@ -5045,7 +5039,7 @@ a.badge:hover {
 
 #social-share .share-btn {
 	padding: 0.5em;
-	width: 4em;
+	width: 3em
 }
 
 #social-share-nav .share-btn h3 {
@@ -5057,7 +5051,6 @@ a.badge:hover {
 	color: #ffffff;
 	border: none;
 	border-radius: 4px;
-	box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.2);
 	outline: none;
 	text-align: center;
 	text-decoration: none;
