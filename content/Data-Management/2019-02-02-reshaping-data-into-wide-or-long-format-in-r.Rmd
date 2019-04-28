@@ -104,7 +104,7 @@ df_long <- arrange(df_long, id)
 kable(df_long,format = "pandoc", caption = "long data")
 ```
 
-Sometime, not only one type of measurement (BP) but also other types (such as Heart rate -HR) are measured and recorded row wise. For example,
+Sometime, not only one type of measurement (BP) but also other types (such as heart rate-HR) are measured and recorded row wise. For example,
 
 ```{r}
 # wide data

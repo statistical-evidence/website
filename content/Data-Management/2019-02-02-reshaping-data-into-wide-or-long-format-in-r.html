@@ -178,7 +178,7 @@ kable(df_long,format = &quot;pandoc&quot;, caption = &quot;long data&quot;)</cod
 </tr>
 </tbody>
 </table>
-<p>Sometime, not only one type of measurement (BP) but also other types (such as Heart rate -HR) are measured and recorded row wise. For example,</p>
+<p>Sometime, not only one type of measurement (BP) but also other types (such as heart rate-HR) are measured and recorded row wise. For example,</p>
 <pre class="r"><code># wide data
 df &lt;- data.frame(matrix(data = NA, nrow = 3, ncol = 8, dimnames = list(NULL, paste0(c(&quot;id&quot;,&quot;name&quot;,&quot;BP_jan&quot;,&quot;BP_feb&quot;,&quot;BP_march&quot;,&quot;HR_jan&quot;,&quot;HR_feb&quot;,&quot;HR_march&quot;)))))
 df[1,] &lt;- c(1,&quot;A&quot;,123,120,125,72,70,71)
