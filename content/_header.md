@@ -9,5 +9,5 @@ sitemap:
 ---
 
 <a href="/" title = "Statistician Online">
-  <img src="/images/logo.png" alt="Hire a statistician or freelance medical statistician UK dissertation or research project">
+  <img src="/images/logo.png" alt="Hire a statistician or freelance medical statistician UK dissertation or research project" style="width:100%">
 </a>

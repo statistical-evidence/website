@@ -81,7 +81,7 @@ for (i in 1:100) {
   statistic[i] <- mean(df[[i]]) }
 ```
 
-```{r fig.cap="Distribution of sample means",fig.align="center",out.width="50%"}
+```{r fig.cap="Distribution of sample means",out.width="50%"}
 require(ggplot2)
 ggplot(data.frame(statistic), aes(statistic)) + geom_histogram() + labs(x= "Mean", y= "Freqency")
 ```
@@ -90,7 +90,7 @@ ggplot(data.frame(statistic), aes(statistic)) + geom_histogram() + labs(x= "Mean
 It is better to plot the histogram with optimum bin width (see [Article from David Freedman](https://link.springer.com/article/10.1007/BF01025868)) along with density curve using `aes(y=..density..)`.So that the area under the density curve will be 1
 {{% /notice %}}
 
-```{r fig.cap="Distribution of sample means (proper histogram)",fig.align="center",out.width="50%"}
+```{r fig.cap="Distribution of sample means (proper histogram)", out.width="50%"}
 binw <- 2*(IQR(statistic)/length(statistic)^(1/3))
 ggplot(data.frame(statistic), aes(statistic)) + geom_histogram(aes(y=..density..),binwidth = binw,fill="darkred",colour="black",size=1) + geom_density(aes(y=..density..),size=1) + labs(x= "Mean", y= "Density")
 ```
@@ -111,7 +111,7 @@ Please note, that this sampling will be done with the replacement. So some singl
 
 From this bootstrapped sampling distribution, which can estimate parameter value, standard errors (standard deviation of sample statistic) and then, calculate the confidence interval.
 
-```{r echo=FALSE, fig.cap="Parametric vs nonparametric bootstrap",fig.align="center"}
+```{r echo=FALSE,out.width="100%",fig.cap="Parametric vs nonparametric bootstrap"}
 knitr::include_graphics("/images/bootstrap.png")
 ```
 
@@ -179,13 +179,13 @@ B
 
 We can used default plots to see whether bootstrap samples are correctly sampled. 
 
-```{r fig.cap="Bootstrap sampling distribution of sample mean",fig.align="center",out.width="50%"}
+```{r fig.cap="Bootstrap sampling distribution of sample mean",out.width="50%"}
 plot(B)
 ```
 
 Or, one can use `ggplot` to get the same figure
 
-```{r fig.cap="Bootstrap sampling distribution of sample mean  (ggplot2)",fig.align="center",out.width="50%" }
+```{r fig.cap="Bootstrap sampling distribution of sample mean  (ggplot2)",out.width="50%" }
 binw <- 2*(IQR(B$t)/length(B$t)^(1/3))
 ggplot(data.frame(B$t), aes(B.t)) + geom_histogram(fill="grey", colour="black", binwidth = binw) + geom_vline(xintercept = B$t0, linetype="dashed", size=1) + labs(x="Bootstrap sample statistic", title="Bootstrap sampling distribution of sample mean")
 ```
@@ -202,7 +202,7 @@ Once we have a sample data, we may think that the observed data may have come fr
 
 For example in our sample birth weights, we may assume that observed birth-weight comes from normal distribution with parameter $\mu$ = `r round(mean(df),1)` and $\sigma$ = `r round(sd(df),1)` ( which is estimated from observed data). See the below figure,
 
-```{r fig.cap="Distribution of observed sample birthweights",fig.align="center",out.width="50%"}
+```{r fig.cap="Distribution of observed sample birthweights",out.width="50%"}
 ggplot(data.frame(df), aes(df)) + geom_density() + labs(x= "birth weight")
 ```
 

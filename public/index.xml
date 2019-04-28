@@ -91,7 +91,7 @@ data-description=&#34;Product description&#34;&gt;
 &lt;/ul&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;require(ggplot2)
 ggplot(data.frame(statistic), aes(statistic)) + geom_histogram() + labs(x= &amp;quot;Mean&amp;quot;, y= &amp;quot;Freqency&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:unnamed-chunk-4&#34;&gt;&lt;/span&gt;
+&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:unnamed-chunk-4&#34;&gt;&lt;/span&gt;
 &lt;img src=&#34;https://www.statistician-online.com/Basic-Statistics/2019-02-09-ootstraping-parametric-and-non-parametric-bootstrap-using-loops-and-boot-function-in-r_files/figure-html/unnamed-chunk-4-1.png&#34; alt=&#34;Distribution of sample means&#34; width=&#34;50%&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;
 Figure 1: Distribution of sample means
@@ -102,7 +102,7 @@ Figure 1: Distribution of sample means
 
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;binw &amp;lt;- 2*(IQR(statistic)/length(statistic)^(1/3))
 ggplot(data.frame(statistic), aes(statistic)) + geom_histogram(aes(y=..density..),binwidth = binw,fill=&amp;quot;darkred&amp;quot;,colour=&amp;quot;black&amp;quot;,size=1) + geom_density(aes(y=..density..),size=1) + labs(x= &amp;quot;Mean&amp;quot;, y= &amp;quot;Density&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:unnamed-chunk-5&#34;&gt;&lt;/span&gt;
+&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:unnamed-chunk-5&#34;&gt;&lt;/span&gt;
 &lt;img src=&#34;https://www.statistician-online.com/Basic-Statistics/2019-02-09-ootstraping-parametric-and-non-parametric-bootstrap-using-loops-and-boot-function-in-r_files/figure-html/unnamed-chunk-5-1.png&#34; alt=&#34;Distribution of sample means (proper histogram)&#34; width=&#34;50%&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;
 Figure 2: Distribution of sample means (proper histogram)
@@ -119,8 +119,8 @@ Figure 2: Distribution of sample means (proper histogram)
 &lt;p&gt;The bootstrap method is one type of re-sampling method, in which sample data (20 birth weights) considered as “population”.From this sample data, we re-sample it with a replacement-large number of time (the 1000’s). The resultant sampling distribution often (not always) approximate the (true) sampling distribution of the statistic.&lt;/p&gt;
 &lt;p&gt;Please note, that this sampling will be done with the replacement. So some single observation may be included many times ( or some may be left out completely). So sample statistic will be varied from each random sample of size n.&lt;/p&gt;
 &lt;p&gt;From this bootstrapped sampling distribution, which can estimate parameter value, standard errors (standard deviation of sample statistic) and then, calculate the confidence interval.&lt;/p&gt;
-&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:unnamed-chunk-6&#34;&gt;&lt;/span&gt;
-&lt;img src=&#34;https://www.statistician-online.com/images/bootstrap.png&#34; alt=&#34;Parametric vs nonparametric bootstrap&#34;  /&gt;
+&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:unnamed-chunk-6&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;https://www.statistician-online.com/images/bootstrap.png&#34; alt=&#34;Parametric vs nonparametric bootstrap&#34; width=&#34;100%&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;
 Figure 3: Parametric vs nonparametric bootstrap
 &lt;/p&gt;
@@ -175,7 +175,7 @@ B&lt;/code&gt;&lt;/pre&gt;
 ## t1* 3617.653 0.2896068    101.2961&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;We can used default plots to see whether bootstrap samples are correctly sampled.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;plot(B)&lt;/code&gt;&lt;/pre&gt;
-&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:unnamed-chunk-15&#34;&gt;&lt;/span&gt;
+&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:unnamed-chunk-15&#34;&gt;&lt;/span&gt;
 &lt;img src=&#34;https://www.statistician-online.com/Basic-Statistics/2019-02-09-ootstraping-parametric-and-non-parametric-bootstrap-using-loops-and-boot-function-in-r_files/figure-html/unnamed-chunk-15-1.png&#34; alt=&#34;Bootstrap sampling distribution of sample mean&#34; width=&#34;50%&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;
 Figure 4: Bootstrap sampling distribution of sample mean
@@ -184,7 +184,7 @@ Figure 4: Bootstrap sampling distribution of sample mean
 &lt;p&gt;Or, one can use &lt;code&gt;ggplot&lt;/code&gt; to get the same figure&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;binw &amp;lt;- 2*(IQR(B$t)/length(B$t)^(1/3))
 ggplot(data.frame(B$t), aes(B.t)) + geom_histogram(fill=&amp;quot;grey&amp;quot;, colour=&amp;quot;black&amp;quot;, binwidth = binw) + geom_vline(xintercept = B$t0, linetype=&amp;quot;dashed&amp;quot;, size=1) + labs(x=&amp;quot;Bootstrap sample statistic&amp;quot;, title=&amp;quot;Bootstrap sampling distribution of sample mean&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:unnamed-chunk-16&#34;&gt;&lt;/span&gt;
+&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:unnamed-chunk-16&#34;&gt;&lt;/span&gt;
 &lt;img src=&#34;https://www.statistician-online.com/Basic-Statistics/2019-02-09-ootstraping-parametric-and-non-parametric-bootstrap-using-loops-and-boot-function-in-r_files/figure-html/unnamed-chunk-16-1.png&#34; alt=&#34;Bootstrap sampling distribution of sample mean  (ggplot2)&#34; width=&#34;50%&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;
 Figure 5: Bootstrap sampling distribution of sample mean (ggplot2)
@@ -211,7 +211,7 @@ Figure 5: Bootstrap sampling distribution of sample mean (ggplot2)
 &lt;p&gt;Once we have a sample data, we may think that the observed data may have come from some known probability distribution function ( i.e normal, gamma or poisson or any).&lt;/p&gt;
 &lt;p&gt;For example in our sample birth weights, we may assume that observed birth-weight comes from normal distribution with parameter &lt;span class=&#34;math inline&#34;&gt;\(\mu\)&lt;/span&gt; = 3617.7 and &lt;span class=&#34;math inline&#34;&gt;\(\sigma\)&lt;/span&gt; = 464.6 ( which is estimated from observed data). See the below figure,&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(data.frame(df), aes(df)) + geom_density() + labs(x= &amp;quot;birth weight&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:unnamed-chunk-18&#34;&gt;&lt;/span&gt;
+&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:unnamed-chunk-18&#34;&gt;&lt;/span&gt;
 &lt;img src=&#34;https://www.statistician-online.com/Basic-Statistics/2019-02-09-ootstraping-parametric-and-non-parametric-bootstrap-using-loops-and-boot-function-in-r_files/figure-html/unnamed-chunk-18-1.png&#34; alt=&#34;Distribution of observed sample birthweights&#34; width=&#34;50%&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;
 Figure 6: Distribution of observed sample birthweights
@@ -803,7 +803,7 @@ model is under 1%. If mean of count response is 5 or below and some 30% of the c
       
       <guid>https://www.statistician-online.com/_header/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://www.statistician-online.com/&#34; title = &#34;Statistician Online&#34;&gt;
-  &lt;img src=&#34;https://www.statistician-online.com/images/logo.png&#34; alt=&#34;Hire a statistician or freelance medical statistician UK dissertation or research project&#34;&gt;
+  &lt;img src=&#34;https://www.statistician-online.com/images/logo.png&#34; alt=&#34;Hire a statistician or freelance medical statistician UK dissertation or research project&#34; style=&#34;width:100%&#34;&gt;
 &lt;/a&gt;&lt;/p&gt;
 </description>
     </item>

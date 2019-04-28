@@ -59,7 +59,7 @@ menuTitle: "Bootstrap re-sampling"
 </ul>
 <pre class="r"><code>require(ggplot2)
 ggplot(data.frame(statistic), aes(statistic)) + geom_histogram() + labs(x= &quot;Mean&quot;, y= &quot;Freqency&quot;)</code></pre>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-4"></span>
+<div class="figure"><span id="fig:unnamed-chunk-4"></span>
 <img src="/Basic-Statistics/2019-02-09-ootstraping-parametric-and-non-parametric-bootstrap-using-loops-and-boot-function-in-r_files/figure-html/unnamed-chunk-4-1.png" alt="Distribution of sample means" width="50%" />
 <p class="caption">
 Figure 1: Distribution of sample means
@@ -70,7 +70,7 @@ It is better to plot the histogram with optimum bin width (see <a href="https://
 {{% /notice %}}</p>
 <pre class="r"><code>binw &lt;- 2*(IQR(statistic)/length(statistic)^(1/3))
 ggplot(data.frame(statistic), aes(statistic)) + geom_histogram(aes(y=..density..),binwidth = binw,fill=&quot;darkred&quot;,colour=&quot;black&quot;,size=1) + geom_density(aes(y=..density..),size=1) + labs(x= &quot;Mean&quot;, y= &quot;Density&quot;)</code></pre>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-5"></span>
+<div class="figure"><span id="fig:unnamed-chunk-5"></span>
 <img src="/Basic-Statistics/2019-02-09-ootstraping-parametric-and-non-parametric-bootstrap-using-loops-and-boot-function-in-r_files/figure-html/unnamed-chunk-5-1.png" alt="Distribution of sample means (proper histogram)" width="50%" />
 <p class="caption">
 Figure 2: Distribution of sample means (proper histogram)
@@ -87,8 +87,8 @@ Figure 2: Distribution of sample means (proper histogram)
 <p>The bootstrap method is one type of re-sampling method, in which sample data (20 birth weights) considered as “population”.From this sample data, we re-sample it with a replacement-large number of time (the 1000’s). The resultant sampling distribution often (not always) approximate the (true) sampling distribution of the statistic.</p>
 <p>Please note, that this sampling will be done with the replacement. So some single observation may be included many times ( or some may be left out completely). So sample statistic will be varied from each random sample of size n.</p>
 <p>From this bootstrapped sampling distribution, which can estimate parameter value, standard errors (standard deviation of sample statistic) and then, calculate the confidence interval.</p>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-6"></span>
-<img src="/images/bootstrap.png" alt="Parametric vs nonparametric bootstrap"  />
+<div class="figure"><span id="fig:unnamed-chunk-6"></span>
+<img src="/images/bootstrap.png" alt="Parametric vs nonparametric bootstrap" width="100%" />
 <p class="caption">
 Figure 3: Parametric vs nonparametric bootstrap
 </p>
@@ -143,7 +143,7 @@ B</code></pre>
 ## t1* 3617.653 0.2896068    101.2961</code></pre>
 <p>We can used default plots to see whether bootstrap samples are correctly sampled.</p>
 <pre class="r"><code>plot(B)</code></pre>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-15"></span>
+<div class="figure"><span id="fig:unnamed-chunk-15"></span>
 <img src="/Basic-Statistics/2019-02-09-ootstraping-parametric-and-non-parametric-bootstrap-using-loops-and-boot-function-in-r_files/figure-html/unnamed-chunk-15-1.png" alt="Bootstrap sampling distribution of sample mean" width="50%" />
 <p class="caption">
 Figure 4: Bootstrap sampling distribution of sample mean
@@ -152,7 +152,7 @@ Figure 4: Bootstrap sampling distribution of sample mean
 <p>Or, one can use <code>ggplot</code> to get the same figure</p>
 <pre class="r"><code>binw &lt;- 2*(IQR(B$t)/length(B$t)^(1/3))
 ggplot(data.frame(B$t), aes(B.t)) + geom_histogram(fill=&quot;grey&quot;, colour=&quot;black&quot;, binwidth = binw) + geom_vline(xintercept = B$t0, linetype=&quot;dashed&quot;, size=1) + labs(x=&quot;Bootstrap sample statistic&quot;, title=&quot;Bootstrap sampling distribution of sample mean&quot;)</code></pre>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-16"></span>
+<div class="figure"><span id="fig:unnamed-chunk-16"></span>
 <img src="/Basic-Statistics/2019-02-09-ootstraping-parametric-and-non-parametric-bootstrap-using-loops-and-boot-function-in-r_files/figure-html/unnamed-chunk-16-1.png" alt="Bootstrap sampling distribution of sample mean  (ggplot2)" width="50%" />
 <p class="caption">
 Figure 5: Bootstrap sampling distribution of sample mean (ggplot2)
@@ -179,7 +179,7 @@ Figure 5: Bootstrap sampling distribution of sample mean (ggplot2)
 <p>Once we have a sample data, we may think that the observed data may have come from some known probability distribution function ( i.e normal, gamma or poisson or any).</p>
 <p>For example in our sample birth weights, we may assume that observed birth-weight comes from normal distribution with parameter <span class="math inline">\(\mu\)</span> = 3617.7 and <span class="math inline">\(\sigma\)</span> = 464.6 ( which is estimated from observed data). See the below figure,</p>
 <pre class="r"><code>ggplot(data.frame(df), aes(df)) + geom_density() + labs(x= &quot;birth weight&quot;)</code></pre>
-<div class="figure" style="text-align: center"><span id="fig:unnamed-chunk-18"></span>
+<div class="figure"><span id="fig:unnamed-chunk-18"></span>
 <img src="/Basic-Statistics/2019-02-09-ootstraping-parametric-and-non-parametric-bootstrap-using-loops-and-boot-function-in-r_files/figure-html/unnamed-chunk-18-1.png" alt="Distribution of observed sample birthweights" width="50%" />
 <p class="caption">
 Figure 6: Distribution of observed sample birthweights

@@ -114,8 +114,11 @@ sub {
 }
 
 img {
-	border: 0;
-	max-width: 100%
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+	max-width: 100%;
+  height: auto
 }
 
 svg:not(:root) {
@@ -236,7 +239,7 @@ caption {
     display: table-caption;
     font-size: 13px;
     font-weight: bold;
-    text-align: -webkit-center;
+    text-align: center
 }
 
 div.figure {
@@ -245,7 +248,7 @@ div.figure {
 p.caption {
     font-size: 13px;
     font-weight: bold;
-    text-align: -webkit-center;
+    text-align: center;
     margin: 0.2rem 
 }
 
@@ -1597,8 +1600,10 @@ textarea:focus {
 
 #body .video-container,
 #body img {
-	margin: auto;
-	display: block;
+	margin-left:auto; 
+  margin-right:auto;
+  border: 0;
+  max-width: 100%;
 	text-align: center
 }
 
