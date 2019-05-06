@@ -27,7 +27,6 @@ categories:
 sitemap:
   ChangeFreq: daily
   Priority: 0.9
-
 ---
 
 
@@ -322,19 +321,27 @@ kable(df_long,format = &quot;pandoc&quot;, caption = &quot;long data&quot;)</cod
 </div>
 <div id="reshape-data-from-long-to-wide" class="section level2">
 <h2>Reshape data from long to wide</h2>
-<p>To make data “wide” from long, the <code>reshape</code> function will need only two main arguments apart from id.</p>
+<p>To make data “wide” from long, the <code>reshape</code> function will need only two main arguments</p>
 <ul>
-<li><p><code>v.names</code> : which column represent <strong>values</strong> of the observations in long data ( so that <code>reshape</code> function can transform these values into rows for each ID)</p></li>
+<li><p><code>idvar</code>: unique identifier of unit on which measurement are made</p></li>
 <li><p><code>timevar</code> : which column represent <strong>the timing</strong> of the observations ( so that <code>reshape</code> function associate it with the value for given time for each ID )</p></li>
+</ul>
+<p>If you do not specify above two arguments, function will drop an error-</p>
+<p><code>Error in [.data.frame (data, , idvar) : undefined columns selected</code></p>
+<p>If you read above error carefully, it already specifying which arguments were missing. Here in above case missing argument was <code>idvar</code>.</p>
+<p>You can optionally provide,</p>
+<ul>
+<li><p><code>v.names</code> : which column represent <strong>values</strong> of the observations in long data (so that <code>reshape</code> function can transform these values into rows for each ID)</p></li>
+<li><p><code>sep</code>: column names in wide format are going to be created using value of <code>timesvar</code> and <code>integers</code>. Specify how both will be seperated in column names.</p></li>
 </ul>
 <p>Here is the example</p>
 <pre class="r"><code>df_wide &lt;- reshape(df_long,
        idvar = &quot;id&quot;,
        # unique identifier
-       v.names = c(&quot;BP&quot;,&quot;HR&quot;),
-       # the columns represent the value of the observation (BP,HR)
        timevar = &quot;month&quot;,
        # the column represent the timing of the observations
+       v.names = c(&quot;BP&quot;,&quot;HR&quot;),
+       # the columns represent the value of the observation (BP,HR)
        direction = &quot;wide&quot;,
        sep = &quot;_&quot;
         )</code></pre>

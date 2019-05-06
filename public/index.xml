@@ -583,19 +583,27 @@ kable(df_long,format = &amp;quot;pandoc&amp;quot;, caption = &amp;quot;long data
 &lt;/div&gt;
 &lt;div id=&#34;reshape-data-from-long-to-wide&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Reshape data from long to wide&lt;/h2&gt;
-&lt;p&gt;To make data “wide” from long, the &lt;code&gt;reshape&lt;/code&gt; function will need only two main arguments apart from id.&lt;/p&gt;
+&lt;p&gt;To make data “wide” from long, the &lt;code&gt;reshape&lt;/code&gt; function will need only two main arguments&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;v.names&lt;/code&gt; : which column represent &lt;strong&gt;values&lt;/strong&gt; of the observations in long data ( so that &lt;code&gt;reshape&lt;/code&gt; function can transform these values into rows for each ID)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;idvar&lt;/code&gt;: unique identifier of unit on which measurement are made&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;code&gt;timevar&lt;/code&gt; : which column represent &lt;strong&gt;the timing&lt;/strong&gt; of the observations ( so that &lt;code&gt;reshape&lt;/code&gt; function associate it with the value for given time for each ID )&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you do not specify above two arguments, function will drop an error-&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Error in [.data.frame (data, , idvar) : undefined columns selected&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;If you read above error carefully, it already specifying which arguments were missing. Here in above case missing argument was &lt;code&gt;idvar&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;You can optionally provide,&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;v.names&lt;/code&gt; : which column represent &lt;strong&gt;values&lt;/strong&gt; of the observations in long data (so that &lt;code&gt;reshape&lt;/code&gt; function can transform these values into rows for each ID)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;sep&lt;/code&gt;: column names in wide format are going to be created using value of &lt;code&gt;timesvar&lt;/code&gt; and &lt;code&gt;integers&lt;/code&gt;. Specify how both will be seperated in column names.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Here is the example&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;df_wide &amp;lt;- reshape(df_long,
        idvar = &amp;quot;id&amp;quot;,
        # unique identifier
-       v.names = c(&amp;quot;BP&amp;quot;,&amp;quot;HR&amp;quot;),
-       # the columns represent the value of the observation (BP,HR)
        timevar = &amp;quot;month&amp;quot;,
        # the column represent the timing of the observations
+       v.names = c(&amp;quot;BP&amp;quot;,&amp;quot;HR&amp;quot;),
+       # the columns represent the value of the observation (BP,HR)
        direction = &amp;quot;wide&amp;quot;,
        sep = &amp;quot;_&amp;quot;
         )&lt;/code&gt;&lt;/pre&gt;

@@ -27,8 +27,11 @@ categories:
 sitemap:
   ChangeFreq: daily
   Priority: 0.9
-
 ---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message=FALSE, warning=FALSE)
+```
+
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 require(knitr)
 require(dplyr)
@@ -40,6 +43,7 @@ Reshaping though frequently required in data analysis, so often it remains confu
 
 
 ## Reshape data from wide to long
+
 
 Your data in wide form if the multiple observations of item, place or person (i.e. units) has been recorded in single row (in different column). This multiple observations may be of repeated measure type (observation are made repeatedly at different time point) or multiple characteristics of some unit (eg. height, length and width of square). 
 
@@ -53,7 +57,7 @@ df[1,] <- c(1,"A",123,120,125)
 df[2,] <- c(2,"B",140,150,155)
 df[3,] <- c(3,"C",96,86,97)
 ```
-
+ 
 Our "wide" data look like
 
 ```{r}
@@ -139,11 +143,24 @@ kable(df_long,format = "pandoc", caption = "long data")
 
 ## Reshape data from long to wide
 
-To make data "wide" from long, the `reshape` function will need only two main arguments apart from id. 
+To make data "wide" from long, the `reshape` function will need only two main arguments
 
-+ `v.names` : which column represent **values** of the observations in long data ( so that `reshape` function can transform these values into rows for each ID)
++ `idvar`: unique identifier of unit on which measurement are made
 
 + `timevar` : which column represent **the timing** of the observations ( so that `reshape` function associate it with the value for given time for each ID )
+
+If you do not specify above two arguments, function will drop an error-  
+
+`Error in [.data.frame (data, , idvar) : undefined columns selected`
+
+If you read above error carefully, it already specifying  which arguments were missing. Here in above case missing argument was `idvar`.
+
+
+You can optionally provide,  
+
++ `v.names` : which column represent **values** of the observations in long data (so that `reshape` function can transform these values into rows for each ID)
+
++ `sep`: column names in wide format are going to be created using value of `timesvar` and `integers`. Specify how both will be seperated in column names.
 
 Here is the example
 
@@ -151,10 +168,10 @@ Here is the example
 df_wide <- reshape(df_long,
        idvar = "id",
        # unique identifier
-       v.names = c("BP","HR"),
-       # the columns represent the value of the observation (BP,HR)
        timevar = "month",
        # the column represent the timing of the observations
+       v.names = c("BP","HR"),
+       # the columns represent the value of the observation (BP,HR)
        direction = "wide",
        sep = "_"
         )
