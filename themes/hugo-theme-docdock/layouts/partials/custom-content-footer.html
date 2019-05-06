@@ -3,8 +3,8 @@
 {{ if .IsPage }}
 <span> Last updated:{{ with .Lastmod -}}{{ .Format "January 2, 2006" | safeHTML }}{{end }}</span>
 <span>|</span>
-<span>Tags:{{ if .Params.tags }} {{range .Params.tags}}
-  <a class="label label-default" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{end}}
+<span >Tags:{{ if .Params.tags }} {{range .Params.tags}}
+  <a class="button-secondary" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> {{end}}
 {{end}}</span>
 {{end}}
   <h2> Sharing is caring! </h2>

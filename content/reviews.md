@@ -6,7 +6,15 @@ sitemap:
   ChangeFreq: weekly
   Priority: 0.9
 disable_comments: true
+pageimage:
+  image:
+    height: 628
+    url: /images/reviews.png
+    width: 1200
+    text: reviews and testimonials
+
 ---
+<img alt="reviews and testimonials" src="/images/reviews.png" />
 
 <script type="text/javascript">
 (function e(){var e=document.createElement("script");e.type="text/javascript",e.async=true,e.src="//staticw2.yotpo.com/2htNWav9UZ2zomAxet41ezNcBR6lTEXDAOHh3nEU/widget.js";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})();
