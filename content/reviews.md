@@ -12,6 +12,9 @@ pageimage:
     url: /images/reviews.png
     width: 1200
     text: reviews and testimonials
+keywords: 
+- reviews
+- Testimonials
 
 ---
 <img alt="reviews and testimonials" src="/images/reviews.png" />
