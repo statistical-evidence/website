@@ -15,6 +15,8 @@ pageimage:
 keywords: 
 - reviews
 - Testimonials
+tags:
+  - reviews
 
 ---
 <img alt="reviews and testimonials" src="/images/reviews.png" />
