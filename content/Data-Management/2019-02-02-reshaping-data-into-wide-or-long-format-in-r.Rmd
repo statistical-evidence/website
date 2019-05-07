@@ -2,14 +2,14 @@
 title: "How to reshape data in wide or long format in R"
 author: "Chetan Prajapati"
 date: "2019-02-02"
-description: Complete tutorial about reshaping data into wide or long format using standard r reshape function.
+description: R tutorial about reshaping  data into wide or long format using base r reshape function. Learn to transform any dataframe, matrix or array using example of longitudinal or panel data. Observations recorded in multiple columns but in single row for id (wide data) or each new observations are new rows but in single column (long data)
+
 keywords: 
-- matrix
-- data
-- r
-- programming
+- reshape
 - wide
 - long
+- r
+
 menuTitle: Reshaping
 pageimage:
   image:
@@ -19,8 +19,6 @@ pageimage:
     text: reshape wide long r melt cast
 slug: reshape-wide-long-data-r-how-to
 tags:
-- dataframe
-- r
 - reshape
 categories: 
 - data manipulation
@@ -45,7 +43,7 @@ Reshaping though frequently required in data analysis, so often it remains confu
 ## Reshape data from wide to long
 
 
-Your data in wide form if the multiple observations of item, place or person (i.e. units) has been recorded in single row (in different column). This multiple observations may be of repeated measure type (observation are made repeatedly at different time point) or multiple characteristics of some unit (eg. height, length and width of square). 
+Your data in wide form if the multiple observations of item, place or person (i.e. units) has been recorded in single row (but in multiple column). This multiple observations may be of repeated measure type (observation are made repeatedly at different time point) or multiple characteristics of some unit (eg. height, length and width of square). 
 
 Let's take an example of wide data of repeated measure type. Person A is visiting clinic every month for their blood pressure check, and nurse note down the value for each month in single row which belong to this specific person A. See example below,
 

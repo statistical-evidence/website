@@ -297,7 +297,7 @@ Figure 7: Parametric bootstrap using boot package
 &lt;p&gt;Reshaping though frequently required in data analysis, so often it remains confusing even if you are frequent user of &lt;code&gt;reshape&lt;/code&gt; function. Here I have provided an simple example to elaborate more on each argument of &lt;code&gt;reshape&lt;/code&gt;.&lt;/p&gt;
 &lt;div id=&#34;reshape-data-from-wide-to-long&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Reshape data from wide to long&lt;/h2&gt;
-&lt;p&gt;Your data in wide form if the multiple observations of item, place or person (i.e. units) has been recorded in single row (in different column). This multiple observations may be of repeated measure type (observation are made repeatedly at different time point) or multiple characteristics of some unit (eg. height, length and width of square).&lt;/p&gt;
+&lt;p&gt;Your data in wide form if the multiple observations of item, place or person (i.e. units) has been recorded in single row (but in multiple column). This multiple observations may be of repeated measure type (observation are made repeatedly at different time point) or multiple characteristics of some unit (eg. height, length and width of square).&lt;/p&gt;
 &lt;p&gt;Let’s take an example of wide data of repeated measure type. Person A is visiting clinic every month for their blood pressure check, and nurse note down the value for each month in single row which belong to this specific person A. See example below,&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# wide data
 df &amp;lt;- data.frame(matrix(data = NA, nrow = 3, ncol = 5, dimnames = list(NULL, paste0(c(&amp;quot;id&amp;quot;,&amp;quot;name&amp;quot;,&amp;quot;jan&amp;quot;,&amp;quot;feb&amp;quot;,&amp;quot;march&amp;quot;)))))
