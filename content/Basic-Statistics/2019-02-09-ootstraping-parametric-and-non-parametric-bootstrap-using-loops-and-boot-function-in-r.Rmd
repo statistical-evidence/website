@@ -1,5 +1,5 @@
 ---
-title: "Bootstrap R tutorial : Parametric vs Nonparametric Bootstrap"
+title: "Bootstrapping in R: Parametric vs Nonparametric Bootstrap"
 author: Chetan Prajapati
 date: '2019-02-09'
 slug: bootstrap-resampling-parametric-nonparametric-boot-how-to
@@ -9,7 +9,7 @@ tags:
   - parametric
   - Non-parametric
   - boot
-description: 'This article describes the bootstrap method using loops and boot function. Bootstrap is a resampling method which used the Monte Carlo technique to estimate standard error, confidence interval, bias. The methods include parametric and non-parametric bootstrap'
+description: 'This article explains the bootstrap method using example  using loops and boot function. Bootstrapping is a resampling method which used the Monte Carlo technique to estimate standard error, confidence interval, bias. The methods include parametric and non-parametric bootstrap'
 keywords: 
 - parametric
 - non-parametric
