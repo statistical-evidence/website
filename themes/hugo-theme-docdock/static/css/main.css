@@ -825,7 +825,7 @@ body{
     content:"";
     height:1px;
     width:0%;
-    background-color:#238fbd;
+    background-color:#bc0b0b;
     -webkit-transition:width .35s ease;
     -moz-transition:width .35s ease;
     -ms-transition:width .35s ease;
@@ -1213,8 +1213,8 @@ div.notices p:first-child:before{
     position:absolute;
     top:-27px;
     color:#fff;
-    font-family:FontAwesome;
-    content:'';
+    font-family:"Font Awesome 5 Free";
+    content:"\f06a";
     left:10px
 }
 div.notices p:first-child:after{

@@ -285,7 +285,7 @@ Figure 7: Parametric bootstrap using boot package
     </item>
     
     <item>
-      <title>How to reshape data in wide or long format in R</title>
+      <title>Reshape data from wide to long or from long to wide in R</title>
       <link>https://www.statistician-online.com/data-management/reshape-wide-long-data-r-how-to/</link>
       <pubDate>Sat, 02 Feb 2019 00:00:00 +0000</pubDate>
       
@@ -293,7 +293,7 @@ Figure 7: Parametric bootstrap using boot package
       <description>
 
 
-&lt;p&gt;&lt;img alt=&#34;reshape data wide long r gather melt dplyr&#34; src=&#34;https://www.statistician-online.com/images/Reshape.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;reshape data wide long r&#34; src=&#34;https://www.statistician-online.com/images/Reshape.png&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Reshaping though frequently required in data analysis, so often it remains confusing even if you are frequent user of &lt;code&gt;reshape&lt;/code&gt; function. Here I have provided an simple example to elaborate more on each argument of &lt;code&gt;reshape&lt;/code&gt;.&lt;/p&gt;
 &lt;div id=&#34;reshape-data-from-wide-to-long&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;Reshape data from wide to long&lt;/h2&gt;
