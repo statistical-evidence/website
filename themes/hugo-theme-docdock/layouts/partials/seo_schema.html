@@ -5,11 +5,96 @@
    "@context":"https://schema.org",
    "@graph":[
      
-      { "@type": "Organization",
-    "additionalType": [
+       {
+  "@type": "LocalBusiness",
+  "additionalType": [
     "http://www.productontology.org/id/Consulting_firm",
     "http://www.productontology.org/id/Methodological_advisor",
     "http://www.productontology.org/id/Statistician" ],
+  "image": [
+    "https://www.statistician-online.com/images/bio.png",
+    "https://www.statistician-online.com/images/cover.png"
+   ],
+  "@id": "https://www.statistician-online.com/#local",
+  "name": "Statistician Online",
+  "branchOf":
+  {"@id": "https://www.statistician-online.com/#organization"},
+  
+  "priceRange" : "£££",
+  "description": "Hire freelance statistician. UK based medical statistician offers consultancy services in statistical aspect of data analysis for your research project or dissertation",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "184 Great Meadow Road",
+    "addressLocality": "Bristol",
+    "addressRegion": "South Gloucestershire",
+    "postalCode": "BS32 8DB",
+    "addressCountry": "GB"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 51.525883,
+    "longitude": -2.536412
+  },
+  "aggregateRating": {
+      "@type": "AggregateRating",
+              "ratingValue": "4",
+              "bestRating": "5",
+              "worstRating": "1",
+              "ratingCount": "1"
+    },
+   "review": {
+    "@type": "Review",
+    "url": "https://goo.gl/maps/ad1f92aeuwr",
+    "author": {
+      "@type": "Person",
+      "name": "Rob Ventom"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Google"
+    },
+    "datePublished": "2019-05-28T20:00",
+    "description": "Great work mate",
+    "inLanguage": "en",
+    "reviewRating": {
+      "@type": "Rating",
+      "worstRating": 1,
+      "bestRating": 5,
+      "ratingValue": 4
+    }
+  },
+  "url": "https://www.statistician-online.com/",
+  "telephone": "+447392339862",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "17:30",
+      "closes": "23:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Saturday",
+        "Sunday"
+      ],
+      "opens": "00:00",
+      "closes": "23:59"
+    }
+    
+  ]
+  
+  
+},
+      
+      { "@type": "Organization",
+    
     "@id":"https://www.statistician-online.com/#organization",
     "name": "Statistician Online",
     "legalName" : "Statistician-Online.com",
@@ -56,49 +141,13 @@
 		"name": "Chetankumar Prajapati",
     "sameAs" : [
     "https://www.crunchbase.com/person/chetan-prajapati",
-    "http://www.bristol.ac.uk/clinical-sciences/people/chetan-a-prajapati/index.html" ],
-    "alumniOf": {
-        "@type": "OrganizationRole",
-        "alumniOf": {
-            "@type": "CollegeOrUniversity",
-            "name": "University of Leicester",
-            "sameAs": "https://en.wikipedia.org/wiki/University_of_Leicester"
-        },
-        "startDate": "2018"
-    }
-	},
+    "http://www.bristol.ac.uk/clinical-sciences/people/chetan-a-prajapati/index.html" ]
+    
+     },
     "areaServed": {
     "@type": "GeoShape",
     "addressCountry": ["BE","BH","CA","CH","CY","DE","EE","ES","FI","FR","GR","IE","IT","KW","LU","LV","MT","NL","NZ","PT","SG","SI","SK","GB"]
   },
-    "review": {
-    "@type": "Review",
-    "url": "https://goo.gl/maps/ad1f92aeuwr",
-    "author": {
-      "@type": "Person",
-      "name": "Rob Ventom"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Google"
-    },
-    "datePublished": "2019-05-28T20:00",
-    "description": "Great work mate",
-    "inLanguage": "en",
-    "reviewRating": {
-      "@type": "Rating",
-      "worstRating": 1,
-      "bestRating": 5,
-      "ratingValue": 4
-    }
-  },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-              "ratingValue": "4",
-              "bestRating": "5",
-              "worstRating": "1",
-              "ratingCount": "1"
-    },
     "hasOfferCatalog": {
     "@type": "OfferCatalog",
     "name": "Statistical Consulting Service",
@@ -176,6 +225,8 @@
          "publisher":{
             "@id":"https://www.statistician-online.com/#organization"
          },
+         "about":{
+            "@id":"https://www.statistician-online.com/#local"},
          "potentialAction":{
             "@type":"SearchAction",
             "target":"https://www.statistician-online.com/?s={search_term_string}",
@@ -193,9 +244,9 @@
             "@id":"https://www.statistician-online.com/#website"
          },
          "about":{
-            "@id":"https://www.statistician-online.com/#organization"
+            "@id":"https://www.statistician-online.com/#local"
          },
-         "description":"Looking to hire a professional and accredited statistical consultant for your research or dissertation? UK based freelance statistician offers reliable statistics consulting services online to researchers, businesses, PhD students at affordable rates. Consultancy service for data analysis or medical statistics help",
+         "description": "{{ with .Site.Params.description }}{{ . }}{{ end }}" ,
          {{ if not .PublishDate.IsZero -}}
   "datePublished": "{{ .PublishDate.Format "2006-01-02T15:04:05-07:00" | safeHTML }}",
   {{- else if not .Date.IsZero -}}
@@ -219,11 +270,96 @@
   "@graph":
 [
   
- { "@type": "Organization",
-    "additionalType": [
+ {
+  "@type": "LocalBusiness",
+  "additionalType": [
     "http://www.productontology.org/id/Consulting_firm",
     "http://www.productontology.org/id/Methodological_advisor",
     "http://www.productontology.org/id/Statistician" ],
+  "image": [
+    "https://www.statistician-online.com/images/bio.png",
+    "https://www.statistician-online.com/images/cover.png"
+   ],
+  "@id": "https://www.statistician-online.com/#local",
+  "name": "Statistician Online",
+  "branchOf":
+  {"@id": "https://www.statistician-online.com/#organization"},
+  
+  "priceRange" : "£££",
+  "description": "Hire freelance statistician. UK based medical statistician offers consultancy services in statistical aspect of data analysis for your research project or dissertation",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "184 Great Meadow Road",
+    "addressLocality": "Bristol",
+    "addressRegion": "South Gloucestershire",
+    "postalCode": "BS32 8DB",
+    "addressCountry": "GB"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 51.525883,
+    "longitude": -2.536412
+  },
+  "aggregateRating": {
+      "@type": "AggregateRating",
+              "ratingValue": "4",
+              "bestRating": "5",
+              "worstRating": "1",
+              "ratingCount": "1"
+    },
+   "review": {
+    "@type": "Review",
+    "url": "https://goo.gl/maps/ad1f92aeuwr",
+    "author": {
+      "@type": "Person",
+      "name": "Rob Ventom"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Google"
+    },
+    "datePublished": "2019-05-28T20:00",
+    "description": "Great work mate",
+    "inLanguage": "en",
+    "reviewRating": {
+      "@type": "Rating",
+      "worstRating": 1,
+      "bestRating": 5,
+      "ratingValue": 4
+    }
+  },
+  "url": "https://www.statistician-online.com/",
+  "telephone": "+447392339862",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "17:30",
+      "closes": "23:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Saturday",
+        "Sunday"
+      ],
+      "opens": "00:00",
+      "closes": "23:59"
+    }
+    
+  ]
+  
+  
+},
+      
+      { "@type": "Organization",
+    
     "@id":"https://www.statistician-online.com/#organization",
     "name": "Statistician Online",
     "legalName" : "Statistician-Online.com",
@@ -270,49 +406,13 @@
 		"name": "Chetankumar Prajapati",
     "sameAs" : [
     "https://www.crunchbase.com/person/chetan-prajapati",
-    "http://www.bristol.ac.uk/clinical-sciences/people/chetan-a-prajapati/index.html" ],
-    "alumniOf": {
-        "@type": "OrganizationRole",
-        "alumniOf": {
-            "@type": "CollegeOrUniversity",
-            "name": "University of Leicester",
-            "sameAs": "https://en.wikipedia.org/wiki/University_of_Leicester"
-        },
-        "startDate": "2018"
-    }
-	},
+    "http://www.bristol.ac.uk/clinical-sciences/people/chetan-a-prajapati/index.html" ]
+    
+     },
     "areaServed": {
     "@type": "GeoShape",
     "addressCountry": ["BE","BH","CA","CH","CY","DE","EE","ES","FI","FR","GR","IE","IT","KW","LU","LV","MT","NL","NZ","PT","SG","SI","SK","GB"]
   },
-    "review": {
-    "@type": "Review",
-    "url": "https://goo.gl/maps/ad1f92aeuwr",
-    "author": {
-      "@type": "Person",
-      "name": "Rob Ventom"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Google"
-    },
-    "datePublished": "2019-05-28T20:00",
-    "description": "Great work mate",
-    "inLanguage": "en",
-    "reviewRating": {
-      "@type": "Rating",
-      "worstRating": 1,
-      "bestRating": 5,
-      "ratingValue": 4
-    }
-  },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-              "ratingValue": "4",
-              "bestRating": "5",
-              "worstRating": "1",
-              "ratingCount": "1"
-    },
     "hasOfferCatalog": {
     "@type": "OfferCatalog",
     "name": "Statistical Consulting Service",
@@ -382,7 +482,7 @@
   }
       },
       
- {
+      {
          "@type":"WebSite",
          "@id":"https://www.statistician-online.com/#website",
          "url":"https://www.statistician-online.com/",
@@ -390,6 +490,8 @@
          "publisher":{
             "@id":"https://www.statistician-online.com/#organization"
          },
+         "about":{
+            "@id":"https://www.statistician-online.com/#local"},
          "potentialAction":{
             "@type":"SearchAction",
             "target":"https://www.statistician-online.com/?s={search_term_string}",
