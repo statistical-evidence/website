@@ -7,27 +7,20 @@
 <meta name="p:domain_verify" content="6835ae5ad93aab1538e521c2642334a4"/>
 <meta name="msvalidate.01" content="6CF94B92C7D01E764F5BC3DDEB0B98FF" />
 <meta name="yandex-verification" content="0c5c6634f3024f99" />
-
 <meta name="description" content="{{if .IsHome}}{{ $.Site.Params.description }}{{else}}{{.Description}}{{end}}" />
 <meta name="title" content="{{ if .IsHome -}}
   {{ .Site.Title }}
 {{- else -}}
   {{ .Title }} | Statistician Online
 {{- end }}" />
-
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320"/>
-
-
 {{ partial "site-opengraph.html" . }}
 {{ partial "site-twittercard.html" . }}
 {{ partial "seo_schema" . }}
-
-
 {{ with .OutputFormats.Get "rss" -}}
     {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
 {{ end -}}
-
 <link rel="canonical" href="{{ .Permalink }}"/>
 <link rel="alternate" href="{{ .Permalink }}" hreflang="en-at" />
 <link rel="alternate" href="{{ .Permalink }}" hreflang="en-be" />
@@ -57,24 +50,15 @@
 <link rel="alternate" href="{{ .Permalink }}" hreflang="en-nz" />
 <link rel="alternate" href="{{ .Permalink }}" hreflang="en" />
 <link rel="alternate" href="{{ .Permalink }}" hreflang="x-default" />
-
-
 <link rel="shortcut icon" href="{{"images/favicon.ico" | relURL}}" type="image/x-icon" />
-
 <link href="{{"css/main.css" | relURL}}" rel="stylesheet">
 <link href="{{"css/fa.css" | relURL}}" rel="stylesheet">
-
 <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
-
 <style>
   :root #header + #content > #left > #rlblock_left {
     display:none !important;
   }
 </style>
 
-
-
-
-{{ partial "custom-head.html" . }}
 
 
