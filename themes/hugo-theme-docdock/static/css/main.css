@@ -76,6 +76,11 @@ hr{
 pre{
     overflow:auto
 }
+
+#grav-logo {
+    max-width: 85%;
+}
+
 button,input,optgroup,select,textarea{
     color:inherit;
     font:inherit;
