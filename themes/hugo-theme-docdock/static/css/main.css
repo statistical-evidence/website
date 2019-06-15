@@ -2220,3 +2220,5 @@ html.with-featherlight{
     box-sizing:border-box
 }
 
+.hidden {
+  display: none; }

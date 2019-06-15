@@ -1,7 +1,7 @@
 baseURL = "https://www.statistician-online.com/"
 languageCode = "en-gb"
 DefaultContentLanguage = "en"
-title = "Hire Accredited Statistician Online | Freelance Statistical Consulting"
+title = "Hire Accredited Statistician Online - Freelance Statistical Consulting"
 theme = "hugo-theme-docdock"
 pygmentsCodeFences = false
 pygmentsStyle = ""

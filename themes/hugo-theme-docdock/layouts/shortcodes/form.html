@@ -5,12 +5,14 @@
 
 <div>
   <form action="/thankyou" method="post" name="Contact" data-netlify="true" netlify-honeypot="bot-field" netlify>
-
+<p class="hidden">
+    <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+  </p>
 <label for="name">Your Name</label>
-<input type="text" id="name" name="Your name" placeholder="Your name..">
+<input type="text" id="name" name="Your name" placeholder="Your name (required)" required>
  
 <label for="email">Your e-mail</label>
-<input type="text" id="email" name="email" placeholder="email@example.com">
+<input type="text" id="email" name="email" placeholder="email@example.com (required)" required>
     
 
 <label for="country">Country</label>
