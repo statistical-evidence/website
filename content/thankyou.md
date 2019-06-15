@@ -8,6 +8,6 @@ sitemap:
   Priority: 0.5
 ---
 
-Thank you for getting in touch with me. I will be in touch with you shortly..
+Thank you for getting in touch with me. I will be in contact with you by e-mail within next 6 hrs.
 
 {{< button href="/" >}} Go To Homepage {{< /button >}}
